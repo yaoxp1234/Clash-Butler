@@ -70,20 +70,20 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 06-0053-RELAY
+- name: 06-0052-RELAY
   network: ws
-  port: 443
-  server: 104.21.36.57
-  servername: orange.fullmargintraders.com
-  tls: true
+  port: 80
+  server: light-presence.oneeat.co
+  servername: light-presence.oneeat.co
+  tls: false
   type: vless
   udp: true
-  uuid: 4c835bff-4f4d-4608-bb21-120099089688
+  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
   ws-opts:
     headers:
-      Host: orange.fullmargintraders.com
-    path: /wsv/4c835bff-4f4d-4608-bb21-120099089688?ed=2048
-- name: 06-0129-RELAY
+      Host: light-presence.oneeat.co
+    path: /
+- name: 06-0127-RELAY
   network: ws
   port: 2053
   server: 141.101.120.100
@@ -96,7 +96,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /telegram%40V2ray_Alpha/?ed=2048
-- name: 06-0130-RELAY
+- name: 06-0128-RELAY
   network: ws
   port: 2053
   server: 141.101.121.34
@@ -109,7 +109,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /?ed=2048
-- name: 06-0131-RELAY
+- name: 06-0129-RELAY
   network: ws
   port: 2053
   server: 141.101.120.15
@@ -122,7 +122,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /?ed=2048
-- name: 06-0132-RELAY
+- name: 06-0130-RELAY
   network: ws
   port: 2053
   server: 141.101.121.107
@@ -135,7 +135,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /
-- name: 06-0133-RELAY
+- name: 06-0131-RELAY
   network: ws
   port: 2053
   server: 141.101.121.62
@@ -149,39 +149,30 @@ proxies:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 08-0069-US
+  name: 08-0132-US
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
-- cipher: aes-256-gcm
-  name: 08-0134-SC
-  password: 2b5fad3874e5
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /aqwshiog
-    restls: false
-    skip-cert-verify: true
-    tls: true
-  port: 443
-  server: 156.251.179.135
-  type: ss
 - cipher: aes-256-cfb
-  name: 08-0135-MD
+  name: 08-0134-MD
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - cipher: aes-256-cfb
-  name: 23-0088-US
+  name: 23-0086-US
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
-- name: 23-0111-RELAY
+- cipher: chacha20-ietf-poly1305
+  name: 23-0103-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
+  type: ss
+- name: 23-0109-RELAY
   network: ws
   port: 80
   server: fierce-data.seotoolsforyou.co.uk
@@ -194,12 +185,6 @@ proxies:
     headers:
       Host: fierce-data.seotoolsforyou.co.uk
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 23-0120-LT
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.171
-  type: ss
 proxy-groups:
 - name: PROXY
   type: select
@@ -216,18 +201,17 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
-  - 06-0053-RELAY
+  - 06-0052-RELAY
+  - 06-0127-RELAY
+  - 06-0128-RELAY
   - 06-0129-RELAY
   - 06-0130-RELAY
   - 06-0131-RELAY
-  - 06-0132-RELAY
-  - 06-0133-RELAY
-  - 08-0069-US
-  - 08-0134-SC
-  - 08-0135-MD
-  - 23-0088-US
-  - 23-0111-RELAY
-  - 23-0120-LT
+  - 08-0132-US
+  - 08-0134-MD
+  - 23-0086-US
+  - 23-0103-NL
+  - 23-0109-RELAY
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -249,18 +233,17 @@ proxy-groups:
   tolerance: 50
   filter: .*
   proxies:
-  - 06-0053-RELAY
+  - 06-0052-RELAY
+  - 06-0127-RELAY
+  - 06-0128-RELAY
   - 06-0129-RELAY
   - 06-0130-RELAY
   - 06-0131-RELAY
-  - 06-0132-RELAY
-  - 06-0133-RELAY
-  - 08-0069-US
-  - 08-0134-SC
-  - 08-0135-MD
-  - 23-0088-US
-  - 23-0111-RELAY
-  - 23-0120-LT
+  - 08-0132-US
+  - 08-0134-MD
+  - 23-0086-US
+  - 23-0103-NL
+  - 23-0109-RELAY
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -314,8 +297,8 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 08-0069-US
-  - 23-0088-US
+  - 08-0132-US
+  - 23-0086-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
