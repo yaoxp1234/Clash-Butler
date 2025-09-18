@@ -70,86 +70,21 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 06-0133-RELAY
-  network: ws
-  port: 2053
-  server: 141.101.120.100
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /telegram%40V2ray_Alpha/?ed=2048
-- name: 06-0134-RELAY
-  network: ws
-  port: 2053
-  server: 141.101.121.34
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /?ed=2048
-- name: 06-0135-RELAY
-  network: ws
-  port: 2053
-  server: 141.101.120.15
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /?ed=2048
-- name: 06-0136-RELAY
-  network: ws
-  port: 2053
-  server: 141.101.121.107
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /
-- name: 06-0137-RELAY
-  network: ws
-  port: 2053
-  server: 141.101.121.62
-  servername: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
-    path: /
 - cipher: aes-256-cfb
-  name: 08-0069-MD
+  name: 08-0110-MD
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0070-VN
+  name: 08-0111-VN
   password: Nk9asglDzHzjktVzTkvhaA
   port: 443
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
 - alterId: 0
   cipher: auto
-  name: 08-0138-CA
+  name: 08-0112-CA
   network: ws
   port: 80
   server: 51.79.102.253
@@ -161,18 +96,18 @@ proxies:
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - cipher: aes-256-cfb
-  name: 23-0092-US
+  name: 23-0064-US
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 23-0124-LT
+  name: 23-0096-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
-- name: 23-0125-IN
+- name: 23-0097-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -197,17 +132,12 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
-  - 06-0133-RELAY
-  - 06-0134-RELAY
-  - 06-0135-RELAY
-  - 06-0136-RELAY
-  - 06-0137-RELAY
-  - 08-0069-MD
-  - 08-0070-VN
-  - 08-0138-CA
-  - 23-0092-US
-  - 23-0124-LT
-  - 23-0125-IN
+  - 08-0110-MD
+  - 08-0111-VN
+  - 08-0112-CA
+  - 23-0064-US
+  - 23-0096-LT
+  - 23-0097-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -229,17 +159,12 @@ proxy-groups:
   tolerance: 50
   filter: .*
   proxies:
-  - 06-0133-RELAY
-  - 06-0134-RELAY
-  - 06-0135-RELAY
-  - 06-0136-RELAY
-  - 06-0137-RELAY
-  - 08-0069-MD
-  - 08-0070-VN
-  - 08-0138-CA
-  - 23-0092-US
-  - 23-0124-LT
-  - 23-0125-IN
+  - 08-0110-MD
+  - 08-0111-VN
+  - 08-0112-CA
+  - 23-0064-US
+  - 23-0096-LT
+  - 23-0097-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -293,7 +218,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 23-0092-US
+  - 23-0064-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
