@@ -70,20 +70,7 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 06-0052-RELAY
-  network: ws
-  port: 80
-  server: light-presence.oneeat.co
-  servername: light-presence.oneeat.co
-  tls: false
-  type: vless
-  udp: true
-  uuid: 7e74ff43-3a90-48b3-8372-7d92a045c2d4
-  ws-opts:
-    headers:
-      Host: light-presence.oneeat.co
-    path: /
-- name: 06-0127-RELAY
+- name: 06-0128-RELAY
   network: ws
   port: 2053
   server: 141.101.120.100
@@ -96,7 +83,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /telegram%40V2ray_Alpha/?ed=2048
-- name: 06-0128-RELAY
+- name: 06-0129-RELAY
   network: ws
   port: 2053
   server: 141.101.121.34
@@ -109,7 +96,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /?ed=2048
-- name: 06-0129-RELAY
+- name: 06-0130-RELAY
   network: ws
   port: 2053
   server: 141.101.120.15
@@ -122,7 +109,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /?ed=2048
-- name: 06-0130-RELAY
+- name: 06-0131-RELAY
   network: ws
   port: 2053
   server: 141.101.121.107
@@ -135,7 +122,7 @@ proxies:
     headers:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /
-- name: 06-0131-RELAY
+- name: 06-0132-RELAY
   network: ws
   port: 2053
   server: 141.101.121.62
@@ -149,7 +136,7 @@ proxies:
       Host: 1749734195126.wk.by.ktff.ssl.com.kokk.cn.aliyun.cdnktff.pp.ua
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 08-0132-US
+  name: 08-0133-US
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
@@ -161,18 +148,12 @@ proxies:
   server: 185.153.197.5
   type: ss
 - cipher: aes-256-cfb
-  name: 23-0086-US
+  name: 23-0087-US
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23-0103-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: 92.112.126.90
-  type: ss
-- name: 23-0109-RELAY
+- name: 23-0110-RELAY
   network: ws
   port: 80
   server: fierce-data.seotoolsforyou.co.uk
@@ -185,6 +166,15 @@ proxies:
     headers:
       Host: fierce-data.seotoolsforyou.co.uk
     path: /
+- name: 23-0120-IN
+  network: tcp
+  port: 49355
+  server: 45.88.183.164
+  servername: 45.88.183.164
+  tls: false
+  type: vless
+  udp: true
+  uuid: ef246c6f-6e7d-4286-af33-5485544b0ba8
 proxy-groups:
 - name: PROXY
   type: select
@@ -201,17 +191,16 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
-  - 06-0052-RELAY
-  - 06-0127-RELAY
   - 06-0128-RELAY
   - 06-0129-RELAY
   - 06-0130-RELAY
   - 06-0131-RELAY
-  - 08-0132-US
+  - 06-0132-RELAY
+  - 08-0133-US
   - 08-0134-MD
-  - 23-0086-US
-  - 23-0103-NL
-  - 23-0109-RELAY
+  - 23-0087-US
+  - 23-0110-RELAY
+  - 23-0120-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -233,17 +222,16 @@ proxy-groups:
   tolerance: 50
   filter: .*
   proxies:
-  - 06-0052-RELAY
-  - 06-0127-RELAY
   - 06-0128-RELAY
   - 06-0129-RELAY
   - 06-0130-RELAY
   - 06-0131-RELAY
-  - 08-0132-US
+  - 06-0132-RELAY
+  - 08-0133-US
   - 08-0134-MD
-  - 23-0086-US
-  - 23-0103-NL
-  - 23-0109-RELAY
+  - 23-0087-US
+  - 23-0110-RELAY
+  - 23-0120-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -297,8 +285,8 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 08-0132-US
-  - 23-0086-US
+  - 08-0133-US
+  - 23-0087-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
