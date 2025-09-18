@@ -153,19 +153,12 @@ proxies:
   port: 989
   server: 104.192.226.106
   type: ss
-- name: 23-0110-RELAY
-  network: ws
-  port: 80
-  server: fierce-data.seotoolsforyou.co.uk
-  servername: fierce-data.seotoolsforyou.co.uk
-  tls: false
-  type: vless
-  udp: true
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  ws-opts:
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 23-0119-LT
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.171
+  type: ss
 - name: 23-0120-IN
   network: tcp
   port: 49355
@@ -199,7 +192,7 @@ proxy-groups:
   - 08-0133-US
   - 08-0134-MD
   - 23-0087-US
-  - 23-0110-RELAY
+  - 23-0119-LT
   - 23-0120-IN
 - name: Best
   type: url-test
@@ -230,7 +223,7 @@ proxy-groups:
   - 08-0133-US
   - 08-0134-MD
   - 23-0087-US
-  - 23-0110-RELAY
+  - 23-0119-LT
   - 23-0120-IN
 - name: HK
   type: url-test
