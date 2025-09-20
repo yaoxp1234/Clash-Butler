@@ -70,7 +70,13 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 23-0091-IN
+- cipher: chacha20-ietf-poly1305
+  name: 23-0088-LT
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.171
+  type: ss
+- name: 23-0089-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -95,7 +101,8 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
-  - 23-0091-IN
+  - 23-0088-LT
+  - 23-0089-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,7 +124,8 @@ proxy-groups:
   tolerance: 50
   filter: .*
   proxies:
-  - 23-0091-IN
+  - 23-0088-LT
+  - 23-0089-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
