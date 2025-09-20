@@ -109,19 +109,6 @@ proxies:
   skip-cert-verify: true
   sni: yue-ru.yuetoto.net
   type: hysteria2
-- name: 05-0006-RELAY
-  network: ws
-  port: 443
-  server: zz.1010991.xyz
-  servername: in1.1095815.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
-  ws-opts:
-    headers:
-      Host: in1.1095815.xyz
-    path: /4R3fOQauyN
 - name: 05-0007-FR
   network: ws
   port: 80
@@ -501,18 +488,6 @@ proxies:
   type: vless
   udp: true
   uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
-- cipher: rc4-md5
-  name: 08-0054-CN
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202509121565513-QOZnRQnbPm.download.microsoft.com
-    mode: http
-    skip-cert-verify: true
-    tls: true
-  port: 8766
-  server: cn01.efan8867801.xyz
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0055-US
   password: p78naCf2EfOlRSLTX0wFVx
@@ -619,6 +594,12 @@ proxies:
     headers:
       Host: v2rayminer.pages.dev
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 23-0094-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
+  type: ss
 - name: 23-0100-RELAY
   network: ws
   port: 80
@@ -682,7 +663,6 @@ proxy-groups:
   - 05-0003-FR
   - 05-0004-DE
   - 05-0005-RU
-  - 05-0006-RELAY
   - 05-0007-FR
   - 05-0008-CA
   - 05-0012-AE
@@ -717,7 +697,6 @@ proxy-groups:
   - 06-0041-IN
   - 06-0046-NL
   - 06-0047-PL
-  - 08-0054-CN
   - 08-0055-US
   - 08-0056-HK
   - 08-0057-RELAY
@@ -731,6 +710,7 @@ proxy-groups:
   - 08-0138-BR
   - 23-0084-RELAY
   - 23-0091-RELAY
+  - 23-0094-NL
   - 23-0100-RELAY
   - 23-0103-RELAY
   - 23-0109-LT
@@ -762,7 +742,6 @@ proxy-groups:
   - 05-0003-FR
   - 05-0004-DE
   - 05-0005-RU
-  - 05-0006-RELAY
   - 05-0007-FR
   - 05-0008-CA
   - 05-0012-AE
@@ -797,7 +776,6 @@ proxy-groups:
   - 06-0041-IN
   - 06-0046-NL
   - 06-0047-PL
-  - 08-0054-CN
   - 08-0055-US
   - 08-0056-HK
   - 08-0057-RELAY
@@ -811,6 +789,7 @@ proxy-groups:
   - 08-0138-BR
   - 23-0084-RELAY
   - 23-0091-RELAY
+  - 23-0094-NL
   - 23-0100-RELAY
   - 23-0103-RELAY
   - 23-0109-LT
