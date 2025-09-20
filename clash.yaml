@@ -70,21 +70,229 @@ dns:
   - https://doh.pub/dns-query
   - https://dns.alidns.com/dns-query
 proxies:
+- cipher: aes-256-cfb
+  name: 05-0000-US
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 05-0001-NO
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.213.23.226
+  type: ss
+- cipher: aes-256-cfb
+  name: 05-0002-SK
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- name: 05-0003-FR
+  password: dongtaiwang.com
+  port: 5355
+  server: 51.159.111.32
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 05-0004-DE
+  password: 7de0251a-7130-43b4-852e-8209dc6dc900
+  port: 21051
+  server: yue-de.yuetoto.net
+  skip-cert-verify: true
+  sni: yue-de.yuetoto.net
+  type: hysteria2
+- name: 05-0005-RU
+  password: 7de0251a-7130-43b4-852e-8209dc6dc900
+  port: 21029
+  server: yue-ru.yuetoto.net
+  skip-cert-verify: true
+  sni: yue-ru.yuetoto.net
+  type: hysteria2
+- name: 05-0006-RELAY
+  network: ws
+  port: 443
+  server: zz.1010991.xyz
+  servername: in1.1095815.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d80603a-d7d7-4bcd-ad88-aaf1cf70b8c6
+  ws-opts:
+    headers:
+      Host: in1.1095815.xyz
+    path: /4R3fOQauyN
+- name: 05-0007-FR
+  network: ws
+  port: 80
+  server: 51.195.31.95
+  servername: wWw.speEDtEST.NeT
+  tls: false
+  type: vless
+  udp: true
+  uuid: 962bfec5-ef89-4180-8f5b-9209a7207668
+  ws-opts:
+    headers:
+      Host: wWw.speEDtEST.NeT
+    path: /wslinws
+- cipher: aes-128-cfb
+  name: 05-0008-CA
+  obfs: http_post
+  password: $$Turb0VPN$$
+  port: 443
+  protocol: auth_aes128_md5
+  server: ssca.irundns.net
+  type: ssr
+- name: 05-0012-AE
+  network: tcp
+  port: 3030
+  server: 93.127.180.123
+  servername: 93.127.180.123
+  tls: false
+  type: vless
+  udp: true
+  uuid: ed82ccaa-4924-41a6-90a1-8facadf38841
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0013-FR
+  network: grpc
+  port: 11230
+  server: 141.227.166.22
+  servername: 141.227.166.22
+  tls: false
+  type: vless
+  udp: true
+  uuid: a1015799-6c9a-4bab-8ad0-8c9444d46fa0
+- grpc-opts:
+    grpc-service-name: twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice
+  name: 05-0014-LT
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: e_w8hU5iFkzVYFOSY-CDrA_vm2HuguWPnwSWgzeeaX8
+    short-id: 7a28ae
+  server: step.dissertationhelpspecialist.com
+  servername: tgju.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cecdc027-3dfd-4d03-bee7-aa47238e175c
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0015-DE
+  network: grpc
+  port: 36626
+  server: 57.129.92.155
+  servername: 57.129.92.155
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4981b98f-4943-4083-83aa-00b028f57a18
+- name: 05-0017-GB
+  network: ws
+  port: 80
+  server: 167.71.137.233
+  servername: 167.71.137.233
+  tls: false
+  type: vless
+  udp: true
+  uuid: 586bb25e-30e7-4163-9d1b-79ffb263e090
+  ws-opts:
+    headers:
+      Host: 167.71.137.233
+    path: /zmnnzws
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0019-FR
+  network: grpc
+  port: 34024
+  server: 141.227.170.186
+  servername: 141.227.170.186
+  tls: false
+  type: vless
+  udp: true
+  uuid: f894d5ed-530d-4f9f-ab7d-468bf8ac5dda
+- grpc-opts:
+    grpc-service-name: FAST78_CHANNEL-TEL--FAST78_CHANNEL-TEL--FAST78_CHANNEL-TEL--FAST78_CHANNEL-JOIN-FAST78_CHANNEL-TEL--FAST78_CHANNEL-JOIN-FAST78_CHANNEL-TEL-FAST78_CHANNEL-TEL--FAST78_CHANNEL-JOIN-FAST78_CHANNEL-TEL--FAST78_CHANNEL
+  name: 05-0021-DE
+  network: grpc
+  port: 57276
+  server: 91.98.165.163
+  servername: 91.98.165.163
+  tls: false
+  type: vless
+  udp: true
+  uuid: 88a5a796-6669-424f-9048-4fe269468372
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0022-FR
+  network: grpc
+  port: 57249
+  server: 141.227.172.235
+  servername: 141.227.172.235
+  tls: false
+  type: vless
+  udp: true
+  uuid: de332b56-8cae-4cf7-92a1-19e9f5647ce0
+- name: 05-0023-RELAY
+  network: ws
+  port: 2083
+  server: www.speedtest.net
+  servername: khtls.armin-website.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a61a9487-7d9e-4f77-f35a-284acc0c1925
+  ws-opts:
+    headers:
+      Host: khtls.armin-website.com
+    path: /free
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0024-FR
+  network: grpc
+  port: 34309
+  server: 51.91.139.99
+  servername: 51.91.139.99
+  tls: false
+  type: vless
+  udp: true
+  uuid: 417dab4b-f2e0-4baf-94d0-6bfbcb1e43a8
+- name: 05-0025-RELAY
+  network: ws
+  port: 80
+  server: tgju.org
+  servername: tgju.org
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2b1ac6e5-d70b-49f9-c0c7-f9d27454505e
+  ws-opts:
+    headers:
+      Host: de.channel.digicyber.click
+    path: /olem/ws
+- name: 05-0026-RELAY
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: 2020.dnss-mobile.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20d98fd8-b472-4574-eeae-b1ecc9082eb9
+  ws-opts:
+    headers:
+      Host: 2020.dnss-mobile.ir
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 05-0004-AE
+  name: 05-0118-AE
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 151.242.251.144
   type: ss
-- cipher: aes-256-cfb
-  name: 05-0005-NL
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0006-PL
+  name: 05-0119-PL
   network: grpc
   port: 24881
   server: 146.59.116.149
@@ -93,14 +301,14 @@ proxies:
   type: vless
   udp: true
   uuid: a8e10cc2-3de0-4558-b303-bfba2a5919b3
-- name: 05-0007-US
+- name: 05-0120-US
   password: WyRE1b2elC
   port: 8443
   server: map.wimax.cc
   skip-cert-verify: true
   sni: map.wimax.cc
   type: trojan
-- name: 05-0011-JP
+- name: 05-0121-JP
   network: ws
   port: 443
   server: 64.110.104.30
@@ -113,7 +321,7 @@ proxies:
     headers:
       Host: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: /
-- name: 05-0014-RELAY
+- name: 05-0122-RELAY
   network: ws
   port: 443
   server: 172.67.187.28
@@ -126,7 +334,7 @@ proxies:
     headers:
       Host: uuuuuuuuuuggghhju.iran2035.dpdns.org
     path: /xeg9Fvgzc4aVkracmjyiKVby2Lp
-- name: 05-0015-RELAY
+- name: 05-0123-RELAY
   network: ws
   port: 8443
   server: 108.165.152.82
@@ -139,7 +347,7 @@ proxies:
     headers:
       Host: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: /Telegram%40V2ray_Alpha
-- name: 05-0016-RELAY
+- name: 05-0124-RELAY
   network: ws
   port: 8443
   server: 141.101.121.225
@@ -152,7 +360,7 @@ proxies:
     headers:
       Host: 1750926573911.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: /Tel-%40V2ray_Alpha
-- name: 05-0021-RELAY
+- name: 05-0125-RELAY
   network: ws
   port: 443
   server: 104.21.67.60
@@ -165,7 +373,7 @@ proxies:
     headers:
       Host: 4g.zippza404abp.webredirect.org
     path: /
-- name: 05-0112-RELAY
+- name: 05-0126-RELAY
   network: ws
   port: 443
   server: backus1.dh03.shop
@@ -180,7 +388,7 @@ proxies:
     path: /higate
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0113-FR
+  name: 05-0127-FR
   network: grpc
   port: 15819
   server: 141.227.136.183
@@ -189,7 +397,7 @@ proxies:
   type: vless
   udp: true
   uuid: 1f90ea31-15a1-4896-bfff-c83f74ce0f7e
-- name: 05-0114-RELAY
+- name: 05-0128-RELAY
   network: ws
   port: 2096
   server: 1750926563683.tencentapp.cn
@@ -204,7 +412,7 @@ proxies:
     path: /
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0115-FR
+  name: 05-0129-FR
   network: grpc
   port: 25365
   server: 141.94.213.115
@@ -215,18 +423,7 @@ proxies:
   uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0116-FR
-  network: grpc
-  port: 11230
-  server: 141.227.166.22
-  servername: 141.227.166.22
-  tls: false
-  type: vless
-  udp: true
-  uuid: a1015799-6c9a-4bab-8ad0-8c9444d46fa0
-- grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0117-FR
+  name: 05-0130-FR
   network: grpc
   port: 27236
   server: 152.228.242.123
@@ -237,7 +434,7 @@ proxies:
   uuid: 859e3599-42c2-4e7e-8f8e-f96b764db26f
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0118-GB
+  name: 05-0131-GB
   network: grpc
   port: 25365
   server: 51.89.230.180
@@ -248,7 +445,7 @@ proxies:
   uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
 - alterId: 1
   cipher: auto
-  name: 05-0119-DE
+  name: 05-0132-DE
   network: ws
   port: 443
   server: 57.129.24.131
@@ -260,12 +457,12 @@ proxies:
   ws-opts:
     path: /linkvws
 - cipher: chacha20-ietf-poly1305
-  name: 06-0033-DE
+  name: 06-0035-DE
   password: O3k5u79Rzc8fAcwLf2cQy3
   port: 80
   server: 142.93.166.6
   type: ss
-- name: 06-0037-HK
+- name: 06-0040-HK
   password: 1640ef52-2db0-44ab-b3f3-8690b762ebc9
   port: 12000
   server: 165.154.112.107
@@ -273,19 +470,12 @@ proxies:
   sni: aliyun.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 06-0038-IN
+  name: 06-0041-IN
   password: bvr9u3aeRQwAafhjmvHtwH
   port: 80
   server: 159.65.155.229
   type: ss
-- name: 06-0042-SG
-  password: installshield
-  port: 8443
-  server: 38.180.249.177
-  skip-cert-verify: true
-  sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  type: trojan
-- name: 06-0043-NL
+- name: 06-0046-NL
   network: ws
   port: 443
   server: 104.248.193.151
@@ -299,7 +489,7 @@ proxies:
       Host: joss.krikkrik.tech
     path: /Free-VPN-CF-Geo-Project/NL10
 - flow: xtls-rprx-vision
-  name: 06-0044-PL
+  name: 06-0047-PL
   network: tcp
   port: 443
   reality-opts:
@@ -311,32 +501,38 @@ proxies:
   type: vless
   udp: true
   uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
-- name: 06-0120-FR
+- cipher: rc4-md5
+  name: 08-0054-CN
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202509121565513-QOZnRQnbPm.download.microsoft.com
+    mode: http
+    skip-cert-verify: true
+    tls: true
+  port: 8766
+  server: cn01.efan8867801.xyz
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0055-US
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 08-0056-HK
   network: ws
   port: 80
-  server: 51.195.31.95
-  servername: wWw.speEDtEST.NeT
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
   tls: false
-  type: vless
+  type: vmess
   udp: true
-  uuid: 962bfec5-ef89-4180-8f5b-9209a7207668
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
-    headers:
-      Host: wWw.speEDtEST.NeT
-    path: /wslinws
-- cipher: aes-256-cfb
-  name: 08-0052-NO
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.23.226
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0053-US
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 104.192.226.106
-  type: ss
-- name: 08-0054-RELAY
+    path: /
+- name: 08-0057-RELAY
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -350,61 +546,80 @@ proxies:
       Host: baipiao.cmliussss.abrdns.com
     path: /snippets/ip=tw.tp81.netlib.re%3A81?ed=2560
 - cipher: aes-256-cfb
-  name: 08-0121-KR
+  name: 08-0058-NL
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0059-VN
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0133-KR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.63.177
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 08-0122-HK
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
 - cipher: aes-256-cfb
-  name: 08-0123-KR
+  name: 08-0134-KR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0124-MD
+  name: 08-0135-MD
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0125-PY
+  name: 08-0136-PY
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
 - cipher: aes-128-gcm
-  name: 08-0126-GB
+  name: 08-0137-GB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0127-BR
+  name: 08-0138-BR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 23-0088-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
+- name: 23-0084-RELAY
+  network: ws
+  port: 8443
+  server: 172.66.47.140
+  servername: V2RayMinER.PAGeS.Dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c918c19-a5bd-4f2c-9b30-03c681c93ddc
+  ws-opts:
+    headers:
+      Host: v2rayminer.pages.dev
+    path: /WwPEDup8yShFB1Wp/NzguNDYuNzMuNDk=?ed=2560
+- name: 23-0091-RELAY
+  network: ws
   port: 443
-  server: 92.112.126.90
-  type: ss
-- name: 23-0094-RELAY
+  server: www.speedtest.net
+  servername: V2RaYmiNEr.PaGES.dEv
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c918c19-a5bd-4f2c-9b30-03c681c93ddc
+  ws-opts:
+    headers:
+      Host: v2rayminer.pages.dev
+    path: /
+- name: 23-0100-RELAY
   network: ws
   port: 80
   server: fierce-data.seotoolsforyou.co.uk
@@ -417,13 +632,26 @@ proxies:
     headers:
       Host: fierce-data.seotoolsforyou.co.uk
     path: /
+- name: 23-0103-RELAY
+  network: ws
+  port: 80
+  server: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
+  servername: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
+  tls: false
+  type: vless
+  udp: true
+  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
+  ws-opts:
+    headers:
+      Host: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 23-0103-LT
+  name: 23-0109-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
-- name: 23-0104-IN
+- name: 23-0110-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -448,44 +676,65 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
-  - 05-0004-AE
-  - 05-0005-NL
-  - 05-0006-PL
-  - 05-0007-US
-  - 05-0011-JP
-  - 05-0014-RELAY
-  - 05-0015-RELAY
-  - 05-0016-RELAY
-  - 05-0021-RELAY
-  - 05-0112-RELAY
-  - 05-0113-FR
-  - 05-0114-RELAY
-  - 05-0115-FR
-  - 05-0116-FR
-  - 05-0117-FR
-  - 05-0118-GB
-  - 05-0119-DE
-  - 06-0033-DE
-  - 06-0037-HK
-  - 06-0038-IN
-  - 06-0042-SG
-  - 06-0043-NL
-  - 06-0044-PL
-  - 06-0120-FR
-  - 08-0052-NO
-  - 08-0053-US
-  - 08-0054-RELAY
-  - 08-0121-KR
-  - 08-0122-HK
-  - 08-0123-KR
-  - 08-0124-MD
-  - 08-0125-PY
-  - 08-0126-GB
-  - 08-0127-BR
-  - 23-0088-NL
-  - 23-0094-RELAY
-  - 23-0103-LT
-  - 23-0104-IN
+  - 05-0000-US
+  - 05-0001-NO
+  - 05-0002-SK
+  - 05-0003-FR
+  - 05-0004-DE
+  - 05-0005-RU
+  - 05-0006-RELAY
+  - 05-0007-FR
+  - 05-0008-CA
+  - 05-0012-AE
+  - 05-0013-FR
+  - 05-0014-LT
+  - 05-0015-DE
+  - 05-0017-GB
+  - 05-0019-FR
+  - 05-0021-DE
+  - 05-0022-FR
+  - 05-0023-RELAY
+  - 05-0024-FR
+  - 05-0025-RELAY
+  - 05-0026-RELAY
+  - 05-0118-AE
+  - 05-0119-PL
+  - 05-0120-US
+  - 05-0121-JP
+  - 05-0122-RELAY
+  - 05-0123-RELAY
+  - 05-0124-RELAY
+  - 05-0125-RELAY
+  - 05-0126-RELAY
+  - 05-0127-FR
+  - 05-0128-RELAY
+  - 05-0129-FR
+  - 05-0130-FR
+  - 05-0131-GB
+  - 05-0132-DE
+  - 06-0035-DE
+  - 06-0040-HK
+  - 06-0041-IN
+  - 06-0046-NL
+  - 06-0047-PL
+  - 08-0054-CN
+  - 08-0055-US
+  - 08-0056-HK
+  - 08-0057-RELAY
+  - 08-0058-NL
+  - 08-0059-VN
+  - 08-0133-KR
+  - 08-0134-KR
+  - 08-0135-MD
+  - 08-0136-PY
+  - 08-0137-GB
+  - 08-0138-BR
+  - 23-0084-RELAY
+  - 23-0091-RELAY
+  - 23-0100-RELAY
+  - 23-0103-RELAY
+  - 23-0109-LT
+  - 23-0110-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -507,44 +756,65 @@ proxy-groups:
   tolerance: 50
   filter: .*
   proxies:
-  - 05-0004-AE
-  - 05-0005-NL
-  - 05-0006-PL
-  - 05-0007-US
-  - 05-0011-JP
-  - 05-0014-RELAY
-  - 05-0015-RELAY
-  - 05-0016-RELAY
-  - 05-0021-RELAY
-  - 05-0112-RELAY
-  - 05-0113-FR
-  - 05-0114-RELAY
-  - 05-0115-FR
-  - 05-0116-FR
-  - 05-0117-FR
-  - 05-0118-GB
-  - 05-0119-DE
-  - 06-0033-DE
-  - 06-0037-HK
-  - 06-0038-IN
-  - 06-0042-SG
-  - 06-0043-NL
-  - 06-0044-PL
-  - 06-0120-FR
-  - 08-0052-NO
-  - 08-0053-US
-  - 08-0054-RELAY
-  - 08-0121-KR
-  - 08-0122-HK
-  - 08-0123-KR
-  - 08-0124-MD
-  - 08-0125-PY
-  - 08-0126-GB
-  - 08-0127-BR
-  - 23-0088-NL
-  - 23-0094-RELAY
-  - 23-0103-LT
-  - 23-0104-IN
+  - 05-0000-US
+  - 05-0001-NO
+  - 05-0002-SK
+  - 05-0003-FR
+  - 05-0004-DE
+  - 05-0005-RU
+  - 05-0006-RELAY
+  - 05-0007-FR
+  - 05-0008-CA
+  - 05-0012-AE
+  - 05-0013-FR
+  - 05-0014-LT
+  - 05-0015-DE
+  - 05-0017-GB
+  - 05-0019-FR
+  - 05-0021-DE
+  - 05-0022-FR
+  - 05-0023-RELAY
+  - 05-0024-FR
+  - 05-0025-RELAY
+  - 05-0026-RELAY
+  - 05-0118-AE
+  - 05-0119-PL
+  - 05-0120-US
+  - 05-0121-JP
+  - 05-0122-RELAY
+  - 05-0123-RELAY
+  - 05-0124-RELAY
+  - 05-0125-RELAY
+  - 05-0126-RELAY
+  - 05-0127-FR
+  - 05-0128-RELAY
+  - 05-0129-FR
+  - 05-0130-FR
+  - 05-0131-GB
+  - 05-0132-DE
+  - 06-0035-DE
+  - 06-0040-HK
+  - 06-0041-IN
+  - 06-0046-NL
+  - 06-0047-PL
+  - 08-0054-CN
+  - 08-0055-US
+  - 08-0056-HK
+  - 08-0057-RELAY
+  - 08-0058-NL
+  - 08-0059-VN
+  - 08-0133-KR
+  - 08-0134-KR
+  - 08-0135-MD
+  - 08-0136-PY
+  - 08-0137-GB
+  - 08-0138-BR
+  - 23-0084-RELAY
+  - 23-0091-RELAY
+  - 23-0100-RELAY
+  - 23-0103-RELAY
+  - 23-0109-LT
+  - 23-0110-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -554,8 +824,8 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 06-0037-HK
-  - 08-0122-HK
+  - 06-0040-HK
+  - 08-0056-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -577,7 +847,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0011-JP
+  - 05-0121-JP
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
@@ -588,7 +858,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 06-0042-SG
+  - DIRECT
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -599,8 +869,9 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0007-US
-  - 08-0053-US
+  - 05-0000-US
+  - 05-0120-US
+  - 08-0055-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
