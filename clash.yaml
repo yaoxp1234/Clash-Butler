@@ -139,19 +139,19 @@ proxies:
   type: vless
   udp: true
   uuid: 72c17850-c1a8-4915-a437-45de2645a6e1
-- name: 05-0013-RELAY
+- alterId: 0
+  cipher: auto
+  name: 05-0009-RELAY
   network: ws
-  port: 2053
-  server: 104.21.48.1
-  servername: c6jH01dP783kNPD1yGxXwr4d0doe89O1.pAGEs.dEv
+  port: 443
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 3d4f244d-4860-4603-9546-184ee632083f
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
   ws-opts:
-    headers:
-      Host: c6jh01dp783knpd1ygxxwr4d0doe89o1.pages.dev
-    path: /XJlWBmgB2NGaiV68
+    path: /6We3U9Df1WGxgFnoFPw1
 - name: 05-0022-RELAY
   network: ws
   port: 443
@@ -204,13 +204,6 @@ proxies:
     headers:
       Host: ddDDdDDdDDF.777198.XyZ
     path: /OjdW89Bpg4ykd4O
-- name: 05-0107-FR
-  password: dongtaiwang.com
-  port: 5355
-  server: 51.159.111.32
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - name: 05-0108-FR
   network: ws
   port: 80
@@ -246,17 +239,6 @@ proxies:
   type: vless
   udp: true
   uuid: f894d5ed-530d-4f9f-ab7d-468bf8ac5dda
-- grpc-opts:
-    grpc-service-name: FAST78_CHANNEL-TEL--FAST78_CHANNEL-TEL--FAST78_CHANNEL-TEL--FAST78_CHANNEL-JOIN-FAST78_CHANNEL-TEL--FAST78_CHANNEL-JOIN-FAST78_CHANNEL-TEL-FAST78_CHANNEL-TEL--FAST78_CHANNEL-JOIN-FAST78_CHANNEL-TEL--FAST78_CHANNEL
-  name: 05-0111-DE
-  network: grpc
-  port: 57276
-  server: 91.98.165.163
-  servername: 91.98.165.163
-  tls: false
-  type: vless
-  udp: true
-  uuid: 88a5a796-6669-424f-9048-4fe269468372
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 05-0112-FR
@@ -407,45 +389,7 @@ proxies:
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 08-0044-HK
-  network: ws
-  port: 80
-  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 08-0045-HK
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
-- cipher: aes-256-cfb
-  name: 08-0046-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0047-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- name: 08-0048-RELAY
+- name: 08-0044-RELAY
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -458,31 +402,80 @@ proxies:
     headers:
       Host: baipiao.cmliussss.abrdns.com
     path: /snippets/ip=tw.tp81.netlib.re%3A81?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 08-0045-HK
+  network: ws
+  port: 80
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 08-0046-HK
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: 08-0047-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0049-VN
+  name: 08-0048-VN
   password: Nk9asglDzHzjktVzTkvhaA
   port: 443
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 08-0049-IR
+  network: tcp
+  port: 59956
+  server: 46.29.34.205
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f
 - cipher: aes-256-cfb
-  name: 08-0125-BR
+  name: 08-0125-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0126-BR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0126-MD
+  name: 08-0127-MD
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.153.197.5
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0127-PT
+  name: 08-0128-PT
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
-- name: 08-0128-NL
+- name: 08-0129-NL
   network: ws
   port: 443
   server: 104.248.193.151
@@ -496,10 +489,16 @@ proxies:
       Host: joss.krikkrik.tech
     path: /Free-VPN-CF-Geo-Project/NL10
 - cipher: aes-128-gcm
-  name: 08-0129-GB
+  name: 08-0130-GB
   password: shadowsocks
   port: 443
   server: 212.102.53.197
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 23-0083-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
   type: ss
 - name: 23-0089-RELAY
   network: ws
@@ -542,16 +541,14 @@ proxy-groups:
   - 05-0004-US
   - 05-0006-FR
   - 05-0008-GB
-  - 05-0013-RELAY
+  - 05-0009-RELAY
   - 05-0022-RELAY
   - 05-0023-RELAY
   - 05-0024-RELAY
   - 05-0027-RELAY
-  - 05-0107-FR
   - 05-0108-FR
   - 05-0109-FR
   - 05-0110-FR
-  - 05-0111-DE
   - 05-0112-FR
   - 05-0113-FR
   - 05-0114-AE
@@ -569,17 +566,19 @@ proxy-groups:
   - 06-0123-HK
   - 06-0124-IN
   - 08-0043-US
-  - 08-0044-HK
+  - 08-0044-RELAY
   - 08-0045-HK
-  - 08-0046-KR
+  - 08-0046-HK
   - 08-0047-KR
-  - 08-0048-RELAY
-  - 08-0049-VN
-  - 08-0125-BR
-  - 08-0126-MD
-  - 08-0127-PT
-  - 08-0128-NL
-  - 08-0129-GB
+  - 08-0048-VN
+  - 08-0049-IR
+  - 08-0125-KR
+  - 08-0126-BR
+  - 08-0127-MD
+  - 08-0128-PT
+  - 08-0129-NL
+  - 08-0130-GB
+  - 23-0083-NL
   - 23-0089-RELAY
   - 23-0098-LT
 - name: Best
@@ -609,16 +608,14 @@ proxy-groups:
   - 05-0004-US
   - 05-0006-FR
   - 05-0008-GB
-  - 05-0013-RELAY
+  - 05-0009-RELAY
   - 05-0022-RELAY
   - 05-0023-RELAY
   - 05-0024-RELAY
   - 05-0027-RELAY
-  - 05-0107-FR
   - 05-0108-FR
   - 05-0109-FR
   - 05-0110-FR
-  - 05-0111-DE
   - 05-0112-FR
   - 05-0113-FR
   - 05-0114-AE
@@ -636,17 +633,19 @@ proxy-groups:
   - 06-0123-HK
   - 06-0124-IN
   - 08-0043-US
-  - 08-0044-HK
+  - 08-0044-RELAY
   - 08-0045-HK
-  - 08-0046-KR
+  - 08-0046-HK
   - 08-0047-KR
-  - 08-0048-RELAY
-  - 08-0049-VN
-  - 08-0125-BR
-  - 08-0126-MD
-  - 08-0127-PT
-  - 08-0128-NL
-  - 08-0129-GB
+  - 08-0048-VN
+  - 08-0049-IR
+  - 08-0125-KR
+  - 08-0126-BR
+  - 08-0127-MD
+  - 08-0128-PT
+  - 08-0129-NL
+  - 08-0130-GB
+  - 23-0083-NL
   - 23-0089-RELAY
   - 23-0098-LT
 - name: HK
@@ -659,8 +658,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 06-0123-HK
-  - 08-0044-HK
   - 08-0045-HK
+  - 08-0046-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
