@@ -71,12 +71,12 @@ dns:
   - https://dns.alidns.com/dns-query
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 23-0068-NL
+  name: 23-0071-NL
   password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
   server: 92.112.126.90
   type: ss
-- name: 23-0074-RELAY
+- name: 23-0077-RELAY
   network: ws
   port: 80
   server: fierce-data.seotoolsforyou.co.uk
@@ -89,7 +89,7 @@ proxies:
     headers:
       Host: fierce-data.seotoolsforyou.co.uk
     path: /
-- name: 23-0077-RELAY
+- name: 23-0080-RELAY
   network: ws
   port: 80
   server: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
@@ -103,12 +103,12 @@ proxies:
       Host: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 23-0083-LT
+  name: 23-0086-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
-- name: 23-0084-IN
+- name: 23-0087-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -133,11 +133,11 @@ proxy-groups:
   type: select
   filter: .*
   proxies:
-  - 23-0068-NL
-  - 23-0074-RELAY
+  - 23-0071-NL
   - 23-0077-RELAY
-  - 23-0083-LT
-  - 23-0084-IN
+  - 23-0080-RELAY
+  - 23-0086-LT
+  - 23-0087-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -159,11 +159,11 @@ proxy-groups:
   tolerance: 50
   filter: .*
   proxies:
-  - 23-0068-NL
-  - 23-0074-RELAY
+  - 23-0071-NL
   - 23-0077-RELAY
-  - 23-0083-LT
-  - 23-0084-IN
+  - 23-0080-RELAY
+  - 23-0086-LT
+  - 23-0087-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
