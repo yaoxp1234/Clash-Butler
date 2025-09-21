@@ -98,11 +98,11 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- cipher: aes-256-cfb
-  name: 05-0004-SE
-  password: amazonskr05
-  port: 443
-  server: 13.61.188.86
+- cipher: chacha20-ietf-poly1305
+  name: 05-0003-FR
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.146
   type: ss
 - name: 05-0005-RELAY
   network: ws
@@ -117,19 +117,6 @@ proxies:
     headers:
       Host: backus1.dh03.shop
     path: /higate
-- alterId: 2
-  cipher: auto
-  name: 05-0006-HK
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
 - name: 05-0007-RELAY
   network: ws
   port: 443
@@ -215,6 +202,19 @@ proxies:
     headers:
       Host: de.channel.digicyber.click
     path: /olem/ws
+- name: 05-0016-RELAY
+  network: ws
+  port: 443
+  server: 104.18.35.85
+  servername: cf.vless.sandesh.fr
+  tls: true
+  type: vless
+  udp: true
+  uuid: 060a8fe8-7175-4ded-94a5-d9808bc645b6
+  ws-opts:
+    headers:
+      Host: cf.vless.sandesh.fr
+    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 05-0017-NL
@@ -237,6 +237,12 @@ proxies:
   type: vless
   udp: true
   uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
+- cipher: chacha20-ietf-poly1305
+  name: 05-0021-FR
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.158.171.146
+  type: ss
 - name: 05-0022-RELAY
   network: ws
   port: 443
@@ -447,12 +453,6 @@ proxies:
     headers:
       Host: v2rayminer.pages.dev
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 23-0087-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: 92.112.126.90
-  type: ss
 - name: 23-0093-RELAY
   network: ws
   port: 80
@@ -513,9 +513,8 @@ proxy-groups:
   - 05-0000-US
   - 05-0001-FR
   - 05-0002-NL
-  - 05-0004-SE
+  - 05-0003-FR
   - 05-0005-RELAY
-  - 05-0006-HK
   - 05-0007-RELAY
   - 05-0008-RELAY
   - 05-0009-RELAY
@@ -523,8 +522,10 @@ proxy-groups:
   - 05-0013-FR
   - 05-0014-FR
   - 05-0015-RELAY
+  - 05-0016-RELAY
   - 05-0017-NL
   - 05-0020-FR
+  - 05-0021-FR
   - 05-0022-RELAY
   - 05-0023-AT
   - 05-0024-IT
@@ -549,7 +550,6 @@ proxy-groups:
   - 08-0112-NL
   - 23-0077-RELAY
   - 23-0084-RELAY
-  - 23-0087-NL
   - 23-0093-RELAY
   - 23-0096-RELAY
   - 23-0102-LT
@@ -578,9 +578,8 @@ proxy-groups:
   - 05-0000-US
   - 05-0001-FR
   - 05-0002-NL
-  - 05-0004-SE
+  - 05-0003-FR
   - 05-0005-RELAY
-  - 05-0006-HK
   - 05-0007-RELAY
   - 05-0008-RELAY
   - 05-0009-RELAY
@@ -588,8 +587,10 @@ proxy-groups:
   - 05-0013-FR
   - 05-0014-FR
   - 05-0015-RELAY
+  - 05-0016-RELAY
   - 05-0017-NL
   - 05-0020-FR
+  - 05-0021-FR
   - 05-0022-RELAY
   - 05-0023-AT
   - 05-0024-IT
@@ -614,7 +615,6 @@ proxy-groups:
   - 08-0112-NL
   - 23-0077-RELAY
   - 23-0084-RELAY
-  - 23-0087-NL
   - 23-0093-RELAY
   - 23-0096-RELAY
   - 23-0102-LT
@@ -628,7 +628,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0006-HK
+  - DIRECT
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
