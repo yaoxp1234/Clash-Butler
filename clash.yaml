@@ -443,13 +443,6 @@ proxies:
   type: vless
   udp: true
   uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
-- name: 06-0036-SE
-  password: 2ee85121-31de-4581-a492-eb00f606e392
-  port: 443
-  server: 45.91.171.116
-  skip-cert-verify: true
-  sni: sto.freeguard.org
-  type: trojan
 - name: 06-0037-US
   password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
   port: 443
@@ -505,24 +498,24 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - cipher: aes-256-cfb
-  name: 08-0118-NO
+  name: 08-0117-NO
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.213.23.226
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0119-CO
+  name: 08-0118-CO
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.16.212
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0120-US
+  name: 08-0119-US
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
-- name: 08-0121-RELAY
+- name: 08-0120-RELAY
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -536,13 +529,13 @@ proxies:
       Host: baipiao.cmliussss.abrdns.com
     path: /snippets/ip=tw.tp81.netlib.re%3A81?ed=2560
 - cipher: aes-256-cfb
-  name: 08-0122-KR
+  name: 08-0121-KR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.90.62.168
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0123-NL
+  name: 08-0122-NL
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
@@ -606,7 +599,6 @@ proxy-groups:
   - 05-0115-IT
   - 05-0116-GB
   - 06-0035-PL
-  - 06-0036-SE
   - 06-0037-US
   - 06-0038-US
   - 06-0039-US
@@ -616,12 +608,12 @@ proxy-groups:
   - 06-0043-US
   - 06-0044-US
   - 06-0045-US
-  - 08-0118-NO
-  - 08-0119-CO
-  - 08-0120-US
-  - 08-0121-RELAY
-  - 08-0122-KR
-  - 08-0123-NL
+  - 08-0117-NO
+  - 08-0118-CO
+  - 08-0119-US
+  - 08-0120-RELAY
+  - 08-0121-KR
+  - 08-0122-NL
   - 23-0066-US
   - 23-0098-LT
 - name: Best
@@ -676,7 +668,6 @@ proxy-groups:
   - 05-0115-IT
   - 05-0116-GB
   - 06-0035-PL
-  - 06-0036-SE
   - 06-0037-US
   - 06-0038-US
   - 06-0039-US
@@ -686,12 +677,12 @@ proxy-groups:
   - 06-0043-US
   - 06-0044-US
   - 06-0045-US
-  - 08-0118-NO
-  - 08-0119-CO
-  - 08-0120-US
-  - 08-0121-RELAY
-  - 08-0122-KR
-  - 08-0123-NL
+  - 08-0117-NO
+  - 08-0118-CO
+  - 08-0119-US
+  - 08-0120-RELAY
+  - 08-0121-KR
+  - 08-0122-NL
   - 23-0066-US
   - 23-0098-LT
 - name: HK
@@ -758,7 +749,7 @@ proxy-groups:
   - 06-0043-US
   - 06-0044-US
   - 06-0045-US
-  - 08-0120-US
+  - 08-0119-US
   - 23-0066-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
