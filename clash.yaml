@@ -81,19 +81,6 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- alterId: 2
-  cipher: auto
-  name: 05-0002-HK
-  network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 05-0003-HK
@@ -120,17 +107,6 @@ proxies:
     headers:
       Host: What.The.Fxxk.cloudns.org
     path: /snippets/ip=tw.tp81.netlib.re%3A81
-- alterId: 64
-  cipher: auto
-  name: 05-0006-US
-  network: tcp
-  port: 30002
-  server: 38.12.83.217
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 05-0008-IT
   network: ws
   port: 1488
@@ -263,20 +239,6 @@ proxies:
   port: 1443
   server: ch1.opensocks.site
   type: ss
-- grpc-opts:
-    grpc-service-name: twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice-twixservice
-  name: 05-0021-LT
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: e_w8hU5iFkzVYFOSY-CDrA_vm2HuguWPnwSWgzeeaX8
-    short-id: 7a28ae
-  server: step.dissertationhelpspecialist.com
-  servername: tgju.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 18a283d9-16fe-4d16-a69c-1012c61f3ae7
 - name: 05-0022-RELAY
   network: ws
   port: 443
@@ -546,12 +508,34 @@ proxies:
   port: 989
   server: 104.192.226.106
   type: ss
+- name: 23-0089-RELAY
+  network: ws
+  port: 80
+  server: fierce-data.seotoolsforyou.co.uk
+  servername: fierce-data.seotoolsforyou.co.uk
+  tls: false
+  type: vless
+  udp: true
+  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
+  ws-opts:
+    headers:
+      Host: fierce-data.seotoolsforyou.co.uk
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 23-0098-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
+- name: 23-0099-IN
+  network: tcp
+  port: 49355
+  server: 45.88.183.164
+  servername: 45.88.183.164
+  tls: false
+  type: vless
+  udp: true
+  uuid: ef246c6f-6e7d-4286-af33-5485544b0ba8
 proxy-groups:
 - name: PROXY
   type: select
@@ -569,10 +553,8 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0000-NL
-  - 05-0002-HK
   - 05-0003-HK
   - 05-0005-RELAY
-  - 05-0006-US
   - 05-0008-IT
   - 05-0009-NL
   - 05-0010-PL
@@ -584,7 +566,6 @@ proxy-groups:
   - 05-0017-RELAY
   - 05-0019-RELAY
   - 05-0020-CH
-  - 05-0021-LT
   - 05-0022-RELAY
   - 05-0023-RELAY
   - 05-0024-RELAY
@@ -615,7 +596,9 @@ proxy-groups:
   - 08-0121-KR
   - 08-0122-NL
   - 23-0066-US
+  - 23-0089-RELAY
   - 23-0098-LT
+  - 23-0099-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -638,10 +621,8 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0000-NL
-  - 05-0002-HK
   - 05-0003-HK
   - 05-0005-RELAY
-  - 05-0006-US
   - 05-0008-IT
   - 05-0009-NL
   - 05-0010-PL
@@ -653,7 +634,6 @@ proxy-groups:
   - 05-0017-RELAY
   - 05-0019-RELAY
   - 05-0020-CH
-  - 05-0021-LT
   - 05-0022-RELAY
   - 05-0023-RELAY
   - 05-0024-RELAY
@@ -684,7 +664,9 @@ proxy-groups:
   - 08-0121-KR
   - 08-0122-NL
   - 23-0066-US
+  - 23-0089-RELAY
   - 23-0098-LT
+  - 23-0099-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -694,7 +676,6 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0002-HK
   - 05-0003-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
@@ -739,7 +720,6 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0006-US
   - 06-0037-US
   - 06-0038-US
   - 06-0039-US
