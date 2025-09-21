@@ -98,12 +98,6 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- cipher: chacha20-ietf-poly1305
-  name: 05-0003-FR
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 45.158.171.146
-  type: ss
 - cipher: aes-256-cfb
   name: 05-0004-SE
   password: amazonskr05
@@ -243,12 +237,6 @@ proxies:
   type: vless
   udp: true
   uuid: 2715b5fc-a3a8-49dd-8c10-55f18f3030c5
-- cipher: chacha20-ietf-poly1305
-  name: 05-0021-FR
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.158.171.146
-  type: ss
 - name: 05-0022-RELAY
   network: ws
   port: 443
@@ -335,28 +323,28 @@ proxies:
     headers:
       Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
     path: /Telegram-XV2ry2?ed=2048
-- name: 08-0041-US
-  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
-  port: 443
-  server: mintaka.appagent.net
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 08-0041-SG
+  password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
+  port: 40005
+  server: sgp.fastsoonlink.com
+  type: ss
 - name: 08-0042-US
-  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
-  port: 443
-  server: delight.appagent.net
+  password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
+  port: 18333
+  server: kasheet.appagent.net
   skip-cert-verify: true
   type: trojan
 - name: 08-0043-US
-  password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
-  port: 28334
-  server: sirens.isquirrel.net
-  skip-cert-verify: true
-  type: trojan
-- name: 08-0044-US
   password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
   port: 28331
   server: seginus.appagent.net
+  skip-cert-verify: true
+  type: trojan
+- name: 08-0044-US
+  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
+  port: 443
+  server: mintaka.appagent.net
   skip-cert-verify: true
   type: trojan
 - name: 08-0045-US
@@ -366,24 +354,49 @@ proxies:
   skip-cert-verify: true
   type: trojan
 - name: 08-0046-US
-  password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
-  port: 18333
-  server: kasheet.appagent.net
+  password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
+  port: 28334
+  server: sirens.isquirrel.net
+  skip-cert-verify: true
+  type: trojan
+- name: 08-0047-US
+  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
+  port: 18332
+  server: blength.appagent.net
+  skip-cert-verify: true
+  type: trojan
+- name: 08-0048-US
+  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
+  port: 443
+  server: delight.appagent.net
+  skip-cert-verify: true
+  type: trojan
+- name: 08-0049-US
+  password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
+  port: 28331
+  server: hanger.appagent.net
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 08-0047-US
+  name: 08-0050-US
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0048-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- name: 08-0049-RELAY
+- flow: xtls-rprx-vision
+  name: 08-0051-PL
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
+    short-id: 2a22
+  server: poland20.clearorbitllc.com
+  servername: poland20.clearorbitllc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
+- name: 08-0053-RELAY
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -397,12 +410,18 @@ proxies:
       Host: baipiao.cmliussss.abrdns.com
     path: /snippets/ip=tw.tp81.netlib.re%3A81?ed=2560
 - cipher: aes-256-cfb
-  name: 08-0050-NL
+  name: 08-0111-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0112-NL
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 51.15.17.169
   type: ss
-- name: 23-0074-RELAY
+- name: 23-0077-RELAY
   network: ws
   port: 8443
   server: 172.66.47.140
@@ -415,7 +434,7 @@ proxies:
     headers:
       Host: v2rayminer.pages.dev
     path: /WwPEDup8yShFB1Wp/NzguNDYuNzMuNDk=?ed=2560
-- name: 23-0081-RELAY
+- name: 23-0084-RELAY
   network: ws
   port: 443
   server: www.speedtest.net
@@ -428,7 +447,13 @@ proxies:
     headers:
       Host: v2rayminer.pages.dev
     path: /
-- name: 23-0090-RELAY
+- cipher: chacha20-ietf-poly1305
+  name: 23-0087-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
+  type: ss
+- name: 23-0093-RELAY
   network: ws
   port: 80
   server: fierce-data.seotoolsforyou.co.uk
@@ -441,7 +466,7 @@ proxies:
     headers:
       Host: fierce-data.seotoolsforyou.co.uk
     path: /
-- name: 23-0093-RELAY
+- name: 23-0096-RELAY
   network: ws
   port: 80
   server: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
@@ -455,12 +480,12 @@ proxies:
       Host: sweeT-coMBInATIOn.SeOtooLsFORyOU.co.Uk
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 23-0099-LT
+  name: 23-0102-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
-- name: 23-0100-IN
+- name: 23-0103-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -488,7 +513,6 @@ proxy-groups:
   - 05-0000-US
   - 05-0001-FR
   - 05-0002-NL
-  - 05-0003-FR
   - 05-0004-SE
   - 05-0005-RELAY
   - 05-0006-HK
@@ -501,7 +525,6 @@ proxy-groups:
   - 05-0015-RELAY
   - 05-0017-NL
   - 05-0020-FR
-  - 05-0021-FR
   - 05-0022-RELAY
   - 05-0023-AT
   - 05-0024-IT
@@ -510,22 +533,27 @@ proxy-groups:
   - 06-0034-NO
   - 06-0035-SK
   - 06-0036-RELAY
-  - 08-0041-US
+  - 08-0041-SG
   - 08-0042-US
   - 08-0043-US
   - 08-0044-US
   - 08-0045-US
   - 08-0046-US
   - 08-0047-US
-  - 08-0048-KR
-  - 08-0049-RELAY
-  - 08-0050-NL
-  - 23-0074-RELAY
-  - 23-0081-RELAY
-  - 23-0090-RELAY
+  - 08-0048-US
+  - 08-0049-US
+  - 08-0050-US
+  - 08-0051-PL
+  - 08-0053-RELAY
+  - 08-0111-KR
+  - 08-0112-NL
+  - 23-0077-RELAY
+  - 23-0084-RELAY
+  - 23-0087-NL
   - 23-0093-RELAY
-  - 23-0099-LT
-  - 23-0100-IN
+  - 23-0096-RELAY
+  - 23-0102-LT
+  - 23-0103-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -550,7 +578,6 @@ proxy-groups:
   - 05-0000-US
   - 05-0001-FR
   - 05-0002-NL
-  - 05-0003-FR
   - 05-0004-SE
   - 05-0005-RELAY
   - 05-0006-HK
@@ -563,7 +590,6 @@ proxy-groups:
   - 05-0015-RELAY
   - 05-0017-NL
   - 05-0020-FR
-  - 05-0021-FR
   - 05-0022-RELAY
   - 05-0023-AT
   - 05-0024-IT
@@ -572,22 +598,27 @@ proxy-groups:
   - 06-0034-NO
   - 06-0035-SK
   - 06-0036-RELAY
-  - 08-0041-US
+  - 08-0041-SG
   - 08-0042-US
   - 08-0043-US
   - 08-0044-US
   - 08-0045-US
   - 08-0046-US
   - 08-0047-US
-  - 08-0048-KR
-  - 08-0049-RELAY
-  - 08-0050-NL
-  - 23-0074-RELAY
-  - 23-0081-RELAY
-  - 23-0090-RELAY
+  - 08-0048-US
+  - 08-0049-US
+  - 08-0050-US
+  - 08-0051-PL
+  - 08-0053-RELAY
+  - 08-0111-KR
+  - 08-0112-NL
+  - 23-0077-RELAY
+  - 23-0084-RELAY
+  - 23-0087-NL
   - 23-0093-RELAY
-  - 23-0099-LT
-  - 23-0100-IN
+  - 23-0096-RELAY
+  - 23-0102-LT
+  - 23-0103-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -630,7 +661,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - DIRECT
+  - 08-0041-SG
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -642,13 +673,15 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 05-0000-US
-  - 08-0041-US
   - 08-0042-US
   - 08-0043-US
   - 08-0044-US
   - 08-0045-US
   - 08-0046-US
   - 08-0047-US
+  - 08-0048-US
+  - 08-0049-US
+  - 08-0050-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
