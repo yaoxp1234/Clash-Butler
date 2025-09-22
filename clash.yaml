@@ -87,19 +87,6 @@ proxies:
   port: 989
   server: 104.192.226.106
   type: ss
-- name: 05-0004-US
-  network: ws
-  port: 28034
-  server: 142.171.85.230
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
 - name: 05-0005-US
   network: ws
   port: 443
@@ -198,6 +185,19 @@ proxies:
     headers:
       Host: 6389113402676776506.rtxiran.info
     path: /
+- name: 05-0016-RELAY
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: 6389113402676776501.rtxiran.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88538870-5626-4cd7-9cda-1e0b6253c9ce
+  ws-opts:
+    headers:
+      Host: 6389113402676776501.rtxiran.info
+    path: /
 - name: 05-0019-RELAY
   network: ws
   port: 80
@@ -211,7 +211,7 @@ proxies:
     headers:
       Host: de.channel.digicyber.click
     path: /olem/ws
-- name: 05-0106-RELAY
+- name: 05-0107-RELAY
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -224,7 +224,7 @@ proxies:
     headers:
       Host: xn--kwr11l51ffzytxy.CMLiussss.dedyn.io
     path: /snippets/ip=tw.tp81.netlib.re%3A81
-- name: 05-0107-RELAY
+- name: 05-0108-RELAY
   network: ws
   port: 443
   server: backus1.dh03.shop
@@ -239,7 +239,7 @@ proxies:
     path: /higate
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0108-AT
+  name: 05-0109-AT
   network: grpc
   port: 57923
   server: 141.227.164.187
@@ -511,14 +511,6 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
-- cipher: aes-128-cfb
-  name: 06-0029-CA
-  obfs: http_post
-  password: $$Turb0VPN$$
-  port: 443
-  protocol: auth_aes128_md5
-  server: ssca.irundns.net
-  type: ssr
 - name: 06-0030-GB
   network: ws
   port: 9931
@@ -532,98 +524,99 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443security=tls
-- flow: xtls-rprx-vision
-  name: 06-0032-PL
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
-    short-id: 2a22
-  server: poland20.clearorbitllc.com
-  servername: poland20.clearorbitllc.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
 - cipher: aes-256-cfb
   name: 08-0037-NO
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.213.23.226
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0040-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0041-NL
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0042-VN
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0044-MD
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0045-CO
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0134-US
+  name: 08-0038-US
   password: p78naCf2EfOlRSLTX0wFVx
   port: 443
   server: pupas-shirting-unsung.freesocks.work
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0135-IS
+  name: 08-0040-NL
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 37.235.49.168
+  server: 51.15.17.169
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0136-PY
+  name: 08-0041-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0042-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0044-CO
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0046-MD
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 08-0047-HK
+  network: ws
+  port: 80
+  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    path: /
+- name: 08-0049-RELAY
+  network: ws
+  port: 443
+  server: openai.com
+  servername: nkAnG2rEpLACE.airlineSHoma.Com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
+  ws-opts:
+    headers:
+      Host: nkAnG2rEpLACE.airlineSHoma.Com
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 08-0134-PY
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.165.233.93
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0137-SK
+  name: 08-0135-SK
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0138-AE
+  name: 08-0136-AE
   password: QCXDxuDlTTMD7jtgHUjIoj
   port: 8080
   server: 151.242.251.153
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0139-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 23-0097-LT
+  name: 23-0098-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
-- name: 23-0098-IN
+- name: 23-0099-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -650,7 +643,6 @@ proxy-groups:
   proxies:
   - 05-0000-FR
   - 05-0001-US
-  - 05-0004-US
   - 05-0005-US
   - 05-0006-US
   - 05-0007-SG
@@ -659,10 +651,11 @@ proxy-groups:
   - 05-0010-FR
   - 05-0011-FR
   - 05-0013-RELAY
+  - 05-0016-RELAY
   - 05-0019-RELAY
-  - 05-0106-RELAY
   - 05-0107-RELAY
-  - 05-0108-AT
+  - 05-0108-RELAY
+  - 05-0109-AT
   - 05-0110-FR
   - 05-0111-FR
   - 05-0112-DE
@@ -687,23 +680,21 @@ proxy-groups:
   - 05-0131-GB
   - 05-0132-NL
   - 06-0028-FI
-  - 06-0029-CA
   - 06-0030-GB
-  - 06-0032-PL
   - 08-0037-NO
-  - 08-0040-KR
-  - 08-0041-NL
-  - 08-0042-VN
-  - 08-0044-MD
-  - 08-0045-CO
-  - 08-0134-US
-  - 08-0135-IS
-  - 08-0136-PY
-  - 08-0137-SK
-  - 08-0138-AE
-  - 08-0139-KR
-  - 23-0097-LT
-  - 23-0098-IN
+  - 08-0038-US
+  - 08-0040-NL
+  - 08-0041-KR
+  - 08-0042-KR
+  - 08-0044-CO
+  - 08-0046-MD
+  - 08-0047-HK
+  - 08-0049-RELAY
+  - 08-0134-PY
+  - 08-0135-SK
+  - 08-0136-AE
+  - 23-0098-LT
+  - 23-0099-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -727,7 +718,6 @@ proxy-groups:
   proxies:
   - 05-0000-FR
   - 05-0001-US
-  - 05-0004-US
   - 05-0005-US
   - 05-0006-US
   - 05-0007-SG
@@ -736,10 +726,11 @@ proxy-groups:
   - 05-0010-FR
   - 05-0011-FR
   - 05-0013-RELAY
+  - 05-0016-RELAY
   - 05-0019-RELAY
-  - 05-0106-RELAY
   - 05-0107-RELAY
-  - 05-0108-AT
+  - 05-0108-RELAY
+  - 05-0109-AT
   - 05-0110-FR
   - 05-0111-FR
   - 05-0112-DE
@@ -764,23 +755,21 @@ proxy-groups:
   - 05-0131-GB
   - 05-0132-NL
   - 06-0028-FI
-  - 06-0029-CA
   - 06-0030-GB
-  - 06-0032-PL
   - 08-0037-NO
-  - 08-0040-KR
-  - 08-0041-NL
-  - 08-0042-VN
-  - 08-0044-MD
-  - 08-0045-CO
-  - 08-0134-US
-  - 08-0135-IS
-  - 08-0136-PY
-  - 08-0137-SK
-  - 08-0138-AE
-  - 08-0139-KR
-  - 23-0097-LT
-  - 23-0098-IN
+  - 08-0038-US
+  - 08-0040-NL
+  - 08-0041-KR
+  - 08-0042-KR
+  - 08-0044-CO
+  - 08-0046-MD
+  - 08-0047-HK
+  - 08-0049-RELAY
+  - 08-0134-PY
+  - 08-0135-SK
+  - 08-0136-AE
+  - 23-0098-LT
+  - 23-0099-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -790,7 +779,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - DIRECT
+  - 08-0047-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -835,12 +824,11 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 05-0001-US
-  - 05-0004-US
   - 05-0005-US
   - 05-0006-US
   - 05-0008-US
   - 05-0114-US
-  - 08-0134-US
+  - 08-0038-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
