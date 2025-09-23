@@ -81,17 +81,11 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- cipher: aes-256-cfb
-  name: 05-0001-NL
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 05-0002-FR
+  name: 05-0001-FR
   port: 15010
   protocol: udp
   server: 195.154.200.40
@@ -102,17 +96,17 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 05-0003-NL
-  port: 37519
+  name: 05-0003-FR
+  port: 50011
   protocol: udp
-  server: 109.104.153.91
+  server: 62.210.127.217
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- name: 05-0004-NL
+- name: 05-0006-LV
   network: ws
-  port: 8443
-  server: 147.45.69.222
+  port: 443
+  server: 138.124.182.204
   servername: kejiland.freewarp.eu.org
   tls: true
   type: vless
@@ -122,7 +116,177 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0009-RELAY
+- name: 05-0008-RELAY
+  network: ws
+  port: 443
+  server: kifpool.me
+  servername: nkang2replace.airlineshoma.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
+  ws-opts:
+    headers:
+      Host: nkang2replace.airlineshoma.com
+    path: /
+- name: 05-0012-SE
+  network: ws
+  port: 2053
+  server: 89.22.230.152
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0013-FR
+  network: grpc
+  port: 34024
+  server: 141.227.170.186
+  servername: 141.227.170.186
+  tls: false
+  type: vless
+  udp: true
+  uuid: f894d5ed-530d-4f9f-ab7d-468bf8ac5dda
+- name: 05-0014-US
+  network: ws
+  port: 15801
+  server: 142.171.156.182
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 05-0015-RELAY
+  network: ws
+  port: 443
+  server: 104.18.33.45
+  servername: nkAnG2rEpLACE.airlineSHoma.Com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 101e6a7d-7d10-4859-a626-8a76daab4547
+  ws-opts:
+    headers:
+      Host: nkAnG2rEpLACE.airlineSHoma.Com
+    path: /
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0016-FR
+  network: grpc
+  port: 10056
+  server: 141.227.180.68
+  servername: 141.227.180.68
+  tls: false
+  type: vless
+  udp: true
+  uuid: b314947a-e90e-4f46-b2ec-3fd172e0c6d1
+- name: 05-0017-DE
+  network: ws
+  port: 2052
+  server: dl5-de4-cdn.fastfilecdn.org
+  servername: dl5-de4-cdn.fastfilecdn.org
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8ef1b0db-5954-447c-85e5-4f62b107ed61
+  ws-opts:
+    headers:
+      Host: dl5-de4-cdn.fastfilecdn.org
+    path: /
+- name: 05-0018-RELAY
+  network: ws
+  port: 80
+  server: tgju.org
+  servername: tgju.org
+  tls: false
+  type: vless
+  udp: true
+  uuid: 539bccb6-2a84-4464-b99e-ea781f2fdaa6
+  ws-opts:
+    headers:
+      Host: de.channel.digicyber.click
+    path: /olem/ws
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0019-FR
+  network: grpc
+  port: 12393
+  server: 141.227.134.24
+  servername: 141.227.134.24
+  tls: false
+  type: vless
+  udp: true
+  uuid: b6977b89-c21a-46b3-ac1c-6e6dac52939a
+- name: 05-0020-US
+  network: ws
+  port: 443
+  server: 199.34.230.114
+  servername: am10.amadebash.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: c1585efc-ed54-4b91-8f80-5eb6edc3e751
+  ws-opts:
+    headers:
+      Host: am10.amadebash.uk
+    path: /containers/de
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0021-AT
+  network: grpc
+  port: 57923
+  server: 141.227.164.187
+  servername: 141.227.164.187
+  tls: false
+  type: vless
+  udp: true
+  uuid: 1ede815e-b941-4232-9a43-57821d473ec4
+- grpc-opts:
+    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+  name: 05-0022-CA
+  network: grpc
+  port: 56010
+  server: 148.113.138.64
+  servername: 148.113.138.64
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2ecdfbf0-90a5-45df-bc57-9988eb001cd7
+- name: 05-0024-RELAY
+  network: ws
+  port: 8080
+  server: 104.26.4.60
+  servername: 104.26.4.60
+  tls: false
+  type: vless
+  udp: true
+  uuid: d345d11e-c424-4583-b36e-527ab1f0afa4
+  ws-opts:
+    headers:
+      Host: v2raynselling.kir-rasol-kir.workers.dev
+    path: /
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 50 Mbps
+  name: 05-0142-NL
+  port: 37519
+  protocol: udp
+  server: 109.104.153.91
+  skip-cert-verify: true
+  type: hysteria
+  up: 20 Mbps
+- name: 05-0143-RELAY
   network: ws
   port: 443
   server: 104.21.9.71
@@ -137,7 +301,7 @@ proxies:
     path: /OjdW89Bpg4ykd4O
 - alterId: 0
   cipher: auto
-  name: 05-0010-RELAY
+  name: 05-0144-RELAY
   network: ws
   port: 443
   server: klo.986986.shop
@@ -148,7 +312,7 @@ proxies:
   uuid: b75c9731-408d-4aa6-8ae9-3857205113a1
   ws-opts:
     path: /nvjx6j7kbDQIQMZvbeVA9
-- name: 05-0011-FR
+- name: 05-0145-FR
   password: dongtaiwang.com
   port: 5355
   server: 51.159.111.32
@@ -157,7 +321,7 @@ proxies:
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 05-0012-HK
+  name: 05-0146-HK
   network: ws
   port: 58056
   server: 47.239.128.194
@@ -170,7 +334,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0015-HK
+  name: 05-0147-HK
   network: ws
   port: 30244
   server: 47.239.128.194
@@ -181,7 +345,7 @@ proxies:
   uuid: b378eaa0-848f-43bb-b062-0244f9e070c6
   ws-opts:
     path: /arki
-- name: 05-0017-RELAY
+- name: 05-0148-RELAY
   network: ws
   port: 443
   server: cf.877774.xyz
@@ -194,33 +358,7 @@ proxies:
     headers:
       Host: 1758413499362.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: /snippets/ip=tw.tp81.netlib.re%3A81
-- name: 05-0018-JP
-  network: ws
-  port: 22735
-  server: 140.83.57.183
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01996549-6892-dbf0-0453-f700236936bd
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0019-RELAY
-  network: ws
-  port: 2096
-  server: 154.211.8.220
-  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
-  ws-opts:
-    headers:
-      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
-    path: /snippets?ip=proxyip%3Aport(443)
-- name: 05-0020-RELAY
+- name: 05-0149-RELAY
   network: ws
   port: 443
   server: xn--ktff-jt6hr36l.tencentapp.cn
@@ -233,48 +371,9 @@ proxies:
     headers:
       Host: 1758413499362.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua
     path: /snippets/ip=tw.tp81.netlib.re%3A81
-- name: 05-0021-IN
-  network: ws
-  port: 2053
-  server: 65.20.74.136
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01996549-6892-dbf0-0453-f700236936bd
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0022-DE
-  network: ws
-  port: 2053
-  server: 89.169.53.131
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01996549-6892-dbf0-0453-f700236936bd
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0023-US
-  network: ws
-  port: 15801
-  server: 142.171.156.182
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01996549-6892-dbf0-0453-f700236936bd
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0108-FR
+  name: 05-0150-FR
   network: grpc
   port: 31706
   server: 141.227.136.92
@@ -283,7 +382,7 @@ proxies:
   type: vless
   udp: true
   uuid: 7dbd5772-e2c3-40d4-a2db-949dd67d67d4
-- name: 05-0109-RELAY
+- name: 05-0151-RELAY
   network: ws
   port: 443
   server: xn--b6gac.eu.org
@@ -298,7 +397,7 @@ proxies:
     path: /snippets/ip=tw.tp81.netlib.re%3A81vless%3A//0c6b0284-77b9-48c8-969a-4be6b18b10d3%401002.952326.xyz%3A10001/?type=tcp
 - alterId: 2
   cipher: auto
-  name: 05-0110-HK
+  name: 05-0152-HK
   network: ws
   port: 80
   server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
@@ -309,7 +408,7 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
-- name: 05-0111-RU
+- name: 05-0153-RU
   network: ws
   port: 443
   server: 147.45.143.22
@@ -322,7 +421,7 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0112-US
+- name: 05-0154-US
   network: ws
   port: 33538
   server: 142.171.202.202
@@ -335,22 +434,9 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0113-DE
-  network: ws
-  port: 443
-  server: 91.149.223.242
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
 - alterId: 0
   cipher: auto
-  name: 05-0114-SC
+  name: 05-0155-SC
   network: ws
   port: 11159
   server: 154.201.80.214
@@ -363,7 +449,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0115-HK
+  name: 05-0156-HK
   network: ws
   port: 36300
   server: 8.217.171.193
@@ -376,7 +462,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0116-HK
+  name: 05-0157-HK
   network: ws
   port: 55096
   server: 8.217.171.193
@@ -389,20 +475,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0117-HK
-  network: ws
-  port: 27200
-  server: 47.239.30.251
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 628c51c0-90db-40e1-8aea-0d97ae081bba
-  ws-opts:
-    path: /arki
-- alterId: 0
-  cipher: auto
-  name: 05-0118-HK
+  name: 05-0159-HK
   network: ws
   port: 31123
   server: 8.217.220.30
@@ -415,7 +488,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0119-HK
+  name: 05-0160-HK
   network: ws
   port: 39648
   server: 8.217.220.30
@@ -428,7 +501,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0120-HK
+  name: 05-0161-HK
   network: ws
   port: 29760
   server: 47.239.81.113
@@ -441,7 +514,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0121-HK
+  name: 05-0162-HK
   network: ws
   port: 14479
   server: 47.76.157.234
@@ -454,7 +527,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: 05-0122-HK
+  name: 05-0163-HK
   network: ws
   port: 23326
   server: 8.218.8.84
@@ -467,7 +540,7 @@ proxies:
     path: /arki
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0123-FR
+  name: 05-0164-FR
   network: grpc
   port: 34309
   server: 51.91.139.99
@@ -476,7 +549,7 @@ proxies:
   type: vless
   udp: true
   uuid: 417dab4b-f2e0-4baf-94d0-6bfbcb1e43a8
-- name: 05-0124-US
+- name: 05-0165-US
   network: ws
   port: 443
   server: 74.48.140.177
@@ -489,7 +562,7 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0125-US
+- name: 05-0166-US
   network: ws
   port: 21182
   server: 142.171.156.141
@@ -504,7 +577,7 @@ proxies:
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0126-FR
+  name: 05-0167-FR
   network: grpc
   port: 27185
   server: 51.178.253.42
@@ -513,7 +586,7 @@ proxies:
   type: vless
   udp: true
   uuid: 6ce3bb2b-bff1-431f-bb46-f492bf6a5b35
-- name: 05-0127-RELAY
+- name: 05-0168-RELAY
   network: ws
   port: 443
   server: 104.17.148.22
@@ -526,20 +599,7 @@ proxies:
     headers:
       Host: 6389113402676776506.rtxiran.info
     path: /
-- name: 05-0128-RELAY
-  network: ws
-  port: 80
-  server: tgju.org
-  servername: tgju.org
-  tls: false
-  type: vless
-  udp: true
-  uuid: 539bccb6-2a84-4464-b99e-ea781f2fdaa6
-  ws-opts:
-    headers:
-      Host: de.channel.digicyber.click
-    path: /olem/ws
-- name: 05-0129-RELAY
+- name: 05-0169-RELAY
   network: ws
   port: 443
   server: backus1.dh03.shop
@@ -554,18 +614,7 @@ proxies:
     path: /higate
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0130-AT
-  network: grpc
-  port: 57923
-  server: 141.227.164.187
-  servername: 141.227.164.187
-  tls: false
-  type: vless
-  udp: true
-  uuid: 1ede815e-b941-4232-9a43-57821d473ec4
-- grpc-opts:
-    grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-  name: 05-0131-FR
+  name: 05-0170-FR
   network: grpc
   port: 57249
   server: 141.227.172.235
@@ -574,73 +623,20 @@ proxies:
   type: vless
   udp: true
   uuid: de332b56-8cae-4cf7-92a1-19e9f5647ce0
-- name: 06-0029-FI
+- name: 06-0029-AU
   network: ws
-  port: 443
-  server: 91.108.241.188
-  servername: kejiland.freewarp.eu.org
-  tls: true
+  port: 2052
+  server: dl5-au4-cdn.fastfilecdn.org
+  servername: dl5-au4-cdn.fastfilecdn.org
+  tls: false
   type: vless
   udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  uuid: 8ef1b0db-5954-447c-85e5-4f62b107ed61
   ws-opts:
     headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
-- cipher: aes-128-cfb
-  name: 06-0030-CA
-  obfs: http_post
-  password: $$Turb0VPN$$
-  port: 443
-  protocol: auth_aes128_md5
-  server: ssca.irundns.net
-  type: ssr
-- name: 06-0031-GB
-  network: ws
-  port: 9931
-  server: 132.145.65.20
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443security=tls
-- name: 06-0040-US
-  network: ws
-  port: 28034
-  server: 142.171.85.230
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 08-0043-RELAY
-  network: ws
-  port: 2087
-  server: snipaste4.speedip.eu.org
-  servername: 00009xvyaetskbv0nfmo.3b0.3sedk8a0p.dxreh7ot7qv.iellib6.bkquusew.iwd1r.2zf0qdgs3rwb.clnj9s.74ck.yh1f9r4u636c5muf997u21lnvw.neib.cn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 01996e2d-b638-4e9f-2b24-38a6379f68a2
-  ws-opts:
-    headers:
-      Host: 00009xvyaetskbv0nfmo.3b0.3sedk8a0p.dxreh7ot7qv.iellib6.bkquusew.iwd1r.2zf0qdgs3rwb.clnj9s.74ck.yh1f9r4u636c5muf997u21lnvw.neib.cn
-    path: /snippets
-- cipher: aes-256-cfb
-  name: 08-0044-NO
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.23.226
-  type: ss
-- name: 08-0048-AE
+      Host: dl5-au4-cdn.fastfilecdn.org
+    path: /
+- name: 06-0031-AE
   network: ws
   port: 2052
   server: dl5-uae4-cdn.fastfilecdn.org
@@ -653,20 +649,345 @@ proxies:
     headers:
       Host: dl5-uae4-cdn.fastfilecdn.org
     path: /
-- alterId: 2
-  cipher: auto
-  name: 08-0133-HK
+- name: 06-0035-DE
   network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+  port: 2053
+  server: 89.169.53.131
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
   udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
   ws-opts:
-    path: /
-- name: 08-0134-US
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0036-DE
+  network: ws
+  port: 443
+  server: 91.149.223.242
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0037-FI
+  network: ws
+  port: 443
+  server: 91.108.241.188
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- cipher: aes-256-cfb
+  name: 06-0038-NL
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- name: 06-0039-GB
+  network: ws
+  port: 9931
+  server: 132.145.65.20
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443security=tls
+- name: 06-0040-RELAY
+  network: ws
+  port: 2096
+  server: 154.211.8.220
+  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  ws-opts:
+    headers:
+      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+    path: /snippets
+- name: 06-0041-RELAY
+  network: ws
+  port: 2083
+  server: 154.211.8.18
+  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  ws-opts:
+    headers:
+      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+    path: /snippets
+- name: 06-0043-IN
+  network: ws
+  port: 2053
+  server: 65.20.74.136
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0047-JP
+  network: ws
+  port: 18650
+  server: 152.70.82.101
+  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  ws-opts:
+    headers:
+      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+    path: /snippets
+- name: 06-0048-JP
+  network: ws
+  port: 15821
+  server: 138.2.32.76
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0049-JP
+  network: ws
+  port: 22735
+  server: 140.83.57.183
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0051-JP
+  network: ws
+  port: 1443
+  server: 140.238.62.82
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0052-JP
+  network: ws
+  port: 15821
+  server: 138.2.32.76
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0053-JP
+  network: ws
+  port: 45638
+  server: 138.2.10.149
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0054-KR
+  network: ws
+  port: 443
+  server: 43.203.199.76
+  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  ws-opts:
+    headers:
+      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+    path: /snippets
+- name: 06-0055-KR
+  network: ws
+  port: 8443
+  server: 158.180.82.203
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0056-KR
+  network: ws
+  port: 30063
+  server: 118.131.232.132
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0058-NL
+  network: ws
+  port: 8000
+  server: 176.222.53.140
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0059-NL
+  network: ws
+  port: 8443
+  server: 147.45.69.222
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0061-RU
+  network: ws
+  port: 2053
+  server: 89.169.160.84
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0062-RU
+  network: ws
+  port: 443
+  server: 147.45.143.22
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0063-RELAY
+  network: ws
+  port: 2083
+  server: 27.50.48.186
+  servername: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019931aa-8cba-3a74-6c77-cb288ae52f2a
+  ws-opts:
+    headers:
+      Host: 0000yhuxn8zf1sqvj1qx.x0uck1bfji4.8f25.dbhnjola4.bmj6yq1giy.ujwpeuoqhayd.pci8t1.paxljcy7c.u9v3a.a1s36uciu.2r11kwhbqtj9k5ix.neib.cn
+    path: /snippets
+- name: 06-0064-SG
+  password: tunnel-astrovpn_official928
+  port: 8441
+  server: 206.206.126.109
+  skip-cert-verify: true
+  sni: zula.ir.AstroVPN-official.AstroVPN-official.workers.dev.AstroVPN_Official.org.AstroVPN.com.AstroVPN_Official.xyz.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.AstroVPN_Official.monster.AstroVPN_OfficialJoinTelegram-------------AstroVPN_Official----------Join.ir
+  type: trojan
+- name: 06-0067-US
+  network: ws
+  port: 52125
+  server: 152.70.113.150
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0068-US
+  network: ws
+  port: 35398
+  server: 107.173.147.41
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0069-US
+  network: ws
+  port: 28034
+  server: 142.171.85.230
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0070-US
+  network: ws
+  port: 8443
+  server: 142.171.166.116
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0073-US
   network: ws
   port: 2052
   server: dl5-us4-cdn.fastfilecdn.org
@@ -679,31 +1000,7 @@ proxies:
     headers:
       Host: dl5-us4-cdn.fastfilecdn.org
     path: /
-- cipher: aes-256-cfb
-  name: 08-0135-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.62.168
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0136-CO
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0137-KR
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.90.63.177
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0138-VN
-  password: Nk9asglDzHzjktVzTkvhaA
-  port: 443
-  server: arxfw2b78fi2q9hzylhn.freesocks.work
-  type: ss
-- name: 08-0139-RELAY
+- name: 06-0074-RELAY
   network: ws
   port: 443
   server: pvt.moonop.tech
@@ -716,32 +1013,114 @@ proxies:
     headers:
       Host: pvt.moonop.tech
     path: /aws5
+- name: 06-0075-RELAY
+  network: ws
+  port: 2087
+  server: snipaste4.speedip.eu.org
+  servername: 00009xvyaetskbv0nfmo.3b0.3sedk8a0p.dxreh7ot7qv.iellib6.bkquusew.iwd1r.2zf0qdgs3rwb.clnj9s.74ck.yh1f9r4u636c5muf997u21lnvw.neib.cn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996e2d-b638-4e9f-2b24-38a6379f68a2
+  ws-opts:
+    headers:
+      Host: 00009xvyaetskbv0nfmo.3b0.3sedk8a0p.dxreh7ot7qv.iellib6.bkquusew.iwd1r.2zf0qdgs3rwb.clnj9s.74ck.yh1f9r4u636c5muf997u21lnvw.neib.cn
+    path: /snippets
+- name: 06-0076-US
+  network: ws
+  port: 15801
+  server: 142.171.156.182
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
+- name: 06-0077-US
+  network: ws
+  port: 443
+  server: 198.46.143.134
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0078-US
+  network: ws
+  port: 22731
+  server: 138.2.235.230
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01996549-6892-dbf0-0453-f700236936bd
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 08-0081-US
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 08-0172-HK
+  network: ws
+  port: 80
+  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
-  name: 23-0067-US
+  name: 08-0173-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.62.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0174-CO
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.16.212
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0175-KR
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0176-VN
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
+  type: ss
+- cipher: aes-256-cfb
+  name: 23-0101-US
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 104.192.226.106
   type: ss
-- name: 23-0090-RELAY
-  network: ws
-  port: 80
-  server: fierce-data.seotoolsforyou.co.uk
-  servername: fierce-data.seotoolsforyou.co.uk
-  tls: false
-  type: vless
-  udp: true
-  uuid: c313c27c-97ff-45ed-ab5c-64641af5debc
-  ws-opts:
-    headers:
-      Host: fierce-data.seotoolsforyou.co.uk
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: 23-0099-LT
+  name: 23-0133-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: 45.87.175.171
   type: ss
-- name: 23-0100-IN
+- name: 23-0134-IN
   network: tcp
   port: 49355
   server: 45.88.183.164
@@ -767,64 +1146,94 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0000-NL
-  - 05-0001-NL
-  - 05-0002-FR
-  - 05-0003-NL
-  - 05-0004-NL
-  - 05-0009-RELAY
-  - 05-0010-RELAY
-  - 05-0011-FR
-  - 05-0012-HK
-  - 05-0015-HK
-  - 05-0017-RELAY
-  - 05-0018-JP
-  - 05-0019-RELAY
-  - 05-0020-RELAY
-  - 05-0021-IN
-  - 05-0022-DE
-  - 05-0023-US
-  - 05-0108-FR
-  - 05-0109-RELAY
-  - 05-0110-HK
-  - 05-0111-RU
-  - 05-0112-US
-  - 05-0113-DE
-  - 05-0114-SC
-  - 05-0115-HK
-  - 05-0116-HK
-  - 05-0117-HK
-  - 05-0118-HK
-  - 05-0119-HK
-  - 05-0120-HK
-  - 05-0121-HK
-  - 05-0122-HK
-  - 05-0123-FR
-  - 05-0124-US
-  - 05-0125-US
-  - 05-0126-FR
-  - 05-0127-RELAY
-  - 05-0128-RELAY
-  - 05-0129-RELAY
-  - 05-0130-AT
-  - 05-0131-FR
-  - 06-0029-FI
-  - 06-0030-CA
-  - 06-0031-GB
-  - 06-0040-US
-  - 08-0043-RELAY
-  - 08-0044-NO
-  - 08-0048-AE
-  - 08-0133-HK
-  - 08-0134-US
-  - 08-0135-KR
-  - 08-0136-CO
-  - 08-0137-KR
-  - 08-0138-VN
-  - 08-0139-RELAY
-  - 23-0067-US
-  - 23-0090-RELAY
-  - 23-0099-LT
-  - 23-0100-IN
+  - 05-0001-FR
+  - 05-0003-FR
+  - 05-0006-LV
+  - 05-0008-RELAY
+  - 05-0012-SE
+  - 05-0013-FR
+  - 05-0014-US
+  - 05-0015-RELAY
+  - 05-0016-FR
+  - 05-0017-DE
+  - 05-0018-RELAY
+  - 05-0019-FR
+  - 05-0020-US
+  - 05-0021-AT
+  - 05-0022-CA
+  - 05-0024-RELAY
+  - 05-0142-NL
+  - 05-0143-RELAY
+  - 05-0144-RELAY
+  - 05-0145-FR
+  - 05-0146-HK
+  - 05-0147-HK
+  - 05-0148-RELAY
+  - 05-0149-RELAY
+  - 05-0150-FR
+  - 05-0151-RELAY
+  - 05-0152-HK
+  - 05-0153-RU
+  - 05-0154-US
+  - 05-0155-SC
+  - 05-0156-HK
+  - 05-0157-HK
+  - 05-0159-HK
+  - 05-0160-HK
+  - 05-0161-HK
+  - 05-0162-HK
+  - 05-0163-HK
+  - 05-0164-FR
+  - 05-0165-US
+  - 05-0166-US
+  - 05-0167-FR
+  - 05-0168-RELAY
+  - 05-0169-RELAY
+  - 05-0170-FR
+  - 06-0029-AU
+  - 06-0031-AE
+  - 06-0035-DE
+  - 06-0036-DE
+  - 06-0037-FI
+  - 06-0038-NL
+  - 06-0039-GB
+  - 06-0040-RELAY
+  - 06-0041-RELAY
+  - 06-0043-IN
+  - 06-0047-JP
+  - 06-0048-JP
+  - 06-0049-JP
+  - 06-0051-JP
+  - 06-0052-JP
+  - 06-0053-JP
+  - 06-0054-KR
+  - 06-0055-KR
+  - 06-0056-KR
+  - 06-0058-NL
+  - 06-0059-NL
+  - 06-0061-RU
+  - 06-0062-RU
+  - 06-0063-RELAY
+  - 06-0064-SG
+  - 06-0067-US
+  - 06-0068-US
+  - 06-0069-US
+  - 06-0070-US
+  - 06-0073-US
+  - 06-0074-RELAY
+  - 06-0075-RELAY
+  - 06-0076-US
+  - 06-0077-US
+  - 06-0078-US
+  - 08-0081-US
+  - 08-0172-HK
+  - 08-0173-KR
+  - 08-0174-CO
+  - 08-0175-KR
+  - 08-0176-VN
+  - 23-0101-US
+  - 23-0133-LT
+  - 23-0134-IN
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -847,64 +1256,94 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0000-NL
-  - 05-0001-NL
-  - 05-0002-FR
-  - 05-0003-NL
-  - 05-0004-NL
-  - 05-0009-RELAY
-  - 05-0010-RELAY
-  - 05-0011-FR
-  - 05-0012-HK
-  - 05-0015-HK
-  - 05-0017-RELAY
-  - 05-0018-JP
-  - 05-0019-RELAY
-  - 05-0020-RELAY
-  - 05-0021-IN
-  - 05-0022-DE
-  - 05-0023-US
-  - 05-0108-FR
-  - 05-0109-RELAY
-  - 05-0110-HK
-  - 05-0111-RU
-  - 05-0112-US
-  - 05-0113-DE
-  - 05-0114-SC
-  - 05-0115-HK
-  - 05-0116-HK
-  - 05-0117-HK
-  - 05-0118-HK
-  - 05-0119-HK
-  - 05-0120-HK
-  - 05-0121-HK
-  - 05-0122-HK
-  - 05-0123-FR
-  - 05-0124-US
-  - 05-0125-US
-  - 05-0126-FR
-  - 05-0127-RELAY
-  - 05-0128-RELAY
-  - 05-0129-RELAY
-  - 05-0130-AT
-  - 05-0131-FR
-  - 06-0029-FI
-  - 06-0030-CA
-  - 06-0031-GB
-  - 06-0040-US
-  - 08-0043-RELAY
-  - 08-0044-NO
-  - 08-0048-AE
-  - 08-0133-HK
-  - 08-0134-US
-  - 08-0135-KR
-  - 08-0136-CO
-  - 08-0137-KR
-  - 08-0138-VN
-  - 08-0139-RELAY
-  - 23-0067-US
-  - 23-0090-RELAY
-  - 23-0099-LT
-  - 23-0100-IN
+  - 05-0001-FR
+  - 05-0003-FR
+  - 05-0006-LV
+  - 05-0008-RELAY
+  - 05-0012-SE
+  - 05-0013-FR
+  - 05-0014-US
+  - 05-0015-RELAY
+  - 05-0016-FR
+  - 05-0017-DE
+  - 05-0018-RELAY
+  - 05-0019-FR
+  - 05-0020-US
+  - 05-0021-AT
+  - 05-0022-CA
+  - 05-0024-RELAY
+  - 05-0142-NL
+  - 05-0143-RELAY
+  - 05-0144-RELAY
+  - 05-0145-FR
+  - 05-0146-HK
+  - 05-0147-HK
+  - 05-0148-RELAY
+  - 05-0149-RELAY
+  - 05-0150-FR
+  - 05-0151-RELAY
+  - 05-0152-HK
+  - 05-0153-RU
+  - 05-0154-US
+  - 05-0155-SC
+  - 05-0156-HK
+  - 05-0157-HK
+  - 05-0159-HK
+  - 05-0160-HK
+  - 05-0161-HK
+  - 05-0162-HK
+  - 05-0163-HK
+  - 05-0164-FR
+  - 05-0165-US
+  - 05-0166-US
+  - 05-0167-FR
+  - 05-0168-RELAY
+  - 05-0169-RELAY
+  - 05-0170-FR
+  - 06-0029-AU
+  - 06-0031-AE
+  - 06-0035-DE
+  - 06-0036-DE
+  - 06-0037-FI
+  - 06-0038-NL
+  - 06-0039-GB
+  - 06-0040-RELAY
+  - 06-0041-RELAY
+  - 06-0043-IN
+  - 06-0047-JP
+  - 06-0048-JP
+  - 06-0049-JP
+  - 06-0051-JP
+  - 06-0052-JP
+  - 06-0053-JP
+  - 06-0054-KR
+  - 06-0055-KR
+  - 06-0056-KR
+  - 06-0058-NL
+  - 06-0059-NL
+  - 06-0061-RU
+  - 06-0062-RU
+  - 06-0063-RELAY
+  - 06-0064-SG
+  - 06-0067-US
+  - 06-0068-US
+  - 06-0069-US
+  - 06-0070-US
+  - 06-0073-US
+  - 06-0074-RELAY
+  - 06-0075-RELAY
+  - 06-0076-US
+  - 06-0077-US
+  - 06-0078-US
+  - 08-0081-US
+  - 08-0172-HK
+  - 08-0173-KR
+  - 08-0174-CO
+  - 08-0175-KR
+  - 08-0176-VN
+  - 23-0101-US
+  - 23-0133-LT
+  - 23-0134-IN
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -914,18 +1353,17 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0012-HK
-  - 05-0015-HK
-  - 05-0110-HK
-  - 05-0115-HK
-  - 05-0116-HK
-  - 05-0117-HK
-  - 05-0118-HK
-  - 05-0119-HK
-  - 05-0120-HK
-  - 05-0121-HK
-  - 05-0122-HK
-  - 08-0133-HK
+  - 05-0146-HK
+  - 05-0147-HK
+  - 05-0152-HK
+  - 05-0156-HK
+  - 05-0157-HK
+  - 05-0159-HK
+  - 05-0160-HK
+  - 05-0161-HK
+  - 05-0162-HK
+  - 05-0163-HK
+  - 08-0172-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -947,7 +1385,12 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0018-JP
+  - 06-0047-JP
+  - 06-0048-JP
+  - 06-0049-JP
+  - 06-0051-JP
+  - 06-0052-JP
+  - 06-0053-JP
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
@@ -958,7 +1401,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - DIRECT
+  - 06-0064-SG
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -969,13 +1412,21 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0023-US
-  - 05-0112-US
-  - 05-0124-US
-  - 05-0125-US
-  - 06-0040-US
-  - 08-0134-US
-  - 23-0067-US
+  - 05-0014-US
+  - 05-0020-US
+  - 05-0154-US
+  - 05-0165-US
+  - 05-0166-US
+  - 06-0067-US
+  - 06-0068-US
+  - 06-0069-US
+  - 06-0070-US
+  - 06-0073-US
+  - 06-0076-US
+  - 06-0077-US
+  - 06-0078-US
+  - 08-0081-US
+  - 23-0101-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
