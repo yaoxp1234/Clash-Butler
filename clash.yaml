@@ -340,19 +340,6 @@ proxies:
     headers:
       Host: HarmonY-427.pages.DEV
     path: /
-- name: 05-0146-RELAY
-  network: ws
-  port: 8443
-  server: 188.114.97.202
-  servername: teslakit1.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: c2e177d4-e610-4abd-85cd-1a869d158751
-  ws-opts:
-    headers:
-      Host: teslakit1.pages.dev
-    path: /
 - name: 05-0147-IR
   network: tcp
   port: 29495
@@ -913,6 +900,12 @@ proxies:
   server: 45.87.175.154
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 08-0371-LT
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.188
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 08-0372-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
@@ -923,6 +916,12 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.58
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0374-FR
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 45.158.171.60
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0375-AE
@@ -1113,6 +1112,12 @@ proxies:
     headers:
       Host: 6Dd1Xt31Qm.SoLeNtRaA.iNfO
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 08-0408-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
+  type: ss
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1278,19 +1283,6 @@ proxies:
   uuid: 375c4b8f-b646-45c1-96a8-e9d86d4163e5
   ws-opts:
     path: /
-- alterId: 0
-  cipher: auto
-  name: 08-0435-US
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
-  ws-opts:
-    path: /
 - name: 08-0436-US
   network: ws
   port: 35398
@@ -1358,6 +1350,22 @@ proxies:
   server: 172.66.46.254
   skip-cert-verify: true
   sni: dcf741e8.epeius-2gy.pages.dev
+  type: trojan
+- name: 08-0447-RELAY
+  network: ws
+  password: auto
+  port: 443
+  server: dcf741e8.epeius-2gy.pages.dev
+  skip-cert-verify: true
+  sni: dcf741e8.epeius-2gy.pages.dev
+  type: trojan
+- name: 08-0448-RELAY
+  network: ws
+  password: trojan
+  port: 8443
+  server: www.visa.com.sg
+  skip-cert-verify: true
+  sni: pangpi.pages.dev
   type: trojan
 - name: 08-0449-RELAY
   network: ws
@@ -1930,12 +1938,6 @@ proxies:
   server: 92.118.205.228
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0531-PL
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
   name: 08-0532-PL
   password: GA9KzeEgvfxNrgmM
   port: 9019
@@ -1958,30 +1960,17 @@ proxies:
   type: vless
   udp: true
   uuid: d90a5ec5-e25f-4080-9a77-be1a621dfd7e
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 08-0537-HK
+  name: 08-0538-HK
   network: ws
-  port: 80
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  port: 20521
+  server: 45.136.12.37
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 08-0539-HK
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
   ws-opts:
     path: /
 - alterId: 0
@@ -2188,11 +2177,11 @@ proxies:
   port: 989
   server: 171.22.254.17
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0716-BO
+- cipher: aes-256-cfb
+  name: 08-0717-SI
   password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.93.173.218
+  port: 989
+  server: 192.71.244.150
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0718-RO
@@ -2232,16 +2221,16 @@ proxies:
   sni: 176.97.68.153
   type: trojan
 - cipher: aes-256-cfb
+  name: 08-0723-MK
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.185.37
+  type: ss
+- cipher: aes-256-cfb
   name: 08-0724-BR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 38.54.57.90
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0725-IN
-  password: 360e21d21977dc11
-  port: 57456
-  server: 103.111.114.29
   type: ss
 - alterId: 0
   cipher: auto
@@ -2311,6 +2300,19 @@ proxies:
   type: vless
   udp: true
   uuid: fae6aee4-70ee-4416-b9ee-22d957262ef4
+- alterId: 0
+  cipher: auto
+  name: 08-1545-US
+  network: ws
+  port: 16556
+  server: 192.3.233.216
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  ws-opts:
+    path: /
 - name: 08-1546-US
   network: ws
   port: 53300
@@ -2373,20 +2375,21 @@ proxies:
   port: 989
   server: 46.183.185.15
   type: ss
-- name: 09-0742-JP
-  password: 253bc477d4e43c209f2d427272968280
+- cipher: aes-256-gcm
+  name: 09-0740-HK
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    restls: false
+    skip-cert-verify: true
+    tls: true
   port: 443
-  server: 202.181.103.246
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 09-0743-JP
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
+  server: 103.103.245.158
+  type: ss
 - name: 09-0748-JP
   password: 253bc477d4e43c209f2d427272968280
   port: 2045
@@ -2542,14 +2545,6 @@ proxies:
   type: vless
   udp: true
   uuid: 7e410940-0187-4ddf-b64f-3117f1e12f4f
-- name: 23-1558-GB
-  network: httpupgrade
-  password: 1sbtkLK7F3
-  port: 37085
-  server: 195.22.157.104
-  skip-cert-verify: true
-  sni: joon.arshiacomplus.dpdns.org
-  type: trojan
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 23-1559-FR
@@ -2661,136 +2656,27 @@ proxies:
   port: 8080
   server: 45.87.175.188
   type: ss
-- name: 39-1148-RELAY
+- name: 39-1133-RELAY
   network: ws
-  port: 8880
-  server: 185.159.247.247
-  servername: ex.sue.x10.mx
-  tls: false
+  password: trojan
+  port: 443
+  server: 91.193.58.0
+  skip-cert-verify: true
+  sni: wahaha.yingyangkuaixian.dpdns.org
+  type: trojan
+- name: 39-1451-RELAY
+  network: ws
+  port: 443
+  server: 45.159.219.96
+  servername: ConFIgmr.PaGeS.dEV
+  tls: true
   type: vless
   udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+  uuid: 63005378-e32e-4e23-bc6e-84812f147a6f
   ws-opts:
     headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1178-RELAY
-  network: ws
-  port: 8880
-  server: 188.244.122.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1194-RELAY
-  network: ws
-  port: 8880
-  server: 185.251.82.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1201-FR
-  network: ws
-  port: 8880
-  server: 185.16.110.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1289-RELAY
-  network: ws
-  port: 8880
-  server: 88.216.69.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1325-RELAY
-  network: ws
-  port: 8880
-  server: 77.105.163.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram
-- name: 39-1350-RELAY
-  network: ws
-  port: 8880
-  server: 92.53.189.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1436-US
-  network: ws
-  port: 8880
-  server: 141.193.27.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram
-- name: 39-1472-US
-  network: ws
-  port: 8880
-  server: 69.84.182.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
-- name: 39-1473-US
-  network: ws
-  port: 8880
-  server: 192.0.63.247
-  servername: ex.sue.x10.mx
-  tls: false
-  type: vless
-  udp: true
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /Telegram🇨🇳
+      Host: ConFIgmr.PaGeS.dEV
+    path: /telegram%40v2ray_configs_pools/?ed
 proxy-groups:
 - name: PROXY
   type: select
@@ -2837,7 +2723,6 @@ proxy-groups:
   - 05-0140-RELAY
   - 05-0142-US
   - 05-0144-RELAY
-  - 05-0146-RELAY
   - 05-0147-IR
   - 05-0148-IR
   - 05-0152-FR
@@ -2895,8 +2780,10 @@ proxy-groups:
   - 08-0368-AE
   - 08-0369-LT
   - 08-0370-LT
+  - 08-0371-LT
   - 08-0372-LT
   - 08-0373-LT
+  - 08-0374-FR
   - 08-0375-AE
   - 08-0376-AE
   - 08-0377-NL
@@ -2925,6 +2812,7 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
+  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2949,13 +2837,14 @@ proxy-groups:
   - 08-0431-US
   - 08-0433-US
   - 08-0434-US
-  - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
   - 08-0439-US
   - 08-0445-RELAY
   - 08-0446-RELAY
+  - 08-0447-RELAY
+  - 08-0448-RELAY
   - 08-0449-RELAY
   - 08-0450-US
   - 08-0451-RELAY
@@ -3022,12 +2911,10 @@ proxy-groups:
   - 08-0527-RU
   - 08-0528-AT
   - 08-0530-PL
-  - 08-0531-PL
   - 08-0532-PL
   - 08-0534-ES
   - 08-0536-ES
-  - 08-0537-HK
-  - 08-0539-HK
+  - 08-0538-HK
   - 08-0540-HK
   - 08-0541-HK
   - 08-0542-HK
@@ -3053,14 +2940,14 @@ proxy-groups:
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
-  - 08-0716-BO
+  - 08-0717-SI
   - 08-0718-RO
   - 08-0719-FR
   - 08-0720-CO
   - 08-0721-AU
   - 08-0722-AU
+  - 08-0723-MK
   - 08-0724-BR
-  - 08-0725-IN
   - 08-0726-IN
   - 08-0727-IN
   - 08-0728-IN
@@ -3068,14 +2955,14 @@ proxy-groups:
   - 08-0734-PT
   - 08-0735-FR
   - 08-0736-FR
+  - 08-1545-US
   - 08-1546-US
   - 08-1547-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1551-JP
   - 08-1552-MK
-  - 09-0742-JP
-  - 09-0743-JP
+  - 09-0740-HK
   - 09-0748-JP
   - 09-0752-JP
   - 10-0755-SC
@@ -3091,7 +2978,6 @@ proxy-groups:
   - 23-1554-FR
   - 23-1556-RELAY
   - 23-1557-NL
-  - 23-1558-GB
   - 23-1559-FR
   - 23-1560-NL
   - 23-1561-TW
@@ -3104,16 +2990,8 @@ proxy-groups:
   - 39-1118-LT
   - 39-1128-LT
   - 39-1129-LT
-  - 39-1148-RELAY
-  - 39-1178-RELAY
-  - 39-1194-RELAY
-  - 39-1201-FR
-  - 39-1289-RELAY
-  - 39-1325-RELAY
-  - 39-1350-RELAY
-  - 39-1436-US
-  - 39-1472-US
-  - 39-1473-US
+  - 39-1133-RELAY
+  - 39-1451-RELAY
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3165,7 +3043,6 @@ proxy-groups:
   - 05-0140-RELAY
   - 05-0142-US
   - 05-0144-RELAY
-  - 05-0146-RELAY
   - 05-0147-IR
   - 05-0148-IR
   - 05-0152-FR
@@ -3223,8 +3100,10 @@ proxy-groups:
   - 08-0368-AE
   - 08-0369-LT
   - 08-0370-LT
+  - 08-0371-LT
   - 08-0372-LT
   - 08-0373-LT
+  - 08-0374-FR
   - 08-0375-AE
   - 08-0376-AE
   - 08-0377-NL
@@ -3253,6 +3132,7 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
+  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -3277,13 +3157,14 @@ proxy-groups:
   - 08-0431-US
   - 08-0433-US
   - 08-0434-US
-  - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
   - 08-0439-US
   - 08-0445-RELAY
   - 08-0446-RELAY
+  - 08-0447-RELAY
+  - 08-0448-RELAY
   - 08-0449-RELAY
   - 08-0450-US
   - 08-0451-RELAY
@@ -3350,12 +3231,10 @@ proxy-groups:
   - 08-0527-RU
   - 08-0528-AT
   - 08-0530-PL
-  - 08-0531-PL
   - 08-0532-PL
   - 08-0534-ES
   - 08-0536-ES
-  - 08-0537-HK
-  - 08-0539-HK
+  - 08-0538-HK
   - 08-0540-HK
   - 08-0541-HK
   - 08-0542-HK
@@ -3381,14 +3260,14 @@ proxy-groups:
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
-  - 08-0716-BO
+  - 08-0717-SI
   - 08-0718-RO
   - 08-0719-FR
   - 08-0720-CO
   - 08-0721-AU
   - 08-0722-AU
+  - 08-0723-MK
   - 08-0724-BR
-  - 08-0725-IN
   - 08-0726-IN
   - 08-0727-IN
   - 08-0728-IN
@@ -3396,14 +3275,14 @@ proxy-groups:
   - 08-0734-PT
   - 08-0735-FR
   - 08-0736-FR
+  - 08-1545-US
   - 08-1546-US
   - 08-1547-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1551-JP
   - 08-1552-MK
-  - 09-0742-JP
-  - 09-0743-JP
+  - 09-0740-HK
   - 09-0748-JP
   - 09-0752-JP
   - 10-0755-SC
@@ -3419,7 +3298,6 @@ proxy-groups:
   - 23-1554-FR
   - 23-1556-RELAY
   - 23-1557-NL
-  - 23-1558-GB
   - 23-1559-FR
   - 23-1560-NL
   - 23-1561-TW
@@ -3432,16 +3310,8 @@ proxy-groups:
   - 39-1118-LT
   - 39-1128-LT
   - 39-1129-LT
-  - 39-1148-RELAY
-  - 39-1178-RELAY
-  - 39-1194-RELAY
-  - 39-1201-FR
-  - 39-1289-RELAY
-  - 39-1325-RELAY
-  - 39-1350-RELAY
-  - 39-1436-US
-  - 39-1472-US
-  - 39-1473-US
+  - 39-1133-RELAY
+  - 39-1451-RELAY
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3451,11 +3321,11 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 08-0537-HK
-  - 08-0539-HK
+  - 08-0538-HK
   - 08-0540-HK
   - 08-0541-HK
   - 08-0542-HK
+  - 09-0740-HK
   - 10-0758-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
@@ -3488,8 +3358,6 @@ proxy-groups:
   - 08-0483-JP
   - 08-0484-JP
   - 08-1551-JP
-  - 09-0742-JP
-  - 09-0743-JP
   - 09-0748-JP
   - 09-0752-JP
   - 10-0759-JP
@@ -3562,7 +3430,6 @@ proxy-groups:
   - 08-0431-US
   - 08-0433-US
   - 08-0434-US
-  - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
@@ -3572,14 +3439,12 @@ proxy-groups:
   - 08-0457-US
   - 08-0458-US
   - 08-0459-US
+  - 08-1545-US
   - 08-1546-US
   - 08-1547-US
   - 08-1548-US
   - 23-1103-US
   - 23-1111-US
-  - 39-1436-US
-  - 39-1472-US
-  - 39-1473-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
