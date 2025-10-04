@@ -275,13 +275,6 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 05-0137-US
-  password: 20050105zhu
-  port: 51541
-  server: 204.44.110.129
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - name: 05-0138-US
   network: ws
   port: 2096
@@ -1156,12 +1149,6 @@ proxies:
     headers:
       Host: 6Dd1Xt31Qm.SoLeNtRaA.iNfO
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 08-0408-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: 92.112.126.90
-  type: ss
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1363,6 +1350,14 @@ proxies:
   password: auto
   port: 443
   server: 172.66.46.254
+  skip-cert-verify: true
+  sni: dcf741e8.epeius-2gy.pages.dev
+  type: trojan
+- name: 08-0447-RELAY
+  network: ws
+  password: auto
+  port: 443
+  server: dcf741e8.epeius-2gy.pages.dev
   skip-cert-verify: true
   sni: dcf741e8.epeius-2gy.pages.dev
   type: trojan
@@ -2000,24 +1995,17 @@ proxies:
     headers:
       Host: saas.cfliu.filegear-sg.me
     path: /snippets?ip=tw.tp81.netlib.re%3A81
-- name: 08-0587-TW
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: saas.cfliu.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d5911d9-f9f9-484f-8f67-5729ab5fd1af
-  ws-opts:
-    headers:
-      Host: saas.cfliu.filegear-sg.me
-    path: /snippets?ip=tw.tp81.netlib.re%3A81
 - cipher: chacha20-ietf-poly1305
   name: 08-0711-AR
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.45.129
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0712-EC
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.47.253.227
   type: ss
 - cipher: aes-256-cfb
   name: 08-0713-LV
@@ -2649,7 +2637,6 @@ proxy-groups:
   - 05-0132-RELAY
   - 05-0133-RELAY
   - 05-0135-RU
-  - 05-0137-US
   - 05-0138-US
   - 05-0139-RELAY
   - 05-0140-RELAY
@@ -2746,7 +2733,6 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
-  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2771,6 +2757,7 @@ proxy-groups:
   - 08-0439-US
   - 08-0445-RELAY
   - 08-0446-RELAY
+  - 08-0447-RELAY
   - 08-0448-RELAY
   - 08-0449-RELAY
   - 08-0450-US
@@ -2842,8 +2829,8 @@ proxy-groups:
   - 08-0582-TW
   - 08-0584-TW
   - 08-0586-TW
-  - 08-0587-TW
   - 08-0711-AR
+  - 08-0712-EC
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
@@ -2949,7 +2936,6 @@ proxy-groups:
   - 05-0132-RELAY
   - 05-0133-RELAY
   - 05-0135-RU
-  - 05-0137-US
   - 05-0138-US
   - 05-0139-RELAY
   - 05-0140-RELAY
@@ -3046,7 +3032,6 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
-  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -3071,6 +3056,7 @@ proxy-groups:
   - 08-0439-US
   - 08-0445-RELAY
   - 08-0446-RELAY
+  - 08-0447-RELAY
   - 08-0448-RELAY
   - 08-0449-RELAY
   - 08-0450-US
@@ -3142,8 +3128,8 @@ proxy-groups:
   - 08-0582-TW
   - 08-0584-TW
   - 08-0586-TW
-  - 08-0587-TW
   - 08-0711-AR
+  - 08-0712-EC
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
@@ -3233,7 +3219,6 @@ proxy-groups:
   - 08-0582-TW
   - 08-0584-TW
   - 08-0586-TW
-  - 08-0587-TW
   - 23-1561-TW
   filter: 台湾|TW|Tw|Taiwan|新北|彰化|CHT|HINET
 - name: JP
@@ -3290,7 +3275,6 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0137-US
   - 05-0138-US
   - 05-0142-US
   - 05-1532-US
