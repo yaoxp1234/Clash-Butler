@@ -1136,19 +1136,6 @@ proxies:
   port: 8080
   server: 45.87.175.185
   type: ss
-- name: 08-0407-RELAY
-  network: ws
-  port: 2096
-  server: 172.66.40.99
-  servername: 6Dd1Xt31Qm.SoLeNtRaA.iNfO
-  tls: true
-  type: vless
-  udp: true
-  uuid: e999db7a-1b17-4da6-bc37-c9fa24af2e93
-  ws-opts:
-    headers:
-      Host: 6Dd1Xt31Qm.SoLeNtRaA.iNfO
-    path: /
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1270,6 +1257,19 @@ proxies:
   type: vmess
   udp: true
   uuid: 375c4b8f-b646-45c1-96a8-e9d86d4163e5
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 08-0435-US
+  network: ws
+  port: 20521
+  server: 154.9.254.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
   ws-opts:
     path: /
 - name: 08-0436-US
@@ -1683,15 +1683,6 @@ proxies:
     headers:
       Host: frAgteSt.JaHANGiRKh.eU.orG
     path: /
-- name: 08-0513-SE
-  network: tcp
-  port: 40617
-  server: 109.120.132.142
-  servername: 109.120.132.142
-  tls: false
-  type: vless
-  udp: true
-  uuid: d8d05386-e381-40a4-bb63-715c208b3ed3
 - cipher: chacha20-ietf-poly1305
   name: 08-0520-PY
   password: f8f7aCzcPKbsF8p3
@@ -1773,18 +1764,6 @@ proxies:
   port: 9060
   server: 217.30.10.18
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0532-PL
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0533-PL
-  password: UTJA57ypk2XKQpnm
-  port: 9033
-  server: 217.30.10.18
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0534-ES
   password: f8f7aCzcPKbsF8p3
@@ -1815,17 +1794,17 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 08-0538-HK
+  name: 08-0539-HK
   network: ws
-  port: 20521
-  server: 45.136.12.37
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 090d0bd9-f9c4-4c3b-8aae-ffa678765935
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
@@ -1845,19 +1824,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 08-0543-HK
-  network: ws
-  port: 20521
-  server: 47.238.252.154
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 87bb9d49-6345-42d4-9ee4-91dd8a6ca544
   ws-opts:
     path: /
 - cipher: aes-256-cfb
@@ -1956,36 +1922,10 @@ proxies:
   port: 989
   server: 154.223.20.79
   type: ss
-- name: 08-0585-TW
-  network: ws
-  port: 81
-  server: 220.135.202.250
-  servername: saas.cfliu.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d5911d9-f9f9-484f-8f67-5729ab5fd1af
-  ws-opts:
-    headers:
-      Host: saas.cfliu.filegear-sg.me
-    path: /snippets?ip=tw.tp81.netlib.re%3A81
 - name: 08-0586-TW
   network: ws
   port: 16443
   server: 114.32.9.249
-  servername: saas.cfliu.filegear-sg.me
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8d5911d9-f9f9-484f-8f67-5729ab5fd1af
-  ws-opts:
-    headers:
-      Host: saas.cfliu.filegear-sg.me
-    path: /snippets?ip=tw.tp81.netlib.re%3A81
-- name: 08-0587-TW
-  network: ws
-  port: 81
-  server: 210.61.97.241
   servername: saas.cfliu.filegear-sg.me
   tls: true
   type: vless
@@ -2732,7 +2672,6 @@ proxy-groups:
   - 08-0404-LT
   - 08-0405-LT
   - 08-0406-LT
-  - 08-0407-RELAY
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2750,6 +2689,7 @@ proxy-groups:
   - 08-0431-US
   - 08-0433-US
   - 08-0434-US
+  - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
@@ -2791,7 +2731,6 @@ proxy-groups:
   - 08-0508-RELAY
   - 08-0511-SE
   - 08-0512-RELAY
-  - 08-0513-SE
   - 08-0520-PY
   - 08-0521-PY
   - 08-0522-BG
@@ -2803,15 +2742,12 @@ proxy-groups:
   - 08-0528-AT
   - 08-0530-PL
   - 08-0531-PL
-  - 08-0532-PL
-  - 08-0533-PL
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
-  - 08-0538-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
@@ -2826,9 +2762,7 @@ proxy-groups:
   - 08-0581-IS
   - 08-0582-TW
   - 08-0584-TW
-  - 08-0585-TW
   - 08-0586-TW
-  - 08-0587-TW
   - 08-0711-AR
   - 08-0712-EC
   - 08-0713-LV
@@ -3031,7 +2965,6 @@ proxy-groups:
   - 08-0404-LT
   - 08-0405-LT
   - 08-0406-LT
-  - 08-0407-RELAY
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -3049,6 +2982,7 @@ proxy-groups:
   - 08-0431-US
   - 08-0433-US
   - 08-0434-US
+  - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
@@ -3090,7 +3024,6 @@ proxy-groups:
   - 08-0508-RELAY
   - 08-0511-SE
   - 08-0512-RELAY
-  - 08-0513-SE
   - 08-0520-PY
   - 08-0521-PY
   - 08-0522-BG
@@ -3102,15 +3035,12 @@ proxy-groups:
   - 08-0528-AT
   - 08-0530-PL
   - 08-0531-PL
-  - 08-0532-PL
-  - 08-0533-PL
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
-  - 08-0538-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
@@ -3125,9 +3055,7 @@ proxy-groups:
   - 08-0581-IS
   - 08-0582-TW
   - 08-0584-TW
-  - 08-0585-TW
   - 08-0586-TW
-  - 08-0587-TW
   - 08-0711-AR
   - 08-0712-EC
   - 08-0713-LV
@@ -3199,10 +3127,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 08-0537-HK
-  - 08-0538-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 08-0543-HK
   - 10-0758-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
@@ -3217,9 +3144,7 @@ proxy-groups:
   - 06-0169-TW
   - 08-0582-TW
   - 08-0584-TW
-  - 08-0585-TW
   - 08-0586-TW
-  - 08-0587-TW
   - 23-1561-TW
   filter: 台湾|TW|Tw|Taiwan|新北|彰化|CHT|HINET
 - name: JP
@@ -3299,6 +3224,7 @@ proxy-groups:
   - 08-0431-US
   - 08-0433-US
   - 08-0434-US
+  - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
