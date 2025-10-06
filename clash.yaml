@@ -713,6 +713,19 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
+- name: 06-0190-SE
+  network: ws
+  port: 8443
+  server: 77.221.137.105
+  servername: kejiland.freewarp.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
+  ws-opts:
+    headers:
+      Host: kejiland.freewarp.eu.org
+    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443?ed=2560
 - name: 06-0193-SE
   network: ws
   port: 443
@@ -823,12 +836,6 @@ proxies:
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: beesyar.org
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0361-LT
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.181
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0362-LT
@@ -975,12 +982,6 @@ proxies:
   server: 45.87.175.92
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0390-LT
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 45.87.175.35
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 08-0391-LT
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
@@ -1085,6 +1086,12 @@ proxies:
     headers:
       Host: 6Dd1Xt31Qm.SoLeNtRaA.iNfO
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 08-0408-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
+  type: ss
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1197,19 +1204,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 08-0434-US
-  network: ws
-  port: 20521
-  server: 64.81.118.54
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 375c4b8f-b646-45c1-96a8-e9d86d4163e5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 08-0435-US
   network: ws
   port: 20521
@@ -1305,19 +1299,6 @@ proxies:
   skip-cert-verify: true
   sni: pangpi.pages.dev
   type: trojan
-- name: 08-0449-RELAY
-  network: ws
-  port: 8443
-  server: 104.21.3.219
-  servername: ovhwuxian.pai50288.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      Host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
 - alterId: 0
   cipher: auto
   name: 08-0450-US
@@ -1716,12 +1697,6 @@ proxies:
   port: 990
   server: 92.118.205.228
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0531-PL
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0534-ES
   password: f8f7aCzcPKbsF8p3
@@ -1856,12 +1831,6 @@ proxies:
   port: 989
   server: 37.235.49.168
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0582-TW
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 223.165.4.173
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0584-TW
   password: f8f7aCzcPKbsF8p3
@@ -1893,24 +1862,23 @@ proxies:
   port: 990
   server: 185.47.253.227
   type: ss
-- name: 08-0714-LV
-  network: ws
-  port: 29505
-  server: 77.73.238.191
-  servername: 77.73.238.191
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0cc9d390-42ee-461e-94ae-e4370883dc48
-  ws-opts:
-    headers:
-      Host: 77.73.238.191
-    path: /
 - cipher: aes-256-cfb
   name: 08-0715-MT
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 171.22.254.17
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0716-BO
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 185.93.173.218
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0717-SI
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.244.150
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0718-RO
@@ -2051,20 +2019,11 @@ proxies:
     headers:
       Host: kejiland.freewarp.eu.org
     path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- cipher: aes-256-gcm
-  name: 09-0740-HK
-  password: ccf426f1fe78
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: newroot2v1.dsjsapp.com
-    mode: websocket
-    mux: true
-    path: /zksuapgx
-    restls: false
-    skip-cert-verify: true
-    tls: true
-  port: 443
-  server: 103.103.245.158
+- cipher: aes-256-cfb
+  name: 08-1552-MK
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.185.15
   type: ss
 - cipher: aes-256-gcm
   name: 10-0755-SC
@@ -2109,6 +2068,19 @@ proxies:
   port: 989
   server: 156.146.40.194
   type: ss
+- name: 23-1094-RELAY
+  network: ws
+  port: 443
+  server: 104.21.36.57
+  servername: banana.fullmargintraders.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48f477f3-906a-4bb6-be96-8201d8a62a6d
+  ws-opts:
+    headers:
+      Host: banana.fullmargintraders.com
+    path: /wsv/48f477f3-906a-4bb6-be96-8201d8a62a6d
 - name: 23-1096-RELAY
   network: ws
   port: 8443
@@ -2122,19 +2094,6 @@ proxies:
     headers:
       Host: saas.cfliu.filegear-sg.me
     path: /snippets?ip=tw.tp81.netlib.re%3A81
-- name: 23-1098-IR
-  network: ws
-  port: 80
-  server: 62.60.192.209
-  servername: 62.60.192.209
-  tls: false
-  type: vless
-  udp: true
-  uuid: f5f2458c-5fcb-4820-82c2-2997492c54d5
-  ws-opts:
-    headers:
-      Host: 62.60.192.209
-    path: /
 - name: 23-1103-US
   password: 2ee85121-31de-4581-a492-eb00f606e392
   port: 443
@@ -2369,6 +2328,7 @@ proxy-groups:
   - 06-0184-NL
   - 06-0187-RU
   - 06-0188-FI
+  - 06-0190-SE
   - 06-0193-SE
   - 06-0194-RELAY
   - 06-0195-US
@@ -2384,7 +2344,6 @@ proxy-groups:
   - 08-0358-NL
   - 08-0359-NL
   - 08-0360-AE
-  - 08-0361-LT
   - 08-0362-LT
   - 08-0363-FR
   - 08-0365-NL
@@ -2409,7 +2368,6 @@ proxy-groups:
   - 08-0386-LT
   - 08-0387-NL
   - 08-0389-LT
-  - 08-0390-LT
   - 08-0391-LT
   - 08-0392-NL
   - 08-0394-NL
@@ -2424,6 +2382,7 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
+  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2440,7 +2399,6 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
@@ -2450,7 +2408,6 @@ proxy-groups:
   - 08-0446-RELAY
   - 08-0447-RELAY
   - 08-0448-RELAY
-  - 08-0449-RELAY
   - 08-0450-US
   - 08-0451-RELAY
   - 08-0452-RELAY
@@ -2494,7 +2451,6 @@ proxy-groups:
   - 08-0527-RU
   - 08-0528-AT
   - 08-0530-PL
-  - 08-0531-PL
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
@@ -2511,13 +2467,13 @@ proxy-groups:
   - 08-0579-GR
   - 08-0580-IS
   - 08-0581-IS
-  - 08-0582-TW
   - 08-0584-TW
   - 08-0586-TW
   - 08-0711-AR
   - 08-0712-EC
-  - 08-0714-LV
   - 08-0715-MT
+  - 08-0716-BO
+  - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
@@ -2534,13 +2490,13 @@ proxy-groups:
   - 08-1548-US
   - 08-1549-FR
   - 08-1551-JP
-  - 09-0740-HK
+  - 08-1552-MK
   - 10-0755-SC
   - 10-0758-HK
   - 10-0759-JP
   - 23-1083-SK
+  - 23-1094-RELAY
   - 23-1096-RELAY
-  - 23-1098-IR
   - 23-1103-US
   - 23-1111-US
   - 23-1114-LT
@@ -2639,6 +2595,7 @@ proxy-groups:
   - 06-0184-NL
   - 06-0187-RU
   - 06-0188-FI
+  - 06-0190-SE
   - 06-0193-SE
   - 06-0194-RELAY
   - 06-0195-US
@@ -2654,7 +2611,6 @@ proxy-groups:
   - 08-0358-NL
   - 08-0359-NL
   - 08-0360-AE
-  - 08-0361-LT
   - 08-0362-LT
   - 08-0363-FR
   - 08-0365-NL
@@ -2679,7 +2635,6 @@ proxy-groups:
   - 08-0386-LT
   - 08-0387-NL
   - 08-0389-LT
-  - 08-0390-LT
   - 08-0391-LT
   - 08-0392-NL
   - 08-0394-NL
@@ -2694,6 +2649,7 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
+  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2710,7 +2666,6 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
@@ -2720,7 +2675,6 @@ proxy-groups:
   - 08-0446-RELAY
   - 08-0447-RELAY
   - 08-0448-RELAY
-  - 08-0449-RELAY
   - 08-0450-US
   - 08-0451-RELAY
   - 08-0452-RELAY
@@ -2764,7 +2718,6 @@ proxy-groups:
   - 08-0527-RU
   - 08-0528-AT
   - 08-0530-PL
-  - 08-0531-PL
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
@@ -2781,13 +2734,13 @@ proxy-groups:
   - 08-0579-GR
   - 08-0580-IS
   - 08-0581-IS
-  - 08-0582-TW
   - 08-0584-TW
   - 08-0586-TW
   - 08-0711-AR
   - 08-0712-EC
-  - 08-0714-LV
   - 08-0715-MT
+  - 08-0716-BO
+  - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
@@ -2804,13 +2757,13 @@ proxy-groups:
   - 08-1548-US
   - 08-1549-FR
   - 08-1551-JP
-  - 09-0740-HK
+  - 08-1552-MK
   - 10-0755-SC
   - 10-0758-HK
   - 10-0759-JP
   - 23-1083-SK
+  - 23-1094-RELAY
   - 23-1096-RELAY
-  - 23-1098-IR
   - 23-1103-US
   - 23-1111-US
   - 23-1114-LT
@@ -2842,7 +2795,6 @@ proxy-groups:
   - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 09-0740-HK
   - 10-0758-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
@@ -2855,7 +2807,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 06-0169-TW
-  - 08-0582-TW
   - 08-0584-TW
   - 08-0586-TW
   - 23-1561-TW
@@ -2935,7 +2886,6 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
