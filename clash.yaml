@@ -1124,12 +1124,6 @@ proxies:
     headers:
       Host: 6Dd1Xt31Qm.SoLeNtRaA.iNfO
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 08-0408-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: 92.112.126.90
-  type: ss
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1238,19 +1232,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 496cec71-a0fd-4f25-bba1-cba9e9d5a52f
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 08-0434-US
-  network: ws
-  port: 20521
-  server: 64.81.118.54
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 375c4b8f-b646-45c1-96a8-e9d86d4163e5
   ws-opts:
     path: /
 - alterId: 0
@@ -1451,12 +1432,6 @@ proxies:
     headers:
       Host: What.The.Fxxk.cloudns.org
     path: /snippets/ip=tw.tp81.netlib.re%3A81?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 08-0461-FI
-  password: 360e21d21977dc11
-  port: 57456
-  server: 185.193.102.7
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0462-FI
   password: f8f7aCzcPKbsF8p3
@@ -1815,17 +1790,17 @@ proxies:
   port: 990
   server: 203.23.128.33
   type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 08-0542-HK
+  name: 08-0543-HK
   network: ws
-  port: 80
-  server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com
+  port: 20521
+  server: 47.238.252.154
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  uuid: 87bb9d49-6345-42d4-9ee4-91dd8a6ca544
   ws-opts:
     path: /
 - cipher: aes-256-cfb
@@ -1852,6 +1827,19 @@ proxies:
   port: 443
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 08-0574-MY
+  network: ws
+  port: 20521
+  server: 45.89.107.51
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 08-0575-MY
@@ -1923,12 +1911,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.45.129
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0712-EC
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
   type: ss
 - cipher: aes-256-cfb
   name: 08-0713-LV
@@ -2603,7 +2585,6 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
-  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2620,7 +2601,6 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
@@ -2639,7 +2619,6 @@ proxy-groups:
   - 08-0458-US
   - 08-0459-US
   - 08-0460-RELAY
-  - 08-0461-FI
   - 08-0462-FI
   - 08-0465-GB
   - 08-0466-GB
@@ -2681,11 +2660,12 @@ proxy-groups:
   - 08-0536-ES
   - 08-0537-HK
   - 08-0541-HK
-  - 08-0542-HK
+  - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
   - 08-0573-VN
+  - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
   - 08-0578-PR
@@ -2696,7 +2676,6 @@ proxy-groups:
   - 08-0584-TW
   - 08-0586-TW
   - 08-0711-AR
-  - 08-0712-EC
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
@@ -2889,7 +2868,6 @@ proxy-groups:
   - 08-0405-LT
   - 08-0406-LT
   - 08-0407-RELAY
-  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2906,7 +2884,6 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
@@ -2925,7 +2902,6 @@ proxy-groups:
   - 08-0458-US
   - 08-0459-US
   - 08-0460-RELAY
-  - 08-0461-FI
   - 08-0462-FI
   - 08-0465-GB
   - 08-0466-GB
@@ -2967,11 +2943,12 @@ proxy-groups:
   - 08-0536-ES
   - 08-0537-HK
   - 08-0541-HK
-  - 08-0542-HK
+  - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
   - 08-0573-VN
+  - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
   - 08-0578-PR
@@ -2982,7 +2959,6 @@ proxy-groups:
   - 08-0584-TW
   - 08-0586-TW
   - 08-0711-AR
-  - 08-0712-EC
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
@@ -3047,7 +3023,7 @@ proxy-groups:
   proxies:
   - 08-0537-HK
   - 08-0541-HK
-  - 08-0542-HK
+  - 08-0543-HK
   - 10-0758-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
@@ -3140,7 +3116,6 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
