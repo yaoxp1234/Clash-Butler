@@ -1098,12 +1098,6 @@ proxies:
   port: 8080
   server: 45.87.175.185
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0408-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: 92.112.126.90
-  type: ss
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1348,14 +1342,6 @@ proxies:
   uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
   ws-opts:
     path: /f6taOMcOSZb9TPR
-- name: 08-0452-RELAY
-  network: ws
-  password: trojan
-  port: 8443
-  server: ip.sb
-  skip-cert-verify: true
-  sni: fofang.pages.dev
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 08-0457-US
@@ -1694,6 +1680,19 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
+- alterId: 2
+  cipher: auto
+  name: 08-0539-HK
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 08-0541-HK
   password: f8f7aCzcPKbsF8p3
@@ -1711,19 +1710,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 08-0543-HK
-  network: ws
-  port: 20521
-  server: 47.238.252.154
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 87bb9d49-6345-42d4-9ee4-91dd8a6ca544
   ws-opts:
     path: /
 - cipher: aes-256-cfb
@@ -1854,12 +1840,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 171.22.254.17
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0717-SI
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.244.150
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0718-RO
@@ -2462,7 +2442,6 @@ proxy-groups:
   - 08-0404-LT
   - 08-0405-LT
   - 08-0406-LT
-  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2491,7 +2470,6 @@ proxy-groups:
   - 08-0449-RELAY
   - 08-0450-US
   - 08-0451-RELAY
-  - 08-0452-RELAY
   - 08-0457-US
   - 08-0458-US
   - 08-0459-US
@@ -2532,9 +2510,9 @@ proxy-groups:
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
@@ -2553,7 +2531,6 @@ proxy-groups:
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
-  - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
@@ -2737,7 +2714,6 @@ proxy-groups:
   - 08-0404-LT
   - 08-0405-LT
   - 08-0406-LT
-  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2766,7 +2742,6 @@ proxy-groups:
   - 08-0449-RELAY
   - 08-0450-US
   - 08-0451-RELAY
-  - 08-0452-RELAY
   - 08-0457-US
   - 08-0458-US
   - 08-0459-US
@@ -2807,9 +2782,9 @@ proxy-groups:
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
@@ -2828,7 +2803,6 @@ proxy-groups:
   - 08-0713-LV
   - 08-0714-LV
   - 08-0715-MT
-  - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
@@ -2885,9 +2859,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 08-0537-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
-  - 08-0543-HK
   - 10-0758-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
