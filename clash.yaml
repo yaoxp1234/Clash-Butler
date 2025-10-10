@@ -815,6 +815,12 @@ proxies:
   server: 193.29.139.173
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 08-0355-NL
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 08-0356-FR
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
@@ -843,6 +849,12 @@ proxies:
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0362-LT
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.192
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0363-FR
@@ -1186,19 +1198,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 08-0434-US
-  network: ws
-  port: 20521
-  server: 64.81.118.54
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 375c4b8f-b646-45c1-96a8-e9d86d4163e5
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 08-0435-US
   network: ws
   port: 20521
@@ -1240,19 +1239,6 @@ proxies:
   network: ws
   port: 33538
   server: 142.171.202.202
-  servername: kejiland.freewarp.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: b65f4df7-f6af-42b2-877a-cef33f21675e
-  ws-opts:
-    headers:
-      Host: kejiland.freewarp.eu.org
-    path: /snippets/ip=proxyip.fxxk.dedyn.io%3A443
-- name: 08-0439-US
-  network: ws
-  port: 52580
-  server: 155.248.214.92
   servername: kejiland.freewarp.eu.org
   tls: true
   type: vless
@@ -1664,19 +1650,6 @@ proxies:
   type: vless
   udp: true
   uuid: d90a5ec5-e25f-4080-9a77-be1a621dfd7e
-- alterId: 2
-  cipher: auto
-  name: 08-0539-HK
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 08-0541-HK
   password: f8f7aCzcPKbsF8p3
@@ -1726,6 +1699,12 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.163.218.2
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0573-VN
+  password: Nk9asglDzHzjktVzTkvhaA
+  port: 443
+  server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
 - alterId: 0
   cipher: auto
@@ -2430,11 +2409,13 @@ proxy-groups:
   - 08-0351-CA
   - 08-0353-LT
   - 08-0354-NL
+  - 08-0355-NL
   - 08-0356-FR
   - 08-0357-NL
   - 08-0358-NL
   - 08-0359-NL
   - 08-0360-AE
+  - 08-0362-LT
   - 08-0363-FR
   - 08-0364-LT
   - 08-0365-NL
@@ -2487,12 +2468,10 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
-  - 08-0439-US
   - 08-0445-RELAY
   - 08-0446-RELAY
   - 08-0447-RELAY
@@ -2540,13 +2519,13 @@ proxy-groups:
   - 08-0533-PL
   - 08-0534-ES
   - 08-0536-ES
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
+  - 08-0573-VN
   - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
@@ -2704,11 +2683,13 @@ proxy-groups:
   - 08-0351-CA
   - 08-0353-LT
   - 08-0354-NL
+  - 08-0355-NL
   - 08-0356-FR
   - 08-0357-NL
   - 08-0358-NL
   - 08-0359-NL
   - 08-0360-AE
+  - 08-0362-LT
   - 08-0363-FR
   - 08-0364-LT
   - 08-0365-NL
@@ -2761,12 +2742,10 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
-  - 08-0439-US
   - 08-0445-RELAY
   - 08-0446-RELAY
   - 08-0447-RELAY
@@ -2814,13 +2793,13 @@ proxy-groups:
   - 08-0533-PL
   - 08-0534-ES
   - 08-0536-ES
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0543-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
+  - 08-0573-VN
   - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
@@ -2895,7 +2874,6 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0543-HK
@@ -2990,12 +2968,10 @@ proxy-groups:
   - 08-0430-US
   - 08-0431-US
   - 08-0433-US
-  - 08-0434-US
   - 08-0435-US
   - 08-0436-US
   - 08-0437-US
   - 08-0438-US
-  - 08-0439-US
   - 08-0450-US
   - 08-0457-US
   - 08-0458-US
