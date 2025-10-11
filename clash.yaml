@@ -703,6 +703,12 @@ proxies:
   port: 8080
   server: 45.87.175.185
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0408-NL
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: 92.112.126.90
+  type: ss
 - name: 08-0409-RELAY
   network: ws
   port: 80
@@ -1204,19 +1210,6 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
-- alterId: 2
-  cipher: auto
-  name: 08-0539-HK
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 08-0541-HK
   password: f8f7aCzcPKbsF8p3
@@ -1283,12 +1276,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 192.71.249.78
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0578-PR
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.255.22
   type: ss
 - cipher: aes-256-cfb
   name: 08-0579-GR
@@ -1894,6 +1881,7 @@ proxy-groups:
   - 08-0404-LT
   - 08-0405-LT
   - 08-0406-LT
+  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -1956,7 +1944,6 @@ proxy-groups:
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0548-DK
@@ -1965,7 +1952,6 @@ proxy-groups:
   - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
-  - 08-0578-PR
   - 08-0579-GR
   - 08-0580-IS
   - 08-0581-IS
@@ -2126,6 +2112,7 @@ proxy-groups:
   - 08-0404-LT
   - 08-0405-LT
   - 08-0406-LT
+  - 08-0408-NL
   - 08-0409-RELAY
   - 08-0410-US
   - 08-0411-US
@@ -2188,7 +2175,6 @@ proxy-groups:
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0548-DK
@@ -2197,7 +2183,6 @@ proxy-groups:
   - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
-  - 08-0578-PR
   - 08-0579-GR
   - 08-0580-IS
   - 08-0581-IS
@@ -2263,7 +2248,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 08-0537-HK
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 10-0758-HK
