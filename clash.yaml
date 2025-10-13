@@ -770,6 +770,12 @@ proxies:
   port: 57456
   server: 104.167.197.25
   type: ss
+- cipher: rc4-md5
+  name: 08-0421-US
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.253
+  type: ss
 - cipher: aes-256-gcm
   name: 08-0426-US
   password: XKFKl2rULjIp74
@@ -1154,6 +1160,12 @@ proxies:
   port: 9019
   server: 217.30.10.18
   type: ss
+- cipher: aes-256-cfb
+  name: 08-0533-PL
+  password: UTJA57ypk2XKQpnm
+  port: 9033
+  server: 217.30.10.18
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0534-ES
   password: f8f7aCzcPKbsF8p3
@@ -1432,19 +1444,6 @@ proxies:
   port: 990
   server: 185.231.233.173
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 08-1545-US
-  network: ws
-  port: 16556
-  server: 192.3.233.216
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 08-1548-US
@@ -1879,6 +1878,7 @@ proxy-groups:
   - 08-0414-US
   - 08-0415-US
   - 08-0419-US
+  - 08-0421-US
   - 08-0426-US
   - 08-0427-US
   - 08-0428-US
@@ -1926,6 +1926,7 @@ proxy-groups:
   - 08-0530-PL
   - 08-0531-PL
   - 08-0532-PL
+  - 08-0533-PL
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
@@ -1962,7 +1963,6 @@ proxy-groups:
   - 08-0728-IN
   - 08-0731-AE
   - 08-0734-PT
-  - 08-1545-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1552-MK
@@ -2109,6 +2109,7 @@ proxy-groups:
   - 08-0414-US
   - 08-0415-US
   - 08-0419-US
+  - 08-0421-US
   - 08-0426-US
   - 08-0427-US
   - 08-0428-US
@@ -2156,6 +2157,7 @@ proxy-groups:
   - 08-0530-PL
   - 08-0531-PL
   - 08-0532-PL
+  - 08-0533-PL
   - 08-0534-ES
   - 08-0536-ES
   - 08-0537-HK
@@ -2192,7 +2194,6 @@ proxy-groups:
   - 08-0728-IN
   - 08-0731-AE
   - 08-0734-PT
-  - 08-1545-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1552-MK
@@ -2312,6 +2313,7 @@ proxy-groups:
   - 08-0414-US
   - 08-0415-US
   - 08-0419-US
+  - 08-0421-US
   - 08-0426-US
   - 08-0427-US
   - 08-0428-US
@@ -2324,7 +2326,6 @@ proxy-groups:
   - 08-0457-US
   - 08-0458-US
   - 08-0459-US
-  - 08-1545-US
   - 08-1548-US
   - 23-1103-US
   - 23-1111-US
