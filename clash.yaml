@@ -788,6 +788,12 @@ proxies:
   port: 57456
   server: 104.167.197.25
   type: ss
+- cipher: rc4-md5
+  name: 08-0421-US
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.253
+  type: ss
 - cipher: aes-256-gcm
   name: 08-0426-US
   password: XKFKl2rULjIp74
@@ -1176,19 +1182,6 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
-- alterId: 2
-  cipher: auto
-  name: 08-0539-HK
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 08-0541-HK
   password: f8f7aCzcPKbsF8p3
@@ -1232,19 +1225,6 @@ proxies:
   port: 443
   server: arxfw2b78fi2q9hzylhn.freesocks.work
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 08-0574-MY
-  network: ws
-  port: 20521
-  server: 45.89.107.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 08-0575-MY
@@ -1304,31 +1284,12 @@ proxies:
   port: 990
   server: 38.54.45.129
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0712-EC
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0713-LV
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 89.46.238.35
   type: ss
-- name: 08-0714-LV
-  network: ws
-  port: 29505
-  server: 77.73.238.191
-  servername: 77.73.238.191
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0cc9d390-42ee-461e-94ae-e4370883dc48
-  ws-opts:
-    headers:
-      Host: 77.73.238.191
-    path: /
 - cipher: aes-256-cfb
   name: 08-0715-MT
   password: f8f7aCzcPKbsF8p3
@@ -1360,12 +1321,6 @@ proxies:
   skip-cert-verify: true
   sni: 176.97.68.153
   type: trojan
-- cipher: aes-256-cfb
-  name: 08-0723-MK
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.185.37
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0724-BR
   password: f8f7aCzcPKbsF8p3
@@ -1424,19 +1379,6 @@ proxies:
   port: 990
   server: 185.231.233.173
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 08-1545-US
-  network: ws
-  port: 16556
-  server: 192.3.233.216
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 08-1548-US
@@ -1545,19 +1487,6 @@ proxies:
   type: vless
   udp: true
   uuid: 005a5104-82c5-4a6b-b023-6e621ec9071d
-- name: 23-1556-RELAY
-  network: ws
-  port: 80
-  server: sweet-combination.seotoolsforyou.co.uk
-  servername: sweet-combination.seotoolsforyou.co.uk
-  tls: false
-  type: vless
-  udp: true
-  uuid: 05020a61-3c0c-4ead-b256-7851ff905a75
-  ws-opts:
-    headers:
-      Host: sweet-combination.seotoolsforyou.co.uk
-    path: /
 - name: 23-1558-GB
   network: httpupgrade
   password: 1sbtkLK7F3
@@ -1731,6 +1660,7 @@ proxy-groups:
   - 08-0414-US
   - 08-0415-US
   - 08-0419-US
+  - 08-0421-US
   - 08-0426-US
   - 08-0427-US
   - 08-0428-US
@@ -1779,14 +1709,12 @@ proxy-groups:
   - 08-0533-PL
   - 08-0534-ES
   - 08-0537-HK
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
   - 08-0573-VN
-  - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
   - 08-0578-PR
@@ -1796,15 +1724,12 @@ proxy-groups:
   - 08-0582-TW
   - 08-0584-TW
   - 08-0711-AR
-  - 08-0712-EC
   - 08-0713-LV
-  - 08-0714-LV
   - 08-0715-MT
   - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
-  - 08-0723-MK
   - 08-0724-BR
   - 08-0725-IN
   - 08-0726-IN
@@ -1812,7 +1737,6 @@ proxy-groups:
   - 08-0728-IN
   - 08-0731-AE
   - 08-0734-PT
-  - 08-1545-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1552-MK
@@ -1824,7 +1748,6 @@ proxy-groups:
   - 23-1103-US
   - 23-1111-US
   - 23-1554-FR
-  - 23-1556-RELAY
   - 23-1558-GB
   - 23-1560-NL
   - 23-1561-TW
@@ -1951,6 +1874,7 @@ proxy-groups:
   - 08-0414-US
   - 08-0415-US
   - 08-0419-US
+  - 08-0421-US
   - 08-0426-US
   - 08-0427-US
   - 08-0428-US
@@ -1999,14 +1923,12 @@ proxy-groups:
   - 08-0533-PL
   - 08-0534-ES
   - 08-0537-HK
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
   - 08-0573-VN
-  - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
   - 08-0578-PR
@@ -2016,15 +1938,12 @@ proxy-groups:
   - 08-0582-TW
   - 08-0584-TW
   - 08-0711-AR
-  - 08-0712-EC
   - 08-0713-LV
-  - 08-0714-LV
   - 08-0715-MT
   - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
-  - 08-0723-MK
   - 08-0724-BR
   - 08-0725-IN
   - 08-0726-IN
@@ -2032,7 +1951,6 @@ proxy-groups:
   - 08-0728-IN
   - 08-0731-AE
   - 08-0734-PT
-  - 08-1545-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1552-MK
@@ -2044,7 +1962,6 @@ proxy-groups:
   - 23-1103-US
   - 23-1111-US
   - 23-1554-FR
-  - 23-1556-RELAY
   - 23-1558-GB
   - 23-1560-NL
   - 23-1561-TW
@@ -2063,7 +1980,6 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 08-0537-HK
-  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 10-0758-HK
@@ -2142,6 +2058,7 @@ proxy-groups:
   - 08-0414-US
   - 08-0415-US
   - 08-0419-US
+  - 08-0421-US
   - 08-0426-US
   - 08-0427-US
   - 08-0428-US
@@ -2153,7 +2070,6 @@ proxy-groups:
   - 08-0457-US
   - 08-0458-US
   - 08-0459-US
-  - 08-1545-US
   - 08-1548-US
   - 23-1103-US
   - 23-1111-US
