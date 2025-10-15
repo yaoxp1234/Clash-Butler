@@ -340,6 +340,12 @@ proxies:
   port: 8080
   server: 45.158.171.110
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0358-NL
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.157
+  type: ss
 - cipher: aes-128-cfb
   name: 08-0359-NL
   password: shadowsocks
@@ -351,6 +357,12 @@ proxies:
   password: 4a2rfixophdjffa8KVA4Aa
   port: 8080
   server: beesyar.org
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 08-0363-FR
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 45.158.171.146
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0364-LT
@@ -419,6 +431,12 @@ proxies:
   server: 45.87.175.65
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 08-0381-AE
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.147
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 08-0382-LT
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
@@ -441,18 +459,6 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.158.171.70
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0386-LT
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 45.87.175.157
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0387-NL
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 193.29.139.179
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0389-LT
@@ -519,12 +525,6 @@ proxies:
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 45.87.175.10
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0408-NL
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-  port: 443
-  server: 92.112.126.90
   type: ss
 - cipher: aes-128-gcm
   name: 08-0410-US
@@ -617,6 +617,19 @@ proxies:
   uuid: 496cec71-a0fd-4f25-bba1-cba9e9d5a52f
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 08-0435-US
+  network: ws
+  port: 20521
+  server: 154.9.254.63
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
+  ws-opts:
+    path: /
 - name: 08-0446-RELAY
   network: ws
   password: auto
@@ -652,6 +665,19 @@ proxies:
   type: vmess
   udp: true
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+- alterId: 0
+  cipher: auto
+  name: 08-0451-RELAY
+  network: ws
+  port: 80
+  server: bbbbbbbbb.222769.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
+  ws-opts:
+    path: /f6taOMcOSZb9TPR
 - name: 08-0452-RELAY
   network: ws
   password: trojan
@@ -838,6 +864,12 @@ proxies:
   server: 37.19.203.147
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 08-0525-RU
+  password: 360e21d21977dc11
+  port: 57456
+  server: 45.139.24.24
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 08-0526-RU
   password: f8f7aCzcPKbsF8p3
   port: 990
@@ -859,6 +891,18 @@ proxies:
   name: 08-0531-PL
   password: ueLXVkvh4hckhErQ
   port: 9060
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0532-PL
+  password: GA9KzeEgvfxNrgmM
+  port: 9019
+  server: 217.30.10.18
+  type: ss
+- cipher: aes-256-cfb
+  name: 08-0533-PL
+  password: UTJA57ypk2XKQpnm
+  port: 9033
   server: 217.30.10.18
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -932,6 +976,19 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
+  name: 08-0574-MY
+  network: ws
+  port: 20521
+  server: 45.89.107.51
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
   name: 08-0575-MY
   network: tcp
   port: 37313
@@ -959,12 +1016,6 @@ proxies:
   port: 989
   server: 37.235.49.152
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0581-IS
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.168
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0582-TW
   password: f8f7aCzcPKbsF8p3
@@ -983,12 +1034,6 @@ proxies:
   port: 990
   server: 38.54.45.129
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 08-0712-EC
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 185.47.253.227
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0713-LV
   password: f8f7aCzcPKbsF8p3
@@ -1000,12 +1045,6 @@ proxies:
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 171.22.254.17
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0717-SI
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.244.150
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0718-RO
@@ -1090,6 +1129,19 @@ proxies:
   port: 990
   server: 185.231.233.173
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 08-1545-US
+  network: ws
+  port: 16556
+  server: 192.3.233.216
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
+  ws-opts:
+    path: /
 - alterId: 0
   cipher: auto
   name: 08-1548-US
@@ -1260,8 +1312,10 @@ proxy-groups:
   - 08-0353-LT
   - 08-0354-NL
   - 08-0356-FR
+  - 08-0358-NL
   - 08-0359-NL
   - 08-0360-AE
+  - 08-0363-FR
   - 08-0364-LT
   - 08-0365-NL
   - 08-0366-NL
@@ -1273,12 +1327,11 @@ proxy-groups:
   - 08-0372-LT
   - 08-0373-LT
   - 08-0379-LT
+  - 08-0381-AE
   - 08-0382-LT
   - 08-0383-FR
   - 08-0384-NL
   - 08-0385-FR
-  - 08-0386-LT
-  - 08-0387-NL
   - 08-0389-LT
   - 08-0390-LT
   - 08-0391-LT
@@ -1290,7 +1343,6 @@ proxy-groups:
   - 08-0402-NL
   - 08-0404-LT
   - 08-0405-LT
-  - 08-0408-NL
   - 08-0410-US
   - 08-0411-US
   - 08-0412-US
@@ -1305,10 +1357,12 @@ proxy-groups:
   - 08-0429-US
   - 08-0430-US
   - 08-0433-US
+  - 08-0435-US
   - 08-0446-RELAY
   - 08-0447-RELAY
   - 08-0448-RELAY
   - 08-0450-US
+  - 08-0451-RELAY
   - 08-0452-RELAY
   - 08-0458-US
   - 08-0459-US
@@ -1332,10 +1386,13 @@ proxy-groups:
   - 08-0520-PY
   - 08-0521-PY
   - 08-0522-BG
+  - 08-0525-RU
   - 08-0526-RU
   - 08-0528-AT
   - 08-0530-PL
   - 08-0531-PL
+  - 08-0532-PL
+  - 08-0533-PL
   - 08-0534-ES
   - 08-0537-HK
   - 08-0539-HK
@@ -1344,18 +1401,16 @@ proxy-groups:
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
+  - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
   - 08-0579-GR
   - 08-0580-IS
-  - 08-0581-IS
   - 08-0582-TW
   - 08-0584-TW
   - 08-0711-AR
-  - 08-0712-EC
   - 08-0713-LV
   - 08-0715-MT
-  - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
@@ -1367,6 +1422,7 @@ proxy-groups:
   - 08-0728-IN
   - 08-0731-AE
   - 08-0734-PT
+  - 08-1545-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1552-MK
@@ -1438,8 +1494,10 @@ proxy-groups:
   - 08-0353-LT
   - 08-0354-NL
   - 08-0356-FR
+  - 08-0358-NL
   - 08-0359-NL
   - 08-0360-AE
+  - 08-0363-FR
   - 08-0364-LT
   - 08-0365-NL
   - 08-0366-NL
@@ -1451,12 +1509,11 @@ proxy-groups:
   - 08-0372-LT
   - 08-0373-LT
   - 08-0379-LT
+  - 08-0381-AE
   - 08-0382-LT
   - 08-0383-FR
   - 08-0384-NL
   - 08-0385-FR
-  - 08-0386-LT
-  - 08-0387-NL
   - 08-0389-LT
   - 08-0390-LT
   - 08-0391-LT
@@ -1468,7 +1525,6 @@ proxy-groups:
   - 08-0402-NL
   - 08-0404-LT
   - 08-0405-LT
-  - 08-0408-NL
   - 08-0410-US
   - 08-0411-US
   - 08-0412-US
@@ -1483,10 +1539,12 @@ proxy-groups:
   - 08-0429-US
   - 08-0430-US
   - 08-0433-US
+  - 08-0435-US
   - 08-0446-RELAY
   - 08-0447-RELAY
   - 08-0448-RELAY
   - 08-0450-US
+  - 08-0451-RELAY
   - 08-0452-RELAY
   - 08-0458-US
   - 08-0459-US
@@ -1510,10 +1568,13 @@ proxy-groups:
   - 08-0520-PY
   - 08-0521-PY
   - 08-0522-BG
+  - 08-0525-RU
   - 08-0526-RU
   - 08-0528-AT
   - 08-0530-PL
   - 08-0531-PL
+  - 08-0532-PL
+  - 08-0533-PL
   - 08-0534-ES
   - 08-0537-HK
   - 08-0539-HK
@@ -1522,18 +1583,16 @@ proxy-groups:
   - 08-0548-DK
   - 08-0549-VN
   - 08-0550-VN
+  - 08-0574-MY
   - 08-0575-MY
   - 08-0576-BE
   - 08-0579-GR
   - 08-0580-IS
-  - 08-0581-IS
   - 08-0582-TW
   - 08-0584-TW
   - 08-0711-AR
-  - 08-0712-EC
   - 08-0713-LV
   - 08-0715-MT
-  - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
   - 08-0722-AU
@@ -1545,6 +1604,7 @@ proxy-groups:
   - 08-0728-IN
   - 08-0731-AE
   - 08-0734-PT
+  - 08-1545-US
   - 08-1548-US
   - 08-1549-FR
   - 08-1552-MK
@@ -1655,9 +1715,11 @@ proxy-groups:
   - 08-0429-US
   - 08-0430-US
   - 08-0433-US
+  - 08-0435-US
   - 08-0450-US
   - 08-0458-US
   - 08-0459-US
+  - 08-1545-US
   - 08-1548-US
   - 23-1103-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
