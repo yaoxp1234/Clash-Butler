@@ -413,6 +413,12 @@ proxies:
   server: 45.87.175.178
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 08-0365-NL
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.251
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 08-0366-NL
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
@@ -1004,21 +1010,9 @@ proxies:
   server: 92.118.205.228
   type: ss
 - cipher: aes-256-cfb
-  name: 08-0531-PL
-  password: ueLXVkvh4hckhErQ
-  port: 9060
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
   name: 08-0532-PL
   password: GA9KzeEgvfxNrgmM
   port: 9019
-  server: 217.30.10.18
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0533-PL
-  password: UTJA57ypk2XKQpnm
-  port: 9033
   server: 217.30.10.18
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -1033,6 +1027,19 @@ proxies:
   network: ws
   port: 80
   server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 08-0539-HK
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1131,12 +1138,6 @@ proxies:
   port: 989
   server: 37.235.49.152
   type: ss
-- cipher: aes-256-cfb
-  name: 08-0581-IS
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 37.235.49.168
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 08-0582-TW
   password: f8f7aCzcPKbsF8p3
@@ -1180,12 +1181,6 @@ proxies:
     headers:
       Host: 77.73.238.191
     path: /
-- cipher: aes-256-cfb
-  name: 08-0715-MT
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 171.22.254.17
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0717-SI
   password: f8f7aCzcPKbsF8p3
@@ -1518,6 +1513,7 @@ proxy-groups:
   - 08-0362-LT
   - 08-0363-FR
   - 08-0364-LT
+  - 08-0365-NL
   - 08-0366-NL
   - 08-0367-NL
   - 08-0368-AE
@@ -1601,11 +1597,10 @@ proxy-groups:
   - 08-0526-RU
   - 08-0528-AT
   - 08-0530-PL
-  - 08-0531-PL
   - 08-0532-PL
-  - 08-0533-PL
   - 08-0534-ES
   - 08-0537-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0548-DK
@@ -1618,14 +1613,12 @@ proxy-groups:
   - 08-0578-PR
   - 08-0579-GR
   - 08-0580-IS
-  - 08-0581-IS
   - 08-0582-TW
   - 08-0584-TW
   - 08-0711-AR
   - 08-0712-EC
   - 08-0713-LV
   - 08-0714-LV
-  - 08-0715-MT
   - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
@@ -1725,6 +1718,7 @@ proxy-groups:
   - 08-0362-LT
   - 08-0363-FR
   - 08-0364-LT
+  - 08-0365-NL
   - 08-0366-NL
   - 08-0367-NL
   - 08-0368-AE
@@ -1808,11 +1802,10 @@ proxy-groups:
   - 08-0526-RU
   - 08-0528-AT
   - 08-0530-PL
-  - 08-0531-PL
   - 08-0532-PL
-  - 08-0533-PL
   - 08-0534-ES
   - 08-0537-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 08-0548-DK
@@ -1825,14 +1818,12 @@ proxy-groups:
   - 08-0578-PR
   - 08-0579-GR
   - 08-0580-IS
-  - 08-0581-IS
   - 08-0582-TW
   - 08-0584-TW
   - 08-0711-AR
   - 08-0712-EC
   - 08-0713-LV
   - 08-0714-LV
-  - 08-0715-MT
   - 08-0717-SI
   - 08-0718-RO
   - 08-0720-CO
@@ -1875,6 +1866,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 08-0537-HK
+  - 08-0539-HK
   - 08-0541-HK
   - 08-0542-HK
   - 10-0758-HK
