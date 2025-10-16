@@ -71,111 +71,139 @@ dns:
   - https://dns.alidns.com/dns-query
 proxies:
 - name: 04-0000-HK
-  password: 935bf1d8-1160-3fc4-a654-0e11aa7cc348
+  password: 4a6b852e-8a4c-3fda-83e5-6e310836a6b6
   port: 443
   server: 103.219.195.237
   skip-cert-verify: true
-  sni: origin-a.akamaihd.net
+  sni: fastly.cdn.steampipe.steamcontent.com
   type: trojan
 - name: 04-0001-JP
+  password: 4a6b852e-8a4c-3fda-83e5-6e310836a6b6
+  port: 443
+  server: 178.239.125.119
+  skip-cert-verify: true
+  sni: steampipe.akamaized.net
+  type: trojan
+- name: 04-0003-SG
+  password: 4a6b852e-8a4c-3fda-83e5-6e310836a6b6
+  port: 443
+  server: vd0ee3cg.cs53rvhb.aliyunglsb.com
+  skip-cert-verify: true
+  sni: fastly.cdn.steampipe.steamcontent.com
+  type: trojan
+- name: 04-0004-US
+  password: 4a6b852e-8a4c-3fda-83e5-6e310836a6b6
+  port: 443
+  server: 178.208.190.99
+  skip-cert-verify: true
+  sni: upos-hz-mirrorakam.akamaized.net
+  type: trojan
+- name: 04-0575-HK
+  password: 935bf1d8-1160-3fc4-a654-0e11aa7cc348
+  port: 443
+  server: 103.219.195.237
+  skip-cert-verify: true
+  sni: origin-a.akamaihd.net
+  type: trojan
+- name: 04-0576-JP
   password: 935bf1d8-1160-3fc4-a654-0e11aa7cc348
   port: 443
   server: 178.239.125.119
   skip-cert-verify: true
   sni: edge.steam-dns.top.comcast.net
   type: trojan
-- name: 04-0003-SG
+- name: 04-0577-SG
   password: 935bf1d8-1160-3fc4-a654-0e11aa7cc348
   port: 443
   server: vd0ee3cg.cs53rvhb.aliyunglsb.com
   skip-cert-verify: true
   sni: origin-a.akamaihd.net
   type: trojan
-- name: 04-0004-US
+- name: 04-0578-US
   password: 935bf1d8-1160-3fc4-a654-0e11aa7cc348
   port: 443
   server: 178.208.190.99
   skip-cert-verify: true
   sni: steamcdn-a.akamaihd.net
   type: trojan
-- name: 04-0575-HK
+- name: 04-0579-HK
   password: f66bb28f-7f13-3849-80b8-3b36ce1397b1
   port: 443
   server: 103.219.195.237
   skip-cert-verify: true
   sni: fastly.cdn.steampipe.steamcontent.com
   type: trojan
-- name: 04-0576-JP
+- name: 04-0580-JP
   password: f66bb28f-7f13-3849-80b8-3b36ce1397b1
   port: 443
   server: 178.239.125.119
   skip-cert-verify: true
   sni: steamcdn-a.akamaihd.net
   type: trojan
-- name: 04-0577-SG
+- name: 04-0581-SG
   password: f66bb28f-7f13-3849-80b8-3b36ce1397b1
   port: 443
   server: vd0ee3cg.cs53rvhb.aliyunglsb.com
   skip-cert-verify: true
   sni: fastly.cdn.steampipe.steamcontent.com
   type: trojan
-- name: 04-0578-US
+- name: 04-0582-US
   password: f66bb28f-7f13-3849-80b8-3b36ce1397b1
   port: 443
   server: 178.208.190.99
   skip-cert-verify: true
   sni: edge.steam-dns.top.comcast.net
   type: trojan
-- name: 04-0579-HK
+- name: 04-0583-HK
   password: 999221ae-5e4d-3d7a-b03f-c7f81f1528df
   port: 443
   server: 103.219.195.237
   skip-cert-verify: true
   sni: www.microsoft365.com
   type: trojan
-- name: 04-0580-JP
+- name: 04-0584-JP
   password: 999221ae-5e4d-3d7a-b03f-c7f81f1528df
   port: 443
   server: 178.239.125.119
   skip-cert-verify: true
   sni: steampipe-kr.akamaized.net
   type: trojan
-- name: 04-0581-SG
+- name: 04-0585-SG
   password: 999221ae-5e4d-3d7a-b03f-c7f81f1528df
   port: 443
   server: vd0ee3cg.cs53rvhb.aliyunglsb.com
   skip-cert-verify: true
   sni: www.microsoft365.com
   type: trojan
-- name: 04-0582-US
+- name: 04-0586-US
   password: 999221ae-5e4d-3d7a-b03f-c7f81f1528df
   port: 443
   server: 178.208.190.99
   skip-cert-verify: true
   sni: cloudsync-prod.s3.amazonaws.com
   type: trojan
-- name: 04-0583-HK
+- name: 04-0587-HK
   password: afb5041f-cf74-31bd-a230-2b4ed990eb23
   port: 443
   server: 103.219.195.237
   skip-cert-verify: true
   sni: steamcdn-a.akamaihd.net
   type: trojan
-- name: 04-0584-JP
+- name: 04-0588-JP
   password: afb5041f-cf74-31bd-a230-2b4ed990eb23
   port: 443
   server: 178.239.125.119
   skip-cert-verify: true
   sni: fastly.cdn.steampipe.steamcontent.com
   type: trojan
-- name: 04-0585-SG
+- name: 04-0589-SG
   password: afb5041f-cf74-31bd-a230-2b4ed990eb23
   port: 443
   server: vd0ee3cg.cs53rvhb.aliyunglsb.com
   skip-cert-verify: true
   sni: steamcdn-a.akamaihd.net
   type: trojan
-- name: 04-0586-US
+- name: 04-0590-US
   password: afb5041f-cf74-31bd-a230-2b4ed990eb23
   port: 443
   server: 178.208.190.99
@@ -258,13 +286,6 @@ proxies:
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
   ws-opts:
     path: /
-- name: 05-0013-HK
-  password: 7c129766-8656-11ea-8fc9-f23c913c8d2b
-  port: 443
-  server: a3819376-t46kg0-t71mow-4cl7.hk2.hyhuawei.com
-  skip-cert-verify: true
-  sni: a3819376-t46kg0-t71mow-4cl7.hk2.hyhuawei.com
-  type: hysteria2
 - name: 05-0015-HK
   password: 460749c2-bcef-11ee-89fc-f23c913c8d2b
   port: 443
@@ -356,7 +377,7 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 05-0587-FR
+  name: 05-0591-FR
   port: 15010
   protocol: udp
   server: 195.154.200.40
@@ -367,42 +388,42 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 05-0588-NL
+  name: 05-0592-NL
   port: 37519
   protocol: udp
   server: 109.104.153.91
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- name: 05-0589-HK
+- name: 05-0593-HK
   password: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
   port: 443
   server: 1f0745c0-t4a9s0-t7mt0p-1sllg.hk1.hyhuawei.com
   skip-cert-verify: true
   sni: 1f0745c0-t4a9s0-t7mt0p-1sllg.hk1.hyhuawei.com
   type: hysteria2
-- name: 05-0590-HK
+- name: 05-0594-HK
   password: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   port: 443
   server: a7e3058e-t46kg0-t4i2d4-luwe.hk2.hyhuawei.com
   skip-cert-verify: true
   sni: a7e3058e-t46kg0-t4i2d4-luwe.hk2.hyhuawei.com
   type: hysteria2
-- name: 05-0591-HK
+- name: 05-0595-HK
   password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
   port: 443
   server: e0d0aa2d-t44ps0-t8izjf-20qs.hk1.hyhuawei.com
   skip-cert-verify: true
   sni: e0d0aa2d-t44ps0-t8izjf-20qs.hk1.hyhuawei.com
   type: hysteria2
-- name: 05-0592-HK
+- name: 05-0596-HK
   password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
   port: 443
   server: c8ea8e71-t46kg0-t5qufl-8n27.hk2.hyhuawei.com
   skip-cert-verify: true
   sni: c8ea8e71-t46kg0-t5qufl-8n27.hk2.hyhuawei.com
   type: hysteria2
-- name: 05-0593-RELAY
+- name: 05-0597-RELAY
   network: ws
   port: 443
   server: 104.21.48.1
@@ -480,12 +501,6 @@ proxies:
     headers:
       Host: freedom.pusytroller.cf
     path: /
-- cipher: aes-256-cfb
-  name: 06-0045-FR
-  password: amazonskr05
-  port: 443
-  server: 15.237.208.55
-  type: ss
 - cipher: aes-256-cfb
   name: 06-0046-FR
   password: amazonskr05
@@ -630,12 +645,6 @@ proxies:
   type: hysteria
   up: 20 Mbps
 - cipher: aes-256-cfb
-  name: 06-0075-SE
-  password: amazonskr05
-  port: 443
-  server: 13.53.125.102
-  type: ss
-- cipher: aes-256-cfb
   name: 06-0076-SE
   password: amazonskr05
   port: 443
@@ -660,6 +669,12 @@ proxies:
     headers:
       Host: freedom.pusytroller.cf
     path: /
+- cipher: chacha20-ietf
+  name: 06-0082-SG
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
 - name: 06-0083-US
   password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
   port: 443
@@ -1080,6 +1095,13 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- name: 07-0191-JP
+  password: c53647f3153f784b3c695ffbe5fb43c0
+  port: 2283
+  server: 160.16.144.208
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 07-0192-SG
   password: GjUtzQIjhyYSzhdN2ZMRft
@@ -1228,6 +1250,12 @@ proxies:
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 07-0217-AE
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.131
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 07-0218-LT
@@ -1404,6 +1432,12 @@ proxies:
   server: 151.242.251.137
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 07-0247-AE
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.133
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 07-0248-LT
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
@@ -1469,32 +1503,6 @@ proxies:
   port: 8080
   server: 45.87.175.10
   type: ss
-- name: 07-0259-RELAY
-  network: ws
-  port: 443
-  server: economist.com
-  servername: revcloud.migacpi.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7d18fc67-1994-4f7e-8ff8-c024223f33bb
-  ws-opts:
-    headers:
-      Host: revcloud.migacpi.org
-    path: /cbde4058-6b81-432b-8689-dd7ce10e479c
-- name: 07-0260-US
-  network: ws
-  port: 443
-  server: 50.7.85.221
-  servername: salampesarm.sesewov745.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3af3a0f3-28ea-407c-a3df-2ae3b33fc174
-  ws-opts:
-    headers:
-      Host: salampesarm.sesewov745.workers.dev
-    path: /path/telegram
 - alterId: 0
   cipher: auto
   name: 07-0261-FR
@@ -1575,19 +1583,6 @@ proxies:
   type: vmess
   udp: true
   uuid: f3d4167e-b15e-4e46-82e9-9286ef93fda7
-- name: 07-0273-FR
-  network: ws
-  port: 80
-  server: 162.19.228.119
-  servername: 162.19.228.119
-  tls: false
-  type: vless
-  udp: true
-  uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
-  ws-opts:
-    headers:
-      Host: google.com
-    path: /http#Telegram
 - name: 07-0274-RELAY
   network: ws
   port: 443
@@ -1747,19 +1742,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 9bc23ccf-4769-4e9a-b278-2dfa8d9ef425
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 07-0299-US
-  network: ws
-  port: 20521
-  server: 154.9.254.63
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d824764a-954e-4c75-9116-f6e5eba944a9
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
@@ -2236,32 +2218,6 @@ proxies:
   uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7
   ws-opts:
     path: /f6taOMcOSZb9TPR
-- alterId: 0
-  cipher: auto
-  name: 07-0345-RELAY
-  network: ws
-  port: 443
-  server: 73E42019-c820-A66a-011E-f11937232ec1.89890604.XYz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: c2633560-5acb-4dd3-9c22-9a6c2fd212e2
-  ws-opts:
-    path: /2uRsM4Z4Y8O5OsbJkA
-- alterId: 0
-  cipher: auto
-  name: 07-0346-RELAY
-  network: ws
-  port: 443
-  server: c3-Bb580476-4A91-6f7F-EeB6-2e2cac4B691E.131.Pp.UA
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: c2633560-5acb-4dd3-9c22-9a6c2fd212e2
-  ws-opts:
-    path: /2uRsM4Z4Y8O5OsbJkA
 - name: 07-0347-RELAY
   network: ws
   port: 8080
@@ -2429,9 +2385,9 @@ proxies:
     headers:
       Host: bycf.lzjnb.shop
     path: /?ed=2560
-- name: 07-0362-JP
+- name: 07-0361-JP
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1331
+  port: 316
   server: 160.16.144.208
   skip-cert-verify: true
   sni: www.baidu.com
@@ -2468,12 +2424,6 @@ proxies:
     headers:
       Host: ovhwuxian.pai50288.uk
     path: /57ba2ab1
-- cipher: aes-256-cfb
-  name: 07-0366-AU
-  password: amazonskr05
-  port: 443
-  server: 16.176.178.192
-  type: ss
 - alterId: 0
   cipher: auto
   name: 07-0367-RELAY
@@ -2516,19 +2466,6 @@ proxies:
   port: 990
   server: 103.163.218.2
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 07-0401-HK
-  network: ws
-  port: 11886
-  server: 47.239.141.74
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0d36b017-6d7c-493d-bb12-55c34faf6efc
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 07-0402-HK
   password: f8f7aCzcPKbsF8p3
@@ -2590,19 +2527,19 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- name: 07-0412-US
+- name: 07-0413-RELAY
   network: ws
   port: 443
-  server: 198.62.62.229
-  servername: mirror.fullmargintraders.com
+  server: 104.21.36.57
+  servername: black.fullmargintraders.com
   tls: true
   type: vless
   udp: true
-  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
+  uuid: 0cc731b9-0375-4590-aeaa-7e2611a149fe
   ws-opts:
     headers:
-      Host: mirror.fullmargintraders.com
-    path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
+      Host: black.fullmargintraders.com
+    path: /wsv/0cc731b9-0375-4590-aeaa-7e2611a149fe
 - cipher: aes-256-cfb
   name: 07-0414-TW
   password: f8f7aCzcPKbsF8p3
@@ -2646,19 +2583,6 @@ proxies:
     headers:
       Host: frAgteSt.JaHANGiRKh.eU.orG
     path: /
-- name: 07-0422-RELAY
-  network: ws
-  port: 443
-  server: kifpool.me
-  servername: nkang2replace.airlineshoma.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
-  ws-opts:
-    headers:
-      Host: nkang2replace.airlineshoma.com
-    path: /
 - name: 07-0423-RELAY
   network: ws
   port: 2096
@@ -2671,19 +2595,6 @@ proxies:
   ws-opts:
     headers:
       Host: frAgteSt.JaHANGiRKh.eU.orG
-    path: /
-- name: 07-0424-RELAY
-  network: ws
-  port: 443
-  server: nkang2replace.airlineshoma.com
-  servername: nkang2replace.airlineshoma.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b754b53a-aaf5-475c-eeed-46806c2aa63f
-  ws-opts:
-    headers:
-      Host: nkang2replace.airlineshoma.com
     path: /
 - cipher: aes-256-cfb
   name: 07-0425-BG
@@ -2851,12 +2762,6 @@ proxies:
   port: 990
   server: 154.205.159.100
   type: ss
-- cipher: aes-256-cfb
-  name: 07-0462-MK
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.185.15
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 07-0463-TH
   password: f8f7aCzcPKbsF8p3
@@ -2882,7 +2787,7 @@ proxies:
   uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
 - alterId: 0
   cipher: auto
-  name: 07-0594-DE
+  name: 07-0598-DE
   network: ws
   port: 443
   server: 57.129.28.64
@@ -2893,27 +2798,25 @@ proxies:
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     path: linkvws
-- name: 07-0596-JP
+- alterId: 0
+  cipher: auto
+  name: 07-0599-DE
+  network: tcp
+  port: 51409
+  server: 155.254.35.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e66d09a9-d9ce-42cf-be0e-516dae182668
+- name: 07-0600-JP
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 24673
   server: 160.16.124.55
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 07-0597-US
-  network: ws
-  port: 16556
-  server: 192.3.233.216
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 600f0d3e-a25d-468b-c789-0b5baa2f52c1
-  ws-opts:
-    path: /
-- name: 07-0598-RELAY
+- name: 07-0602-RELAY
   network: ws
   port: 8443
   server: 190.93.245.234
@@ -2926,7 +2829,7 @@ proxies:
     headers:
       Host: v3.ganglink.sbs
     path: /?ed=2560
-- name: 07-0599-RELAY
+- name: 07-0603-RELAY
   network: ws
   port: 2053
   server: 104.24.222.53
@@ -2940,14 +2843,14 @@ proxies:
       Host: 20061024.xyz
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 07-0600-GB
+  name: 07-0604-GB
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 62.100.205.48
   type: ss
 - alterId: 2
   cipher: auto
-  name: 07-0601-HK
+  name: 07-0605-HK
   network: ws
   port: 80
   server: 38721ce7-t3rr40-tdnzz0-1qtp7.hk3.p5pv.com
@@ -2960,7 +2863,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: 07-0602-HK
+  name: 07-0606-HK
   network: ws
   port: 80
   server: be4fe2f9-t3gn40-tdnzz0-1qtp7.hk3.p5pv.com
@@ -2972,43 +2875,49 @@ proxies:
   ws-opts:
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 07-0603-RU
+  name: 07-0607-RU
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.126.239.250
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 07-0604-ES
+  name: 07-0608-ES
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 45.154.206.192
   type: ss
 - cipher: aes-256-cfb
-  name: 07-0605-IS
+  name: 07-0609-IS
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.235.49.152
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 07-0606-AT
+  name: 07-0610-AT
   password: eUh4lSpi7nOYj0vSrqLUh0
   port: 8506
   server: 95.163.176.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 07-0607-PR
+  name: 07-0611-PR
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.47.255.22
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 07-0608-PT
+  name: 07-0612-PT
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 185.231.233.173
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 07-0613-IN
+  password: 360e21d21977dc11
+  port: 57456
+  server: id.vpnsparta.pro
+  type: ss
 - cipher: aes-256-cfb
-  name: 07-0610-MK
+  name: 07-0614-MK
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.185.37
@@ -3044,12 +2953,6 @@ proxies:
     headers:
       Host: vless.muzheng.top
     path: /Telegram🇨🇳 %40WangCai2
-- cipher: aes-256-cfb
-  name: 08-0485-FR
-  password: amazonskr05
-  port: 443
-  server: 13.36.170.248
-  type: ss
 - cipher: aes-256-cfb
   name: 08-0486-US
   password: amazonskr05
@@ -3116,13 +3019,12 @@ proxies:
   skip-cert-verify: true
   sni: e1464788-t46kg0-t8em25-1o8ak.hk2.hyhuawei.com
   type: hysteria2
-- name: 08-0500-HK
-  password: 80aa5178-f936-11ed-8ce6-f23c91369f2d
+- cipher: aes-256-cfb
+  name: 08-0497-SE
+  password: amazonskr05
   port: 443
-  server: e471c2f8-t48f40-tfvcxz-1nq4g.hk2.hyhuawei.com
-  skip-cert-verify: true
-  sni: e471c2f8-t48f40-tfvcxz-1nq4g.hk2.hyhuawei.com
-  type: hysteria2
+  server: 13.53.127.3
+  type: ss
 - name: 08-0502-HK
   password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
   port: 443
@@ -3162,20 +3064,6 @@ proxies:
     headers:
       Host: freedom.pusytroller.cf
     path: /
-- name: 08-0514-HK
-  password: ab0147e4-e673-11ee-8058-f23c91cfbbc9
-  port: 443
-  server: 935e61cf-t44ps0-t5hirq-1hfyu.hk1.hyhuawei.com
-  skip-cert-verify: true
-  sni: 935e61cf-t44ps0-t5hirq-1hfyu.hk1.hyhuawei.com
-  type: hysteria2
-- name: 08-0515-HK
-  password: 87b31a02-172e-11ee-a11f-f23c913c8d2b
-  port: 443
-  server: 074b4920-t44ps0-thvc3p-1o4kv.hk1.hyhuawei.com
-  skip-cert-verify: true
-  sni: 074b4920-t44ps0-thvc3p-1o4kv.hk1.hyhuawei.com
-  type: hysteria2
 - cipher: aes-256-cfb
   name: 08-0516-SE
   password: amazonskr05
@@ -3301,20 +3189,6 @@ proxies:
   port: 80
   server: 54.157.30.50
   type: ss
-- name: 08-0548-HK
-  password: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
-  port: 443
-  server: 90d21e21-t44ps0-t4nxvc-1p1b.hk1.hyhuawei.com
-  skip-cert-verify: true
-  sni: 90d21e21-t44ps0-t4nxvc-1p1b.hk1.hyhuawei.com
-  type: hysteria2
-- name: 08-0549-HK
-  password: 460749c2-bcef-11ee-89fc-f23c913c8d2b
-  port: 443
-  server: 51af639c-t48f40-tbe46y-1la7v.hk1.hyhuawei.com
-  skip-cert-verify: true
-  sni: 51af639c-t48f40-tbe46y-1la7v.hk1.hyhuawei.com
-  type: hysteria2
 - cipher: aes-256-gcm
   name: 08-0553-US
   password: dada0801
@@ -3338,12 +3212,6 @@ proxies:
   password: amazonskr05
   port: 443
   server: 184.72.209.232
-  type: ss
-- cipher: aes-256-cfb
-  name: 08-0563-SE
-  password: amazonskr05
-  port: 443
-  server: 16.16.209.174
   type: ss
 - cipher: aes-256-cfb
   name: 08-0564-AU
@@ -3377,20 +3245,20 @@ proxies:
   sni: afada3f8-t44ps0-th9kx9-1os43.hk1.hyhuawei.com
   type: hysteria2
 - cipher: chacha20-ietf
-  name: 08-0611-SG
+  name: 08-0615-SG
   password: asd123456
   port: 8388
   server: 103.36.91.23
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 08-0612-ES
+  name: 08-0616-ES
   password: 2jmKlUhNDQ3mUf7uaOLJYb
   port: 443
   server: 194.87.45.189
   type: ss
 - alterId: 0
   cipher: auto
-  name: 08-0613-BR
+  name: 08-0617-BR
   network: ws
   port: 80
   server: pq-brazil1.09vpn.com
@@ -3401,7 +3269,7 @@ proxies:
   uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
   ws-opts:
     path: /vmess/
-- name: 10-0614-NOWHERE
+- name: 10-0618-NOWHERE
   password: e9368912c4ed6046dca6949229cbff02
   port: 4400
   server: 221.128.195.222
@@ -3409,24 +3277,24 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - cipher: aes-256-cfb
-  name: 10-0615-JP
+  name: 10-0619-JP
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 194.68.27.76
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 39-0616-LT
+  name: 39-0620-LT
   password: 1RWwXhwfAB5gAEozU4G2Pg
   port: 8080
   server: 45.87.175.188
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 39-0617-LT
+  name: 39-0621-LT
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
   server: 45.87.175.188
   type: ss
-- name: 39-0618-RELAY
+- name: 39-0622-RELAY
   network: ws
   password: trojan
   port: 443
@@ -3466,6 +3334,10 @@ proxy-groups:
   - 04-0584-JP
   - 04-0585-SG
   - 04-0586-US
+  - 04-0587-HK
+  - 04-0588-JP
+  - 04-0589-SG
+  - 04-0590-US
   - 05-0005-RELAY
   - 05-0007-FR
   - 05-0008-HK
@@ -3473,7 +3345,6 @@ proxy-groups:
   - 05-0010-US
   - 05-0011-RELAY
   - 05-0012-HK
-  - 05-0013-HK
   - 05-0015-HK
   - 05-0016-HK
   - 05-0017-DE
@@ -3483,13 +3354,13 @@ proxy-groups:
   - 05-0022-LT
   - 05-0028-RELAY
   - 05-0029-HK
-  - 05-0587-FR
-  - 05-0588-NL
-  - 05-0589-HK
-  - 05-0590-HK
-  - 05-0591-HK
-  - 05-0592-HK
-  - 05-0593-RELAY
+  - 05-0591-FR
+  - 05-0592-NL
+  - 05-0593-HK
+  - 05-0594-HK
+  - 05-0595-HK
+  - 05-0596-HK
+  - 05-0597-RELAY
   - 06-0031-HK
   - 06-0034-SG
   - 06-0035-AU
@@ -3498,7 +3369,6 @@ proxy-groups:
   - 06-0038-AU
   - 06-0041-CA
   - 06-0042-RELAY
-  - 06-0045-FR
   - 06-0046-FR
   - 06-0047-FR
   - 06-0049-HK
@@ -3521,10 +3391,10 @@ proxy-groups:
   - 06-0069-JP
   - 06-0072-LT
   - 06-0073-NL
-  - 06-0075-SE
   - 06-0076-SE
   - 06-0077-SE
   - 06-0080-RELAY
+  - 06-0082-SG
   - 06-0083-US
   - 06-0084-US
   - 06-0085-US
@@ -3591,6 +3461,7 @@ proxy-groups:
   - 06-0164-US
   - 06-0168-US
   - 07-0190-JP
+  - 07-0191-JP
   - 07-0192-SG
   - 07-0195-SG
   - 07-0197-SG
@@ -3611,6 +3482,7 @@ proxy-groups:
   - 07-0214-LT
   - 07-0215-LT
   - 07-0216-LT
+  - 07-0217-AE
   - 07-0218-LT
   - 07-0219-LT
   - 07-0220-LT
@@ -3640,6 +3512,7 @@ proxy-groups:
   - 07-0244-LT
   - 07-0245-NL
   - 07-0246-AE
+  - 07-0247-AE
   - 07-0248-LT
   - 07-0249-LT
   - 07-0250-LT
@@ -3651,8 +3524,6 @@ proxy-groups:
   - 07-0256-NL
   - 07-0257-NL
   - 07-0258-LT
-  - 07-0259-RELAY
-  - 07-0260-US
   - 07-0261-FR
   - 07-0262-FR
   - 07-0265-DE
@@ -3660,7 +3531,6 @@ proxy-groups:
   - 07-0268-DE
   - 07-0269-FR
   - 07-0270-DE
-  - 07-0273-FR
   - 07-0274-RELAY
   - 07-0275-DE
   - 07-0276-DE
@@ -3683,7 +3553,6 @@ proxy-groups:
   - 07-0296-US
   - 07-0297-US
   - 07-0298-US
-  - 07-0299-US
   - 07-0300-US
   - 07-0304-US
   - 07-0306-RELAY
@@ -3723,8 +3592,6 @@ proxy-groups:
   - 07-0342-RELAY
   - 07-0343-RELAY
   - 07-0344-RELAY
-  - 07-0345-RELAY
-  - 07-0346-RELAY
   - 07-0347-RELAY
   - 07-0348-US
   - 07-0349-RELAY
@@ -3738,17 +3605,15 @@ proxy-groups:
   - 07-0358-RELAY
   - 07-0359-RELAY
   - 07-0360-RELAY
-  - 07-0362-JP
+  - 07-0361-JP
   - 07-0363-JP
   - 07-0364-RELAY
   - 07-0365-RELAY
-  - 07-0366-AU
   - 07-0367-RELAY
   - 07-0368-AU
   - 07-0369-CA
   - 07-0371-VN
   - 07-0372-VN
-  - 07-0401-HK
   - 07-0402-HK
   - 07-0403-HK
   - 07-0405-FR
@@ -3756,16 +3621,14 @@ proxy-groups:
   - 07-0407-FR
   - 07-0410-FR
   - 07-0411-FR
-  - 07-0412-US
+  - 07-0413-RELAY
   - 07-0414-TW
   - 07-0416-CZ
   - 07-0417-SK
   - 07-0418-SE
   - 07-0420-NL
   - 07-0421-RELAY
-  - 07-0422-RELAY
   - 07-0423-RELAY
-  - 07-0424-RELAY
   - 07-0425-BG
   - 07-0426-LV
   - 07-0428-RU
@@ -3789,30 +3652,29 @@ proxy-groups:
   - 07-0454-AR
   - 07-0455-IN
   - 07-0457-ID
-  - 07-0462-MK
   - 07-0463-TH
   - 07-0464-UA
   - 07-0471-AE
-  - 07-0594-DE
-  - 07-0596-JP
-  - 07-0597-US
-  - 07-0598-RELAY
-  - 07-0599-RELAY
-  - 07-0600-GB
-  - 07-0601-HK
-  - 07-0602-HK
-  - 07-0603-RU
-  - 07-0604-ES
-  - 07-0605-IS
-  - 07-0606-AT
-  - 07-0607-PR
-  - 07-0608-PT
-  - 07-0610-MK
+  - 07-0598-DE
+  - 07-0599-DE
+  - 07-0600-JP
+  - 07-0602-RELAY
+  - 07-0603-RELAY
+  - 07-0604-GB
+  - 07-0605-HK
+  - 07-0606-HK
+  - 07-0607-RU
+  - 07-0608-ES
+  - 07-0609-IS
+  - 07-0610-AT
+  - 07-0611-PR
+  - 07-0612-PT
+  - 07-0613-IN
+  - 07-0614-MK
   - 08-0473-AU
   - 08-0474-US
   - 08-0480-US
   - 08-0482-RELAY
-  - 08-0485-FR
   - 08-0486-US
   - 08-0489-RELAY
   - 08-0490-HK
@@ -3820,14 +3682,12 @@ proxy-groups:
   - 08-0493-HK
   - 08-0494-RELAY
   - 08-0496-HK
-  - 08-0500-HK
+  - 08-0497-SE
   - 08-0502-HK
   - 08-0507-HK
   - 08-0508-AU
   - 08-0509-SE
   - 08-0512-RELAY
-  - 08-0514-HK
-  - 08-0515-HK
   - 08-0516-SE
   - 08-0520-AU
   - 08-0522-FR
@@ -3845,26 +3705,23 @@ proxy-groups:
   - 08-0544-HK
   - 08-0545-AU
   - 08-0546-US
-  - 08-0548-HK
-  - 08-0549-HK
   - 08-0553-US
   - 08-0557-SE
   - 08-0560-US
   - 08-0561-US
-  - 08-0563-SE
   - 08-0564-AU
   - 08-0567-AU
   - 08-0568-US
   - 08-0569-US
   - 08-0570-HK
-  - 08-0611-SG
-  - 08-0612-ES
-  - 08-0613-BR
-  - 10-0614-NOWHERE
-  - 10-0615-JP
-  - 39-0616-LT
-  - 39-0617-LT
-  - 39-0618-RELAY
+  - 08-0615-SG
+  - 08-0616-ES
+  - 08-0617-BR
+  - 10-0618-NOWHERE
+  - 10-0619-JP
+  - 39-0620-LT
+  - 39-0621-LT
+  - 39-0622-RELAY
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3902,6 +3759,10 @@ proxy-groups:
   - 04-0584-JP
   - 04-0585-SG
   - 04-0586-US
+  - 04-0587-HK
+  - 04-0588-JP
+  - 04-0589-SG
+  - 04-0590-US
   - 05-0005-RELAY
   - 05-0007-FR
   - 05-0008-HK
@@ -3909,7 +3770,6 @@ proxy-groups:
   - 05-0010-US
   - 05-0011-RELAY
   - 05-0012-HK
-  - 05-0013-HK
   - 05-0015-HK
   - 05-0016-HK
   - 05-0017-DE
@@ -3919,13 +3779,13 @@ proxy-groups:
   - 05-0022-LT
   - 05-0028-RELAY
   - 05-0029-HK
-  - 05-0587-FR
-  - 05-0588-NL
-  - 05-0589-HK
-  - 05-0590-HK
-  - 05-0591-HK
-  - 05-0592-HK
-  - 05-0593-RELAY
+  - 05-0591-FR
+  - 05-0592-NL
+  - 05-0593-HK
+  - 05-0594-HK
+  - 05-0595-HK
+  - 05-0596-HK
+  - 05-0597-RELAY
   - 06-0031-HK
   - 06-0034-SG
   - 06-0035-AU
@@ -3934,7 +3794,6 @@ proxy-groups:
   - 06-0038-AU
   - 06-0041-CA
   - 06-0042-RELAY
-  - 06-0045-FR
   - 06-0046-FR
   - 06-0047-FR
   - 06-0049-HK
@@ -3957,10 +3816,10 @@ proxy-groups:
   - 06-0069-JP
   - 06-0072-LT
   - 06-0073-NL
-  - 06-0075-SE
   - 06-0076-SE
   - 06-0077-SE
   - 06-0080-RELAY
+  - 06-0082-SG
   - 06-0083-US
   - 06-0084-US
   - 06-0085-US
@@ -4027,6 +3886,7 @@ proxy-groups:
   - 06-0164-US
   - 06-0168-US
   - 07-0190-JP
+  - 07-0191-JP
   - 07-0192-SG
   - 07-0195-SG
   - 07-0197-SG
@@ -4047,6 +3907,7 @@ proxy-groups:
   - 07-0214-LT
   - 07-0215-LT
   - 07-0216-LT
+  - 07-0217-AE
   - 07-0218-LT
   - 07-0219-LT
   - 07-0220-LT
@@ -4076,6 +3937,7 @@ proxy-groups:
   - 07-0244-LT
   - 07-0245-NL
   - 07-0246-AE
+  - 07-0247-AE
   - 07-0248-LT
   - 07-0249-LT
   - 07-0250-LT
@@ -4087,8 +3949,6 @@ proxy-groups:
   - 07-0256-NL
   - 07-0257-NL
   - 07-0258-LT
-  - 07-0259-RELAY
-  - 07-0260-US
   - 07-0261-FR
   - 07-0262-FR
   - 07-0265-DE
@@ -4096,7 +3956,6 @@ proxy-groups:
   - 07-0268-DE
   - 07-0269-FR
   - 07-0270-DE
-  - 07-0273-FR
   - 07-0274-RELAY
   - 07-0275-DE
   - 07-0276-DE
@@ -4119,7 +3978,6 @@ proxy-groups:
   - 07-0296-US
   - 07-0297-US
   - 07-0298-US
-  - 07-0299-US
   - 07-0300-US
   - 07-0304-US
   - 07-0306-RELAY
@@ -4159,8 +4017,6 @@ proxy-groups:
   - 07-0342-RELAY
   - 07-0343-RELAY
   - 07-0344-RELAY
-  - 07-0345-RELAY
-  - 07-0346-RELAY
   - 07-0347-RELAY
   - 07-0348-US
   - 07-0349-RELAY
@@ -4174,17 +4030,15 @@ proxy-groups:
   - 07-0358-RELAY
   - 07-0359-RELAY
   - 07-0360-RELAY
-  - 07-0362-JP
+  - 07-0361-JP
   - 07-0363-JP
   - 07-0364-RELAY
   - 07-0365-RELAY
-  - 07-0366-AU
   - 07-0367-RELAY
   - 07-0368-AU
   - 07-0369-CA
   - 07-0371-VN
   - 07-0372-VN
-  - 07-0401-HK
   - 07-0402-HK
   - 07-0403-HK
   - 07-0405-FR
@@ -4192,16 +4046,14 @@ proxy-groups:
   - 07-0407-FR
   - 07-0410-FR
   - 07-0411-FR
-  - 07-0412-US
+  - 07-0413-RELAY
   - 07-0414-TW
   - 07-0416-CZ
   - 07-0417-SK
   - 07-0418-SE
   - 07-0420-NL
   - 07-0421-RELAY
-  - 07-0422-RELAY
   - 07-0423-RELAY
-  - 07-0424-RELAY
   - 07-0425-BG
   - 07-0426-LV
   - 07-0428-RU
@@ -4225,30 +4077,29 @@ proxy-groups:
   - 07-0454-AR
   - 07-0455-IN
   - 07-0457-ID
-  - 07-0462-MK
   - 07-0463-TH
   - 07-0464-UA
   - 07-0471-AE
-  - 07-0594-DE
-  - 07-0596-JP
-  - 07-0597-US
-  - 07-0598-RELAY
-  - 07-0599-RELAY
-  - 07-0600-GB
-  - 07-0601-HK
-  - 07-0602-HK
-  - 07-0603-RU
-  - 07-0604-ES
-  - 07-0605-IS
-  - 07-0606-AT
-  - 07-0607-PR
-  - 07-0608-PT
-  - 07-0610-MK
+  - 07-0598-DE
+  - 07-0599-DE
+  - 07-0600-JP
+  - 07-0602-RELAY
+  - 07-0603-RELAY
+  - 07-0604-GB
+  - 07-0605-HK
+  - 07-0606-HK
+  - 07-0607-RU
+  - 07-0608-ES
+  - 07-0609-IS
+  - 07-0610-AT
+  - 07-0611-PR
+  - 07-0612-PT
+  - 07-0613-IN
+  - 07-0614-MK
   - 08-0473-AU
   - 08-0474-US
   - 08-0480-US
   - 08-0482-RELAY
-  - 08-0485-FR
   - 08-0486-US
   - 08-0489-RELAY
   - 08-0490-HK
@@ -4256,14 +4107,12 @@ proxy-groups:
   - 08-0493-HK
   - 08-0494-RELAY
   - 08-0496-HK
-  - 08-0500-HK
+  - 08-0497-SE
   - 08-0502-HK
   - 08-0507-HK
   - 08-0508-AU
   - 08-0509-SE
   - 08-0512-RELAY
-  - 08-0514-HK
-  - 08-0515-HK
   - 08-0516-SE
   - 08-0520-AU
   - 08-0522-FR
@@ -4281,26 +4130,23 @@ proxy-groups:
   - 08-0544-HK
   - 08-0545-AU
   - 08-0546-US
-  - 08-0548-HK
-  - 08-0549-HK
   - 08-0553-US
   - 08-0557-SE
   - 08-0560-US
   - 08-0561-US
-  - 08-0563-SE
   - 08-0564-AU
   - 08-0567-AU
   - 08-0568-US
   - 08-0569-US
   - 08-0570-HK
-  - 08-0611-SG
-  - 08-0612-ES
-  - 08-0613-BR
-  - 10-0614-NOWHERE
-  - 10-0615-JP
-  - 39-0616-LT
-  - 39-0617-LT
-  - 39-0618-RELAY
+  - 08-0615-SG
+  - 08-0616-ES
+  - 08-0617-BR
+  - 10-0618-NOWHERE
+  - 10-0619-JP
+  - 39-0620-LT
+  - 39-0621-LT
+  - 39-0622-RELAY
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -4314,16 +4160,16 @@ proxy-groups:
   - 04-0575-HK
   - 04-0579-HK
   - 04-0583-HK
+  - 04-0587-HK
   - 05-0008-HK
   - 05-0012-HK
-  - 05-0013-HK
   - 05-0015-HK
   - 05-0016-HK
   - 05-0029-HK
-  - 05-0589-HK
-  - 05-0590-HK
-  - 05-0591-HK
-  - 05-0592-HK
+  - 05-0593-HK
+  - 05-0594-HK
+  - 05-0595-HK
+  - 05-0596-HK
   - 06-0031-HK
   - 06-0049-HK
   - 06-0051-HK
@@ -4340,26 +4186,20 @@ proxy-groups:
   - 06-0063-HK
   - 06-0064-HK
   - 06-0065-HK
-  - 07-0401-HK
   - 07-0402-HK
   - 07-0403-HK
-  - 07-0601-HK
-  - 07-0602-HK
+  - 07-0605-HK
+  - 07-0606-HK
   - 08-0490-HK
   - 08-0493-HK
   - 08-0496-HK
-  - 08-0500-HK
   - 08-0502-HK
   - 08-0507-HK
-  - 08-0514-HK
-  - 08-0515-HK
   - 08-0527-HK
   - 08-0530-HK
   - 08-0532-HK
   - 08-0538-HK
   - 08-0544-HK
-  - 08-0548-HK
-  - 08-0549-HK
   - 08-0570-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
@@ -4386,13 +4226,15 @@ proxy-groups:
   - 04-0576-JP
   - 04-0580-JP
   - 04-0584-JP
+  - 04-0588-JP
   - 06-0069-JP
   - 07-0190-JP
+  - 07-0191-JP
   - 07-0288-JP
-  - 07-0362-JP
+  - 07-0361-JP
   - 07-0363-JP
-  - 07-0596-JP
-  - 10-0615-JP
+  - 07-0600-JP
+  - 10-0619-JP
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
@@ -4407,7 +4249,9 @@ proxy-groups:
   - 04-0577-SG
   - 04-0581-SG
   - 04-0585-SG
+  - 04-0589-SG
   - 06-0034-SG
+  - 06-0082-SG
   - 07-0192-SG
   - 07-0195-SG
   - 07-0197-SG
@@ -4415,7 +4259,7 @@ proxy-groups:
   - 07-0199-SG
   - 07-0201-SG
   - 08-0536-SG
-  - 08-0611-SG
+  - 08-0615-SG
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -4430,6 +4274,7 @@ proxy-groups:
   - 04-0578-US
   - 04-0582-US
   - 04-0586-US
+  - 04-0590-US
   - 05-0010-US
   - 06-0083-US
   - 06-0084-US
@@ -4493,7 +4338,6 @@ proxy-groups:
   - 06-0164-US
   - 06-0168-US
   - 07-0202-US
-  - 07-0260-US
   - 07-0289-US
   - 07-0290-US
   - 07-0291-US
@@ -4504,15 +4348,12 @@ proxy-groups:
   - 07-0296-US
   - 07-0297-US
   - 07-0298-US
-  - 07-0299-US
   - 07-0300-US
   - 07-0304-US
   - 07-0317-US
   - 07-0337-US
   - 07-0339-US
   - 07-0348-US
-  - 07-0412-US
-  - 07-0597-US
   - 08-0474-US
   - 08-0480-US
   - 08-0486-US
