@@ -71,32 +71,32 @@ dns:
   - https://dns.alidns.com/dns-query
 proxies:
 - name: 04-0000-HK
-  password: ea40450a-1dc3-3c10-afec-fb1fa30ff7ad
+  password: 9094214d-db26-3498-9374-43bbd2626f2b
   port: 443
   server: 103.219.195.237
   skip-cert-verify: true
-  sni: steampipe-partner.akamaized.net
+  sni: origin-a.akamaihd.net
   type: trojan
 - name: 04-0001-JP
-  password: ea40450a-1dc3-3c10-afec-fb1fa30ff7ad
+  password: 9094214d-db26-3498-9374-43bbd2626f2b
   port: 443
   server: 178.239.125.119
   skip-cert-verify: true
-  sni: cloudsync-prod.s3.amazonaws.com
+  sni: edge.steam-dns.top.comcast.net
   type: trojan
 - name: 04-0003-SG
-  password: ea40450a-1dc3-3c10-afec-fb1fa30ff7ad
+  password: 9094214d-db26-3498-9374-43bbd2626f2b
   port: 443
   server: vd0ee3cg.cs53rvhb.aliyunglsb.com
   skip-cert-verify: true
-  sni: steampipe-partner.akamaized.net
+  sni: origin-a.akamaihd.net
   type: trojan
 - name: 04-0004-US
-  password: ea40450a-1dc3-3c10-afec-fb1fa30ff7ad
+  password: 9094214d-db26-3498-9374-43bbd2626f2b
   port: 443
   server: 178.208.190.99
   skip-cert-verify: true
-  sni: steampipe-kr.akamaized.net
+  sni: steamcdn-a.akamaihd.net
   type: trojan
 - name: 05-0006-KR
   network: ws
@@ -111,23 +111,10 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /X%40节点狂魔
-- name: 05-0010-KR
+- name: 05-0011-KR
   network: ws
-  port: 10249
-  server: 121.176.175.54
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /X%40节点狂魔
-- name: 05-0014-KR
-  network: ws
-  port: 23023
-  server: 115.40.244.240
+  port: 12228
+  server: 218.148.100.87
   servername: gaosir.unfeeling.sbs
   tls: true
   type: vless
@@ -215,19 +202,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /Telegram🇨🇳%40WangCai2/?ed=2560
-- name: 06-0031-KR
-  network: ws
-  port: 31337
-  server: 211.219.241.28
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /X%40节点狂魔/?ed=2560
 - name: 06-0033-KR
   network: ws
   port: 50001
@@ -280,32 +254,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /X%40节点狂魔/?ed=2560
-- name: 06-0037-KR
-  network: ws
-  port: 30051
-  server: 175.201.95.5
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /telegram %40freecodes
-- name: 06-0039-KR
-  network: ws
-  port: 30067
-  server: 112.156.154.95
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /x %40节点狂魔security=tls
 - name: 06-0040-TW
   network: ws
   port: 443
@@ -367,6 +315,19 @@ proxies:
   type: vmess
   udp: true
   uuid: 0c6abb66-660e-4db9-9e64-3a2625639278
+- alterId: 0
+  cipher: auto
+  name: 07-0202-SG
+  network: ws
+  port: 443
+  server: waifu.kurumi.biz.id
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3393cc9e-7498-4942-9bc4-c6da73080fd9
+  ws-opts:
+    path: /vmess
 - cipher: aes-256-cfb
   name: 07-0203-DE
   password: amazonskr05
@@ -427,19 +388,6 @@ proxies:
     path: linkvws
 - alterId: 0
   cipher: auto
-  name: 07-0208-DE
-  network: ws
-  port: 443
-  server: 57.129.59.199
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    path: linkvws
-- alterId: 0
-  cipher: auto
   name: 07-0209-DE
   network: ws
   port: 20086
@@ -486,17 +434,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 4b9654bd-a4e8-41e0-8425-ef4604cc1166
-- alterId: 0
-  cipher: auto
-  name: 07-0217-DE
-  network: tcp
-  port: 51409
-  server: 155.254.35.214
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e66d09a9-d9ce-42cf-be0e-516dae182668
 - cipher: chacha20-ietf-poly1305
   name: 07-0218-US
   password: f8f7aCzcPKbsF8p3
@@ -533,6 +470,19 @@ proxies:
   network: ws
   port: 443
   server: 15.235.85.156
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: 07-0224-CA
+  network: ws
+  port: 443
+  server: 148.113.153.113
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1557,24 +1507,17 @@ proxies:
   server: 195.154.185.174
   type: ss
 - cipher: aes-256-cfb
+  name: 07-0357-FR
+  password: amazonskr05
+  port: 443
+  server: 13.38.44.116
+  type: ss
+- cipher: aes-256-cfb
   name: 07-0358-FR
   password: amazonskr05
   port: 443
   server: 35.180.193.77
   type: ss
-- name: 07-0361-US
-  network: ws
-  port: 443
-  server: 198.62.62.229
-  servername: mirror.fullmargintraders.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6c11247b-6078-461a-93d5-22e4df284e6d
-  ws-opts:
-    headers:
-      Host: mirror.fullmargintraders.com
-    path: /wsv/6c11247b-6078-461a-93d5-22e4df284e6d
 - cipher: chacha20-ietf-poly1305
   name: 07-0362-CZ
   password: f8f7aCzcPKbsF8p3
@@ -1699,24 +1642,17 @@ proxies:
   server: 37.143.129.230
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 07-0380-GB
+  password: 2DGq3jvVRg5n3CcxmysGK2kmrgJeSNof12A76cZvVxqPpetyC1XEciCFufq5xKvRWGGnKVembpThuUSQhbZ7GMsZY4UVxEBw
+  port: 44884
+  server: 64.137.109.212
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: 07-0381-GB
   password: 2WkRGh6tAv8UmsHh4i3F6zosj2dzA6sCzXbwq4TdXteztMfyA5aZcLy5jY5Z7FZ3QQMcTVwM7TvibdvzYircC7iDZafp2U6z
   port: 40521
   server: media.mothyleela.cfd
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 07-0385-CY
-  network: ws
-  port: 20521
-  server: 45.89.107.51
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3dbaa5c3-f493-4ad1-9c5d-8525f4962a6c
-  ws-opts:
-    path: /
 - cipher: chacha20-ietf-poly1305
   name: 07-0387-RO
   password: f8f7aCzcPKbsF8p3
@@ -1813,6 +1749,19 @@ proxies:
   port: 989
   server: 38.54.57.90
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 07-0442-BR
+  network: ws
+  port: 80
+  server: pq-brazil1.09vpn.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c04c3b34-70fd-4fec-963e-c12d09f36bef
+  ws-opts:
+    path: /vmess/
 - cipher: aes-256-cfb
   name: 07-0443-GR
   password: f8f7aCzcPKbsF8p3
@@ -2141,6 +2090,19 @@ proxies:
     headers:
       Host: fangbinxingnmsl.pusytroller.cf
     path: /
+- name: 10-0543-HK
+  network: ws
+  port: 35951
+  server: 36.50.90.241
+  servername: gaosir.unfeeling.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x%40节点狂魔/?ed=2560
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -2173,43 +2135,39 @@ proxy-groups:
   - 04-0003-SG
   - 04-0004-US
   - 05-0006-KR
-  - 05-0010-KR
-  - 05-0014-KR
+  - 05-0011-KR
   - 05-0015-KR
   - 05-0016-KR
   - 06-0017-HK
   - 06-0026-HK
   - 06-0028-HK
   - 06-0029-KR
-  - 06-0031-KR
   - 06-0033-KR
   - 06-0034-KR
   - 06-0035-KR
   - 06-0036-KR
-  - 06-0037-KR
-  - 06-0039-KR
   - 06-0040-TW
   - 06-0041-RELAY
   - 06-0042-RELAY
   - 07-0200-SG
   - 07-0201-SG
+  - 07-0202-SG
   - 07-0203-DE
   - 07-0204-FR
   - 07-0205-DE
   - 07-0206-DE
   - 07-0207-DE
-  - 07-0208-DE
   - 07-0209-DE
   - 07-0212-DE
   - 07-0213-DE
   - 07-0216-DE
-  - 07-0217-DE
   - 07-0218-US
   - 07-0219-CA
   - 07-0220-CA
   - 07-0221-CA
   - 07-0222-CA
   - 07-0223-CA
+  - 07-0224-CA
   - 07-0225-CA
   - 07-0227-US
   - 07-0228-US
@@ -2328,8 +2286,8 @@ proxy-groups:
   - 07-0353-GB
   - 07-0355-FR
   - 07-0356-FR
+  - 07-0357-FR
   - 07-0358-FR
-  - 07-0361-US
   - 07-0362-CZ
   - 07-0365-JP
   - 07-0366-JP
@@ -2345,8 +2303,8 @@ proxy-groups:
   - 07-0376-AU
   - 07-0377-CA
   - 07-0379-FI
+  - 07-0380-GB
   - 07-0381-GB
-  - 07-0385-CY
   - 07-0387-RO
   - 07-0388-VN
   - 07-0389-VN
@@ -2363,6 +2321,7 @@ proxy-groups:
   - 07-0439-PR
   - 07-0440-KR
   - 07-0441-BR
+  - 07-0442-BR
   - 07-0443-GR
   - 07-0444-PT
   - 07-0450-TH
@@ -2392,6 +2351,7 @@ proxy-groups:
   - 10-0539-RELAY
   - 10-0540-RELAY
   - 10-0541-RELAY
+  - 10-0543-HK
   - 10-0545-NL
 - name: Best
   type: url-test
@@ -2419,43 +2379,39 @@ proxy-groups:
   - 04-0003-SG
   - 04-0004-US
   - 05-0006-KR
-  - 05-0010-KR
-  - 05-0014-KR
+  - 05-0011-KR
   - 05-0015-KR
   - 05-0016-KR
   - 06-0017-HK
   - 06-0026-HK
   - 06-0028-HK
   - 06-0029-KR
-  - 06-0031-KR
   - 06-0033-KR
   - 06-0034-KR
   - 06-0035-KR
   - 06-0036-KR
-  - 06-0037-KR
-  - 06-0039-KR
   - 06-0040-TW
   - 06-0041-RELAY
   - 06-0042-RELAY
   - 07-0200-SG
   - 07-0201-SG
+  - 07-0202-SG
   - 07-0203-DE
   - 07-0204-FR
   - 07-0205-DE
   - 07-0206-DE
   - 07-0207-DE
-  - 07-0208-DE
   - 07-0209-DE
   - 07-0212-DE
   - 07-0213-DE
   - 07-0216-DE
-  - 07-0217-DE
   - 07-0218-US
   - 07-0219-CA
   - 07-0220-CA
   - 07-0221-CA
   - 07-0222-CA
   - 07-0223-CA
+  - 07-0224-CA
   - 07-0225-CA
   - 07-0227-US
   - 07-0228-US
@@ -2574,8 +2530,8 @@ proxy-groups:
   - 07-0353-GB
   - 07-0355-FR
   - 07-0356-FR
+  - 07-0357-FR
   - 07-0358-FR
-  - 07-0361-US
   - 07-0362-CZ
   - 07-0365-JP
   - 07-0366-JP
@@ -2591,8 +2547,8 @@ proxy-groups:
   - 07-0376-AU
   - 07-0377-CA
   - 07-0379-FI
+  - 07-0380-GB
   - 07-0381-GB
-  - 07-0385-CY
   - 07-0387-RO
   - 07-0388-VN
   - 07-0389-VN
@@ -2609,6 +2565,7 @@ proxy-groups:
   - 07-0439-PR
   - 07-0440-KR
   - 07-0441-BR
+  - 07-0442-BR
   - 07-0443-GR
   - 07-0444-PT
   - 07-0450-TH
@@ -2638,6 +2595,7 @@ proxy-groups:
   - 10-0539-RELAY
   - 10-0540-RELAY
   - 10-0541-RELAY
+  - 10-0543-HK
   - 10-0545-NL
 - name: HK
   type: url-test
@@ -2667,6 +2625,7 @@ proxy-groups:
   - 10-0535-HK
   - 10-0536-HK
   - 10-0537-HK
+  - 10-0543-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -2707,6 +2666,7 @@ proxy-groups:
   - 04-0003-SG
   - 07-0200-SG
   - 07-0201-SG
+  - 07-0202-SG
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -2741,7 +2701,6 @@ proxy-groups:
   - 07-0271-US
   - 07-0281-US
   - 07-0282-US
-  - 07-0361-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
