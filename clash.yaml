@@ -414,19 +414,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /Telegram%40freecodes/?ed=2560
-- name: 06-0077-JP
-  network: ws
-  port: 443
-  server: 47.79.43.222
-  servername: gaosir.unfeeling.sbs
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /X%40节点狂魔
 - name: 06-0081-JP
   network: ws
   port: 19999
@@ -800,20 +787,6 @@ proxies:
   port: 443
   server: 3.9.17.198
   type: ss
-- name: 16-0380-JP
-  password: ea39fa94f1ee00999337ea1fd3318e69
-  port: 2381
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 16-0381-JP
-  password: ea39fa94f1ee00999337ea1fd3318e69
-  port: 2467
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
 - name: 17-0392-RELAY
   network: ws
   port: 443
@@ -1116,7 +1089,7 @@ proxies:
   type: vless
   udp: true
   uuid: a42343e4-c498-42b7-8361-c03a36e7a5fb
-- name: 17-0488-FR
+- name: 17-0528-FR
   network: ws
   port: 80
   server: de.vpnbase.net
@@ -1191,7 +1164,6 @@ proxy-groups:
   - 05-0008-US
   - 05-0010-RELAY
   - 06-0076-JP
-  - 06-0077-JP
   - 06-0081-JP
   - 06-0084-KR
   - 06-0087-RELAY
@@ -1229,8 +1201,6 @@ proxy-groups:
   - 09-0373-US
   - 09-0374-GB
   - 16-0379-GB
-  - 16-0380-JP
-  - 16-0381-JP
   - 17-0392-RELAY
   - 17-0393-RELAY
   - 17-0395-RELAY
@@ -1263,7 +1233,7 @@ proxy-groups:
   - 17-0485-RU
   - 17-0486-AT
   - 17-0487-FI
-  - 17-0488-FR
+  - 17-0528-FR
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1331,7 +1301,6 @@ proxy-groups:
   - 05-0008-US
   - 05-0010-RELAY
   - 06-0076-JP
-  - 06-0077-JP
   - 06-0081-JP
   - 06-0084-KR
   - 06-0087-RELAY
@@ -1369,8 +1338,6 @@ proxy-groups:
   - 09-0373-US
   - 09-0374-GB
   - 16-0379-GB
-  - 16-0380-JP
-  - 16-0381-JP
   - 17-0392-RELAY
   - 17-0393-RELAY
   - 17-0395-RELAY
@@ -1403,7 +1370,7 @@ proxy-groups:
   - 17-0485-RU
   - 17-0486-AT
   - 17-0487-FI
-  - 17-0488-FR
+  - 17-0528-FR
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1447,10 +1414,7 @@ proxy-groups:
   tolerance: 50
   proxies:
   - 06-0076-JP
-  - 06-0077-JP
   - 06-0081-JP
-  - 16-0380-JP
-  - 16-0381-JP
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
