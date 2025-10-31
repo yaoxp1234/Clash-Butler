@@ -367,6 +367,19 @@ proxies:
     headers:
       Host: wolf565.royalmt.life
     path: /
+- flow: xtls-rprx-vision
+  name: 05-0007-SE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 6i0TALpH7qy8-xzwJkI13mRsgi2e7lHqKQyAcDSg8Uc
+    short-id: 4af2
+  server: sweden11.clearorbitllc.com
+  servername: sweden11.clearorbitllc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26c99015-b58e-47d2-a4ce-4f4b05b70400
 - grpc-opts:
     grpc-service-name: vless2020
   name: 05-0008-FR
@@ -535,30 +548,6 @@ proxies:
   type: vless
   udp: true
   uuid: dc28e2d3-7c69-47c6-b5b0-f76914454294
-- name: 07-0209-US
-  password: a16d62f6-048d-11f0-af5a-f23c93136cb3
-  port: 1743
-  server: 697c3dc5-t4v9c0-t4zzea-d6ar.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0210-US
-  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
-  port: 1743
-  server: 360311d5-t4v9c0-tcm6ys-deip.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0211-US
-  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-  port: 1743
-  server: 37a48ffc-t4whs0-t5a0jp-b4pt.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0214-US
-  password: 06c625ea-5902-11ee-9e87-f23c9313b177
-  port: 1743
-  server: f1d942ca-t3bpc0-t3ss2y-4mce.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
 - name: 07-0217-HK
   password: 78c2bad7-f5f3-41f2-88cc-81de9d05040b
   port: 2056
@@ -575,18 +564,6 @@ proxies:
   type: vless
   udp: true
   uuid: 6bab29a5-8c22-499c-eb45-996aa68cc9fc
-- name: 07-0223-US
-  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-  port: 1743
-  server: cc65f71a-t4v9c0-t5waci-4550.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0224-US
-  password: a16d62f6-048d-11f0-af5a-f23c93136cb3
-  port: 1743
-  server: 16004295-t4x400-t4zzea-d6ar.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
 - name: 07-0226-RELAY
   network: ws
   port: 443
@@ -600,42 +577,6 @@ proxies:
     headers:
       Host: nkang2replace.airlineshoma.com
     path: /
-- name: 07-0228-US
-  password: 712bdc36-24be-11ee-be53-f23c9313b177
-  port: 1743
-  server: fe1d6996-t4v9c0-tcl9of-5fdt.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0229-US
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  port: 1743
-  server: c0a37350-t4x400-tdtx5w-au6.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0230-US
-  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
-  port: 1743
-  server: 026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0231-US
-  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-  port: 1743
-  server: 57ac7353-t4x400-t9lxaa-1glq.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0232-US
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  port: 1743
-  server: eb8d3417-t4teo0-tdtx5w-au6.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0233-US
-  password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-  port: 1743
-  server: ad87b9c7-t3b340-t3hjqp-b4pt.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
 - name: 07-0234-RELAY
   network: ws
   port: 443
@@ -649,30 +590,6 @@ proxies:
     headers:
       Host: net2026cd.zanddynastyofpersia.org
     path: /eJsVXFVZ6iavNx1EFxOyH861WH
-- name: 07-0236-US
-  password: 16955d72-1794-11f0-a035-f23c95b6f51d
-  port: 1743
-  server: f9a084a0-t4x400-t5ht86-dnss.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0237-US
-  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
-  port: 1743
-  server: c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0238-US
-  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
-  port: 1743
-  server: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
-- name: 07-0240-US
-  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
-  port: 1743
-  server: 6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk
-  skip-cert-verify: true
-  type: hysteria2
 - grpc-opts:
     grpc-service-name: ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
   name: 08-0241-CZ
@@ -696,6 +613,13 @@ proxies:
   port: 1080
   server: xce11lxz.pet0er23mh21qq.com
   type: ss
+- name: 08-0247-DE
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 52.28.43.123
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 08-0249-DE
   password: telegram-id-directvpn
   port: 22223
@@ -709,14 +633,14 @@ proxies:
   port: 1080
   server: 170.168.61.141
   type: ss
-- cipher: rc4-md5
-  name: 09-0308-US
-  obfs: plain
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  protocol: origin
-  server: 107.151.182.253
-  type: ssr
+- name: 09-0308-US
+  network: ws
+  password: iwangjie
+  port: 15805
+  server: 158.101.11.204
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  type: trojan
 - name: 09-0311-RELAY
   network: ws
   port: 443
@@ -1053,12 +977,12 @@ proxies:
     headers:
       Host: fache.2.5.4.b.0.d.0.0.1.0.a.2.ip6.arpa
     path: /
-- name: 10-0349-US
-  password: 0fc81038-0f9c-4a4f-980f-aa91c4a0afb4
+- name: 10-0348-US
+  password: 7fb2c6d9-e8f1-48ee-b1f0-cf3734503f65
   port: 54265
   server: banmabanmabanmabanmabanmabanma1.wanlidag.top
   skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  sni: 🔒 By EbraSha
   type: hysteria2
 - name: 10-0350-US
   password: e6c931d0-1b38-4316-855e-2bfe752208bc
@@ -1095,6 +1019,13 @@ proxies:
   skip-cert-verify: true
   sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
   type: hysteria2
+- name: 10-0355-US
+  password: aaf48778-bd61-4f71-a867-398171377d5b
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
 - name: 10-0356-RELAY
   network: ws
   port: 2095
@@ -1110,6 +1041,34 @@ proxies:
     path: /
 - name: 10-0358-US
   password: 5b786016-a0dd-4613-ad2d-0a10a8f8702d
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
+- name: 10-0359-US
+  password: 3a68480d-d6c9-466b-84e7-1cb3f4024b7c
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
+- name: 10-0360-US
+  password: b460d7e3-5b38-4b44-b8f2-b39f096c992a
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
+- name: 10-0361-US
+  password: dcc70d73-98d6-444d-b1dc-e8ecd05cc0a6
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
+- name: 10-0362-US
+  password: 6b902cba-6591-41df-94e8-88df86052810
   port: 54265
   server: banmabanmabanmabanmabanmabanma1.wanlidag.top
   skip-cert-verify: true
@@ -1287,6 +1246,12 @@ proxies:
   port: 8080
   server: 45.87.175.199
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0437-DE
+  password: c40641c1f89e7acb
+  port: 57456
+  server: 212.224.125.154
+  type: ss
 - name: 17-0440-NL
   network: tcp
   port: 6060
@@ -1436,6 +1401,14 @@ proxies:
   type: vless
   udp: true
   uuid: 81e9e522-2efd-4709-996d-74e46f4edaf8
+- cipher: rc4-md5
+  name: 98-0526-US
+  obfs: plain
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  protocol: origin
+  server: 107.151.182.253
+  type: ssr
 proxy-groups:
 - name: PROXY
   type: select
@@ -1493,6 +1466,7 @@ proxy-groups:
   - 04-0522-US
   - 05-0001-FR
   - 05-0006-CH
+  - 05-0007-SE
   - 05-0008-FR
   - 05-0009-RELAY
   - 05-0011-RELAY
@@ -1508,29 +1482,14 @@ proxy-groups:
   - 05-0525-RELAY
   - 06-0022-US
   - 06-0048-AM
-  - 07-0209-US
-  - 07-0210-US
-  - 07-0211-US
-  - 07-0214-US
   - 07-0217-HK
   - 07-0221-US
-  - 07-0223-US
-  - 07-0224-US
   - 07-0226-RELAY
-  - 07-0228-US
-  - 07-0229-US
-  - 07-0230-US
-  - 07-0231-US
-  - 07-0232-US
-  - 07-0233-US
   - 07-0234-RELAY
-  - 07-0236-US
-  - 07-0237-US
-  - 07-0238-US
-  - 07-0240-US
   - 08-0241-CZ
   - 08-0242-AU
   - 08-0243-NL
+  - 08-0247-DE
   - 08-0249-DE
   - 08-0256-NL
   - 09-0308-US
@@ -1560,14 +1519,19 @@ proxy-groups:
   - 10-0344-RELAY
   - 10-0346-RELAY
   - 10-0347-RELAY
-  - 10-0349-US
+  - 10-0348-US
   - 10-0350-US
   - 10-0351-US
   - 10-0352-US
   - 10-0353-US
   - 10-0354-US
+  - 10-0355-US
   - 10-0356-RELAY
   - 10-0358-US
+  - 10-0359-US
+  - 10-0360-US
+  - 10-0361-US
+  - 10-0362-US
   - 16-0367-GB
   - 17-0377-RELAY
   - 17-0379-RELAY
@@ -1586,6 +1550,7 @@ proxy-groups:
   - 17-0427-LT
   - 17-0433-US
   - 17-0436-LT
+  - 17-0437-DE
   - 17-0440-NL
   - 17-0442-RELAY
   - 17-0449-CY
@@ -1602,6 +1567,7 @@ proxy-groups:
   - 17-0477-FI
   - 17-0478-FR
   - 17-0482-AT
+  - 98-0526-US
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1664,6 +1630,7 @@ proxy-groups:
   - 04-0522-US
   - 05-0001-FR
   - 05-0006-CH
+  - 05-0007-SE
   - 05-0008-FR
   - 05-0009-RELAY
   - 05-0011-RELAY
@@ -1679,29 +1646,14 @@ proxy-groups:
   - 05-0525-RELAY
   - 06-0022-US
   - 06-0048-AM
-  - 07-0209-US
-  - 07-0210-US
-  - 07-0211-US
-  - 07-0214-US
   - 07-0217-HK
   - 07-0221-US
-  - 07-0223-US
-  - 07-0224-US
   - 07-0226-RELAY
-  - 07-0228-US
-  - 07-0229-US
-  - 07-0230-US
-  - 07-0231-US
-  - 07-0232-US
-  - 07-0233-US
   - 07-0234-RELAY
-  - 07-0236-US
-  - 07-0237-US
-  - 07-0238-US
-  - 07-0240-US
   - 08-0241-CZ
   - 08-0242-AU
   - 08-0243-NL
+  - 08-0247-DE
   - 08-0249-DE
   - 08-0256-NL
   - 09-0308-US
@@ -1731,14 +1683,19 @@ proxy-groups:
   - 10-0344-RELAY
   - 10-0346-RELAY
   - 10-0347-RELAY
-  - 10-0349-US
+  - 10-0348-US
   - 10-0350-US
   - 10-0351-US
   - 10-0352-US
   - 10-0353-US
   - 10-0354-US
+  - 10-0355-US
   - 10-0356-RELAY
   - 10-0358-US
+  - 10-0359-US
+  - 10-0360-US
+  - 10-0361-US
+  - 10-0362-US
   - 16-0367-GB
   - 17-0377-RELAY
   - 17-0379-RELAY
@@ -1757,6 +1714,7 @@ proxy-groups:
   - 17-0427-LT
   - 17-0433-US
   - 17-0436-LT
+  - 17-0437-DE
   - 17-0440-NL
   - 17-0442-RELAY
   - 17-0449-CY
@@ -1773,6 +1731,7 @@ proxy-groups:
   - 17-0477-FI
   - 17-0478-FR
   - 17-0482-AT
+  - 98-0526-US
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1874,23 +1833,7 @@ proxy-groups:
   - 04-0519-US
   - 04-0522-US
   - 06-0022-US
-  - 07-0209-US
-  - 07-0210-US
-  - 07-0211-US
-  - 07-0214-US
   - 07-0221-US
-  - 07-0223-US
-  - 07-0224-US
-  - 07-0228-US
-  - 07-0229-US
-  - 07-0230-US
-  - 07-0231-US
-  - 07-0232-US
-  - 07-0233-US
-  - 07-0236-US
-  - 07-0237-US
-  - 07-0238-US
-  - 07-0240-US
   - 09-0308-US
   - 09-0331-US
   - 09-0332-US
@@ -1900,15 +1843,21 @@ proxy-groups:
   - 09-0338-US
   - 09-0340-US
   - 09-0341-US
-  - 10-0349-US
+  - 10-0348-US
   - 10-0350-US
   - 10-0351-US
   - 10-0352-US
   - 10-0353-US
   - 10-0354-US
+  - 10-0355-US
   - 10-0358-US
+  - 10-0359-US
+  - 10-0360-US
+  - 10-0361-US
+  - 10-0362-US
   - 17-0412-US
   - 17-0433-US
+  - 98-0526-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
