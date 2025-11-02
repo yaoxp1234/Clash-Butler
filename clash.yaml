@@ -266,13 +266,6 @@ proxies:
   skip-cert-verify: true
   sni: www.microsoft365.com
   type: trojan
-- name: 05-0000-HK
-  password: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  port: 443
-  server: 19473573-t44ps0-t4f0w3-11p9g.hk1.hyhuawei.com
-  skip-cert-verify: true
-  sni: 19473573-t44ps0-t4f0w3-11p9g.hk1.hyhuawei.com
-  type: hysteria2
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -401,19 +394,17 @@ proxies:
     headers:
       Host: latte.gejeh683bm.ir
     path: /index.html
-- flow: xtls-rprx-vision
-  name: 05-0020-RO
+- alterId: 34463
+  cipher: auto
+  name: 05-0022-JP
   network: tcp
-  port: 443
-  reality-opts:
-    public-key: n5F7RiT4wzYN_JM-Lxwff24YVZy3HHFsVoXtJmRT2BY
-    short-id: 80dc32ed
-  server: germany85.clearorbitllc.com
-  servername: germany85.clearorbitllc.com
+  port: 21583
+  server: c2nnc-g01.jp03-7d22-vm0.entry.fr0307a.art
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 72fa752b-7731-4390-98cb-62b57344e847
+  uuid: 8e555d33-4ce4-395e-93cd-670297aeeb0f
 - alterId: 2
   cipher: auto
   name: 05-0023-HK
@@ -492,6 +483,19 @@ proxies:
   uuid: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
   ws-opts:
     path: /
+- alterId: 2
+  cipher: auto
+  name: 06-0057-HK
+  network: ws
+  port: 80
+  server: 57b9f026-t55r40-teqqcv-1rc6n.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 32bd96d6-186b-11f0-9a65-f23c9164ca5d
+  ws-opts:
+    path: /
 - name: 06-0058-HK
   password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
   port: 443
@@ -517,6 +521,19 @@ proxies:
   uuid: bf36227c-0191-11f0-aee1-f23c91cfbbc9
   ws-opts:
     path: /
+- alterId: 2
+  cipher: auto
+  name: 06-0061-HK
+  network: ws
+  port: 80
+  server: 3f5f832d-t55r40-teu3io-1t4wg.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1b13e20c-e778-11ef-907f-f23c913c8d2b
+  ws-opts:
+    path: /
 - name: 06-0063-HK
   password: 48e51dfa-db8f-11ed-a23f-f23c91369f2d
   port: 443
@@ -540,6 +557,19 @@ proxies:
   type: vmess
   udp: true
   uuid: 7c129766-8656-11ea-8fc9-f23c913c8d2b
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 06-0066-HK
+  network: ws
+  port: 80
+  server: ea43b2d7-t55r40-tdcdb7-1k27l.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
   ws-opts:
     path: /
 - name: 06-0067-HK
@@ -780,26 +810,12 @@ proxies:
   skip-cert-verify: true
   sni: tw1.oxdtangx.top
   type: hysteria2
-- name: 06-0135-US
-  password: d8ead9a0-3c8b-411d-92ef-dd366543197b
+- name: 06-0133-US
+  password: 4efbdf2e-733d-466a-a41b-9c87ed2ab041
   port: 11112
-  server: tw1.oxdtangx.top
+  server: us1.oxdtangx.top
   skip-cert-verify: true
-  sni: tw1.oxdtangx.top
-  type: hysteria2
-- name: 06-0141-US
-  password: 7120cb42-150d-4fb9-a347-de74818e2b9e
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  type: hysteria2
-- name: 06-0142-US
-  password: c6499074-faa4-4d08-b630-8db684a6e0d0
-  port: 11112
-  server: rb1.oxdtangx.top
-  skip-cert-verify: true
-  sni: rb1.oxdtangx.top
+  sni: us1.oxdtangx.top
   type: hysteria2
 - name: 06-0145-US
   password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
@@ -807,18 +823,18 @@ proxies:
   server: 46b37be3-t56dc0-tcm6ys-deip.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
+- name: 06-0149-US
+  password: 1c5fd2c8-f49c-45e8-9c37-ca5afbabb9b0
+  port: 11112
+  server: us2.oxdtangx.top
+  skip-cert-verify: true
+  sni: us2.oxdtangx.top
+  type: hysteria2
 - name: 06-0150-US
   password: 0da8651e-e1f6-11ec-bd7c-f23c913c8d2b
   port: 443
   server: 02591bdd-t53wg0-tcinla-hrtf.us.hyhuawei.com
   skip-cert-verify: true
-  type: hysteria2
-- name: 06-0154-US
-  password: 47781afc-389d-41cb-82c6-6fe8d3505ca6
-  port: 11112
-  server: us2.oxdtangx.top
-  skip-cert-verify: true
-  sni: us2.oxdtangx.top
   type: hysteria2
 - name: 06-0156-US
   password: 3549abda-3854-11ef-b71e-f23c9164ca5d
@@ -832,25 +848,25 @@ proxies:
   server: f6bf48c8-t55r40-tds6bp-1hzyr.us.hyhuawei.com
   skip-cert-verify: true
   type: hysteria2
+- name: 06-0160-US
+  password: 1c5fd2c8-f49c-45e8-9c37-ca5afbabb9b0
+  port: 11112
+  server: us1.oxdtangx.top
+  skip-cert-verify: true
+  sni: us1.oxdtangx.top
+  type: hysteria2
+- name: 06-0161-US
+  password: 3079531f-a90c-4c58-8d12-f9631e4d3792
+  port: 11112
+  server: us1.oxdtangx.top
+  skip-cert-verify: true
+  sni: us1.oxdtangx.top
+  type: hysteria2
 - name: 06-0163-US
   password: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
   port: 443
   server: 314908c1-t53wg0-tdcdb7-1k27l.us.hyhuawei.com
   skip-cert-verify: true
-  type: hysteria2
-- name: 06-0164-US
-  password: 253d7904-49fb-4d14-8ca7-938178063e75
-  port: 11112
-  server: us2.oxdtangx.top
-  skip-cert-verify: true
-  sni: us2.oxdtangx.top
-  type: hysteria2
-- name: 06-0165-US
-  password: c6499074-faa4-4d08-b630-8db684a6e0d0
-  port: 11112
-  server: tw1.oxdtangx.top
-  skip-cert-verify: true
-  sni: tw1.oxdtangx.top
   type: hysteria2
 - name: 06-0167-US
   password: bcc58e88-e147-11ec-b286-f23c91cfbbc9
@@ -881,13 +897,6 @@ proxies:
   port: 443
   server: 8aaecaaa-t55r40-t8hh31-amya.us.hyhuawei.com
   skip-cert-verify: true
-  type: hysteria2
-- name: 06-0175-US
-  password: 2693acc0-edc3-4f34-a73a-068f1fbf4f89
-  port: 11112
-  server: tw1.oxdtangx.top
-  skip-cert-verify: true
-  sni: tw1.oxdtangx.top
   type: hysteria2
 - name: 06-0177-US
   password: 12a81f5a-fa9e-11ef-8400-f23c9164ca5d
@@ -924,20 +933,6 @@ proxies:
   port: 443
   server: 5e7b8fdc-t53wg0-t5jnf1-n09f.us.hyhuawei.com
   skip-cert-verify: true
-  type: hysteria2
-- name: 06-0190-US
-  password: 3662a53e-4f55-42df-9842-63697d9655cb
-  port: 47301
-  server: mg1.dreamlinkc.top
-  skip-cert-verify: true
-  sni: mg1.dreamlinkc.top
-  type: hysteria2
-- name: 06-0193-US
-  password: 5148373c-be18-4778-b200-39d8ad39bcc9
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
   type: hysteria2
 - name: 06-0196-US
   password: ecfab6c8-df5b-11ed-98a7-f23c913c8d2b
@@ -1052,12 +1047,12 @@ proxies:
   uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
   ws-opts:
     path: /
-- cipher: aes-256-cfb
-  name: 07-0218-DE
-  password: amazonskr05
+- name: 07-0217-HK
+  password: BxceQaOe
   port: 443
-  server: 18.184.173.223
-  type: ss
+  server: 58.152.46.98
+  skip-cert-verify: true
+  type: trojan
 - cipher: aes-256-cfb
   name: 07-0219-DE
   password: amazonskr05
@@ -1082,6 +1077,19 @@ proxies:
   server: 68f48101-t4teo0-t5waci-4550.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 07-0224-HK
+  network: ws
+  port: 80
+  server: 34013157-sunz40-taz53d-1j0y6.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  ws-opts:
+    path: /
 - cipher: aes-256-cfb
   name: 07-0227-CA
   password: amazonskr05
@@ -1196,6 +1204,19 @@ proxies:
   uuid: 7c129766-8656-11ea-8fc9-f23c913c8d2b
   ws-opts:
     path: /
+- alterId: 2
+  cipher: auto
+  name: 07-0248-HK
+  network: ws
+  port: 80
+  server: 6e1d5f2b-sv0xs0-tdh9w7-ahsb.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    path: /
 - name: 07-0249-US
   password: 712bdc36-24be-11ee-be53-f23c9313b177
   port: 1743
@@ -1208,6 +1229,19 @@ proxies:
   server: bb441d0e-t4x400-t5waci-4550.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 07-0251-HK
+  network: ws
+  port: 80
+  server: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
+  ws-opts:
+    path: /
 - alterId: 2
   cipher: auto
   name: 07-0252-HK
@@ -1246,6 +1280,19 @@ proxies:
   uuid: 47e91fb6-25b8-df52-bc18-3cdc8548192f
   ws-opts:
     path: /
+- alterId: 2
+  cipher: auto
+  name: 07-0257-HK
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - name: 07-0260-US
   password: 16955d72-1794-11f0-a035-f23c95b6f51d
   port: 1743
@@ -1276,6 +1323,19 @@ proxies:
   server: 61f04f6d-t4v9c0-t5amrp-b4pt.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 07-0266-HK
+  network: ws
+  port: 80
+  server: 7f074f62-sv6hs0-tdh9w7-ahsb.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    path: /
 - alterId: 2
   cipher: auto
   name: 07-0267-HK
@@ -1505,13 +1565,6 @@ proxies:
   skip-cert-verify: true
   sni: f66aed6e-t53wg0-t7fl9b-1q16i.hk2.hyhuawei.com
   type: hysteria2
-- name: 08-0299-US
-  password: bcb0c249-fd42-4e85-aef7-2502c911aeba
-  port: 11112
-  server: yg1.oxdtangx.top
-  skip-cert-verify: true
-  sni: yg1.oxdtangx.top
-  type: hysteria2
 - cipher: aes-256-cfb
   name: 08-0300-FR
   password: amazonskr05
@@ -1596,6 +1649,13 @@ proxies:
   server: 7604a39f-t53wg0-ta5i1s-1j61y.hk2.hyhuawei.com
   skip-cert-verify: true
   sni: 7604a39f-t53wg0-ta5i1s-1j61y.hk2.hyhuawei.com
+  type: hysteria2
+- name: 08-0313-US
+  password: 1c4a05b0-f6bc-4256-98a4-79a2db4056d2
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
   type: hysteria2
 - alterId: 2
   cipher: auto
@@ -1701,6 +1761,13 @@ proxies:
   skip-cert-verify: true
   sni: trojan.burgerip.co.uk
   type: trojan
+- name: 08-0326-US
+  password: 4781c248-c986-454f-8624-082f769bc62b
+  port: 54265
+  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  skip-cert-verify: true
+  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
+  type: hysteria2
 - name: 08-0327-HK
   password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
   port: 443
@@ -1733,6 +1800,19 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
+- alterId: 2
+  cipher: auto
+  name: 08-0335-HK
+  network: ws
+  port: 80
+  server: 9993d2b5-t0zr40-ta5nd4-e06r.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
+  ws-opts:
+    path: /
 - name: 08-0337-DE
   password: telegram-id-directvpn
   port: 22223
@@ -1772,6 +1852,12 @@ proxies:
   skip-cert-verify: true
   sni: b1c6fa6f-t53wg0-t525pa-ach1.hk1.hyhuawei.com
   type: hysteria2
+- name: 08-0344-DE
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.157.82.27
+  skip-cert-verify: true
+  type: trojan
 - name: 08-0345-FR
   password: telegram-id-privatevpns
   port: 22222
@@ -1786,19 +1872,6 @@ proxies:
   skip-cert-verify: true
   sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 08-0348-MY
-  network: ws
-  port: 26710
-  server: 23.27.240.193
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 7cc16cad-66e3-4efb-84ba-a8b3a390ce52
-  ws-opts:
-    path: /7cc16cad
 - name: 08-0351-HK
   password: e668cd78-6892-11eb-a8bf-f23c91cfbbc9
   port: 443
@@ -1806,6 +1879,13 @@ proxies:
   skip-cert-verify: true
   sni: a5607302-t53wg0-t8izjf-20qs.hk1.hyhuawei.com
   type: hysteria2
+- name: 08-0352-DE
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.157.82.27
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
 - name: 08-0354-US
   password: e92f8938-a107-44b3-a410-1b015099170b
   port: 57300
@@ -1847,20 +1927,6 @@ proxies:
   port: 35291
   server: 80.66.72.11
   type: ss
-- name: 08-0365-US
-  password: 2693acc0-edc3-4f34-a73a-068f1fbf4f89
-  port: 11112
-  server: tw2.oxdtangx.top
-  skip-cert-verify: true
-  sni: tw2.oxdtangx.top
-  type: hysteria2
-- name: 08-0366-US
-  password: 409843f5-3e2b-4e24-8d41-5d5dde496420
-  port: 11112
-  server: tw2.oxdtangx.top
-  skip-cert-verify: true
-  sni: tw2.oxdtangx.top
-  type: hysteria2
 - name: 08-0367-US
   password: a452c7eb-2d0d-4a6f-a287-87aa420a2836
   port: 54265
@@ -1875,357 +1941,12 @@ proxies:
   skip-cert-verify: true
   sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
   type: hysteria2
-- name: 09-0391-RELAY
-  network: ws
-  port: 2083
-  server: store.ubi.com
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0392-RELAY
-  network: ws
-  port: 2096
-  server: www.shopify.com
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0393-RELAY
-  network: ws
-  port: 2083
-  server: staticdelivery.nexusmods.com
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0394-RELAY
-  network: ws
-  port: 2053
-  server: cloudflare-dl.byoip.top
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0395-RELAY
-  network: ws
-  port: 2087
-  server: saas.sin.fan
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0396-RELAY
-  network: ws
-  port: 2087
-  server: cloudflare-dl.cnae.top
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0397-RELAY
-  network: ws
-  port: 2096
-  server: cfsaas.080112.xyz
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0398-HK
-  network: ws
-  port: 39738
-  server: 47.238.4.4
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0399-JP
-  network: ws
-  port: 20205
-  server: 172.105.208.156
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0401-SG
-  network: ws
-  port: 443
-  server: 8.219.169.127
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0402-SG
-  network: ws
-  port: 2024
-  server: 47.79.121.246
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0403-US
-  network: ws
-  port: 443
-  server: 47.88.13.222
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0404-US
-  network: ws
-  port: 20205
-  server: 192.155.85.13
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0405-US
-  network: ws
-  port: 443
-  server: 129.146.46.164
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0406-AE
-  network: ws
-  port: 10069
-  server: 193.123.84.196
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0407-CA
-  network: ws
-  port: 443
-  server: 143.110.221.58
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0408-CA
-  network: ws
-  port: 2053
-  server: 137.184.171.169
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0409-DE
-  network: ws
-  port: 4443
-  server: 146.190.178.177
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0410-DE
-  network: ws
-  port: 20205
-  server: 172.104.144.44
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0411-DE
-  network: ws
-  port: 20205
-  server: 139.162.137.249
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0412-DE
-  network: ws
-  port: 20205
-  server: 143.42.22.105
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0413-NL
-  network: ws
-  port: 443
-  server: 80.240.141.48
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0415-NL
-  network: ws
-  port: 20205
-  server: 95.85.46.233
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0416-PL
-  network: ws
-  port: 12531
-  server: 70.34.244.250
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- name: 09-0417-SE
-  network: ws
-  port: 39738
-  server: 13.60.225.39
-  servername: snippet.danfeng.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5544203-55e3-426e-92f1-0684c93f9829
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.site
-    path: /?ed=2560
-- cipher: aes-128-gcm
-  name: 10-0419-HK
-  password: 57bc0c04-8184-48f5-906b-897d095ed445
-  port: 17459
-  server: liubu9.singdns.com
+- cipher: chacha20-ietf
+  name: 10-0432-SG
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
   type: ss
-- name: 10-0421-TW
-  password: YlfdAfTHoAuoRIbTPl
-  port: 443
-  server: tw-1.chianginc.com
-  skip-cert-verify: true
-  type: trojan
-- name: 10-0436-US
-  password: 6f054165-5e84-4613-85ad-c1f74015a151
-  port: 11112
-  server: tw2.oxdtangx.top
-  skip-cert-verify: true
-  sni: tw2.oxdtangx.top
-  type: hysteria2
-- name: 10-0437-US
-  password: d4593181-2776-4a0a-a2ca-5851b1ebae31
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  type: hysteria2
 - name: 10-0438-HK
   password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
   port: 443
@@ -2238,19 +1959,11 @@ proxies:
   server: c14f6edc-t53wg0-tee612-2r82.hk2.hyhuawei.com
   skip-cert-verify: true
   type: hysteria2
-- name: 10-0452-US
-  password: 3a68480d-d6c9-466b-84e7-1cb3f4024b7c
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
+- name: 10-0450-HK
+  password: d6e1207c-f41a-11ef-9495-f23c91cfbbc9
+  port: 443
+  server: 6369805c-t53wg0-t7mt0p-1sllg.hk1.hyhuawei.com
   skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  type: hysteria2
-- name: 10-0453-US
-  password: 61139adb-9689-41cb-8924-9b12ff63af9c
-  port: 57300
-  server: sfjmg4.sufujia.top
-  skip-cert-verify: true
-  sni: sfjmg4.sufujia.top
   type: hysteria2
 - name: 10-0460-RELAY
   network: ws
@@ -2265,78 +1978,6 @@ proxies:
     headers:
       Host: fache.2.5.4.b.0.d.0.0.1.0.a.2.ip6.arpa
     path: /
-- name: 10-0462-US
-  password: 3fe32f0c-4e0f-4834-b546-13bbb96191f3
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  type: hysteria2
-- name: 13-0465-CY
-  network: ws
-  port: 443
-  server: 45.83.21.88
-  servername: rAyAn-007.pArViN.DpDnS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-  ws-opts:
-    headers:
-      Host: rayan-007.parvin.dpdns.org
-    path: /Telegram%3A%40AZARBAYJAB1?ed=2560
-- name: 13-0466-CY
-  network: ws
-  port: 443
-  server: 45.83.21.29
-  servername: rAyAn-007.pArViN.DpDnS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-  ws-opts:
-    headers:
-      Host: rayan-007.parvin.dpdns.org
-    path: /Telegram%3A%40AZARBAYJAB1?ed=2560
-- name: 13-0467-CY
-  network: ws
-  port: 443
-  server: 45.83.21.194
-  servername: rAyAn-007.pArViN.DpDnS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-  ws-opts:
-    headers:
-      Host: rayan-007.parvin.dpdns.org
-    path: /Telegram%3A%40AZARBAYJAB1?ed=2560
-- name: 13-0468-CY
-  network: ws
-  port: 443
-  server: 45.83.21.4
-  servername: rAyAn-007.pArViN.DpDnS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-  ws-opts:
-    headers:
-      Host: rayan-007.parvin.dpdns.org
-    path: /Telegram%3A%40AZARBAYJAB1?ed=2560
-- name: 13-0469-CY
-  network: ws
-  port: 443
-  server: 45.83.21.13
-  servername: rAyAn-007.pArViN.DpDnS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
-  ws-opts:
-    headers:
-      Host: rayan-007.parvin.dpdns.org
-    path: /Telegram%3A%40AZARBAYJAB1?ed=2560
 - name: 13-0471-DE
   network: tcp
   port: 17287
@@ -2359,6 +2000,19 @@ proxies:
   type: vless
   udp: true
   uuid: 6206bf1d-068d-4186-9eee-d534a01cb98e
+- flow: xtls-rprx-vision
+  name: 13-0479-AT
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: NvdLgcQKj0XeAmqIpCEdvcsgfNrtSyfGnQYNdZ7eTFE
+    short-id: 08aa0813199a4c38
+  server: at.monkeyisland.life
+  servername: at.monkeyisland.life
+  tls: true
+  type: vless
+  udp: true
+  uuid: 74c0af7c-8482-4b4e-b067-ea456a80cdb7
 - cipher: aes-256-gcm
   name: 13-0480-SG
   password: bd080898-b41a-48ae-b164-1baae4124627
@@ -2610,6 +2264,19 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
+  name: 16-0511-HK
+  network: ws
+  port: 80
+  server: d5dc60aa-t0kxs0-t1nwsn-1la2q.hk3.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 431026c8-7397-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    path: /
+- alterId: 2
+  cipher: auto
   name: 16-0512-HK
   network: ws
   port: 80
@@ -2820,12 +2487,19 @@ proxies:
   port: 8080
   server: 45.87.175.199
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 17-0578-DE
-  password: c40641c1f89e7acb
-  port: 57456
-  server: 212.224.125.154
-  type: ss
+- name: 17-0580-RELAY
+  network: ws
+  port: 443
+  server: 172.67.130.204
+  servername: HHhhhHhhhhH.777198.xYz
+  tls: true
+  type: vless
+  udp: true
+  uuid: c226ac5d-65e9-4379-95c3-fb542bc242d8
+  ws-opts:
+    headers:
+      Host: hhhhhhhhhhh.777198.xyz
+    path: /OjdW89Bpg4ykd4O
 - name: 17-0582-NL
   network: tcp
   port: 6060
@@ -2869,18 +2543,6 @@ proxies:
   port: 8080
   server: 45.87.175.190
   type: ss
-- name: 17-0601-RU
-  network: tcp
-  port: 38339
-  reality-opts:
-    public-key: o0MFuznHh_Wztg0FTAMhFXm3hjAqOJAJIIVNn-_A9WA
-    short-id: e16883e511
-  server: 176.120.72.63
-  servername: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 481c5606-b586-44d7-bc2e-d8ef30d67f62
 - name: 17-0602-SG
   network: tcp
   port: 55076
@@ -2915,18 +2577,6 @@ proxies:
   type: vless
   udp: true
   uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
-- name: 17-0609-RU
-  network: tcp
-  port: 38339
-  reality-opts:
-    public-key: o0MFuznHh_Wztg0FTAMhFXm3hjAqOJAJIIVNn-_A9WA
-    short-id: e16883e511
-  server: kz.accesspoints.cloakify.app
-  servername: dl.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 481c5606-b586-44d7-bc2e-d8ef30d67f62
 - cipher: chacha20-ietf-poly1305
   name: 17-0614-DE
   password: LVBYRkSkHlTqebSJrGc2C7
@@ -2952,7 +2602,7 @@ proxies:
   type: vless
   udp: true
   uuid: d5c1b5d7-055b-4457-bc3a-6e99919c1bcb
-- name: 17-0685-FR
+- name: 17-0653-FR
   network: ws
   port: 80
   server: de.vpnbase.net
@@ -3009,7 +2659,6 @@ proxy-groups:
   - 04-0650-US
   - 04-0651-SG
   - 04-0652-US
-  - 05-0000-HK
   - 05-0001-FR
   - 05-0002-RELAY
   - 05-0003-HK
@@ -3022,19 +2671,22 @@ proxy-groups:
   - 05-0012-NL
   - 05-0015-CA
   - 05-0017-RELAY
-  - 05-0020-RO
+  - 05-0022-JP
   - 05-0023-HK
   - 05-0024-RELAY
   - 05-0025-RELAY
   - 06-0041-FI
   - 06-0049-US
   - 06-0056-HK
+  - 06-0057-HK
   - 06-0058-HK
   - 06-0059-HK
   - 06-0060-HK
+  - 06-0061-HK
   - 06-0063-HK
   - 06-0064-HK
   - 06-0065-HK
+  - 06-0066-HK
   - 06-0067-HK
   - 06-0068-HK
   - 06-0070-HK
@@ -3064,31 +2716,26 @@ proxy-groups:
   - 06-0125-US
   - 06-0127-US
   - 06-0128-US
-  - 06-0135-US
-  - 06-0141-US
-  - 06-0142-US
+  - 06-0133-US
   - 06-0145-US
+  - 06-0149-US
   - 06-0150-US
-  - 06-0154-US
   - 06-0156-US
   - 06-0157-US
+  - 06-0160-US
+  - 06-0161-US
   - 06-0163-US
-  - 06-0164-US
-  - 06-0165-US
   - 06-0167-US
   - 06-0169-US
   - 06-0170-US
   - 06-0172-US
   - 06-0174-US
-  - 06-0175-US
   - 06-0177-US
   - 06-0179-US
   - 06-0180-US
   - 06-0186-US
   - 06-0187-US
   - 06-0188-US
-  - 06-0190-US
-  - 06-0193-US
   - 06-0196-US
   - 07-0200-HK
   - 07-0203-US
@@ -3102,11 +2749,12 @@ proxy-groups:
   - 07-0214-US
   - 07-0215-HK
   - 07-0216-HK
-  - 07-0218-DE
+  - 07-0217-HK
   - 07-0219-DE
   - 07-0220-US
   - 07-0221-US
   - 07-0223-US
+  - 07-0224-HK
   - 07-0227-CA
   - 07-0228-US
   - 07-0230-HK
@@ -3120,17 +2768,21 @@ proxy-groups:
   - 07-0245-US
   - 07-0246-US
   - 07-0247-HK
+  - 07-0248-HK
   - 07-0249-US
   - 07-0250-US
+  - 07-0251-HK
   - 07-0252-HK
   - 07-0254-US
   - 07-0255-US
   - 07-0256-HK
+  - 07-0257-HK
   - 07-0260-US
   - 07-0261-LT
   - 07-0262-US
   - 07-0264-US
   - 07-0265-US
+  - 07-0266-HK
   - 07-0267-HK
   - 08-0268-HK
   - 08-0269-HK
@@ -3163,7 +2815,6 @@ proxy-groups:
   - 08-0296-HK
   - 08-0297-HK
   - 08-0298-HK
-  - 08-0299-US
   - 08-0300-FR
   - 08-0301-HK
   - 08-0304-HK
@@ -3172,6 +2823,7 @@ proxy-groups:
   - 08-0307-HK
   - 08-0309-HK
   - 08-0311-HK
+  - 08-0313-US
   - 08-0314-HK
   - 08-0316-HK
   - 08-0317-HK
@@ -3181,71 +2833,38 @@ proxy-groups:
   - 08-0321-HK
   - 08-0322-HK
   - 08-0324-FR
+  - 08-0326-US
   - 08-0327-HK
   - 08-0332-HK
   - 08-0333-US
   - 08-0334-FR
+  - 08-0335-HK
   - 08-0337-DE
   - 08-0338-HK
   - 08-0340-HK
   - 08-0341-TR
   - 08-0343-HK
+  - 08-0344-DE
   - 08-0345-FR
   - 08-0347-US
-  - 08-0348-MY
   - 08-0351-HK
+  - 08-0352-DE
   - 08-0354-US
   - 08-0356-US
   - 08-0357-US
   - 08-0358-US
   - 08-0361-US
   - 08-0363-DE
-  - 08-0365-US
-  - 08-0366-US
   - 08-0367-US
   - 08-0369-US
-  - 09-0391-RELAY
-  - 09-0392-RELAY
-  - 09-0393-RELAY
-  - 09-0394-RELAY
-  - 09-0395-RELAY
-  - 09-0396-RELAY
-  - 09-0397-RELAY
-  - 09-0398-HK
-  - 09-0399-JP
-  - 09-0401-SG
-  - 09-0402-SG
-  - 09-0403-US
-  - 09-0404-US
-  - 09-0405-US
-  - 09-0406-AE
-  - 09-0407-CA
-  - 09-0408-CA
-  - 09-0409-DE
-  - 09-0410-DE
-  - 09-0411-DE
-  - 09-0412-DE
-  - 09-0413-NL
-  - 09-0415-NL
-  - 09-0416-PL
-  - 09-0417-SE
-  - 10-0419-HK
-  - 10-0421-TW
-  - 10-0436-US
-  - 10-0437-US
+  - 10-0432-SG
   - 10-0438-HK
   - 10-0444-HK
-  - 10-0452-US
-  - 10-0453-US
+  - 10-0450-HK
   - 10-0460-RELAY
-  - 10-0462-US
-  - 13-0465-CY
-  - 13-0466-CY
-  - 13-0467-CY
-  - 13-0468-CY
-  - 13-0469-CY
   - 13-0471-DE
   - 13-0478-KZ
+  - 13-0479-AT
   - 13-0480-SG
   - 13-0481-TR
   - 13-0484-XK
@@ -3267,6 +2886,7 @@ proxy-groups:
   - 16-0507-HK
   - 16-0508-HK
   - 16-0510-HK
+  - 16-0511-HK
   - 16-0512-HK
   - 16-0513-HK
   - 16-0514-HK
@@ -3287,22 +2907,20 @@ proxy-groups:
   - 17-0563-ES
   - 17-0574-US
   - 17-0577-LT
-  - 17-0578-DE
+  - 17-0580-RELAY
   - 17-0582-NL
   - 17-0584-RELAY
   - 17-0591-CY
   - 17-0592-FI
   - 17-0600-LT
-  - 17-0601-RU
   - 17-0602-SG
   - 17-0603-LT
   - 17-0605-NL
   - 17-0607-IL
-  - 17-0609-RU
   - 17-0614-DE
   - 17-0623-RU
   - 17-0624-MD
-  - 17-0685-FR
+  - 17-0653-FR
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3352,7 +2970,6 @@ proxy-groups:
   - 04-0650-US
   - 04-0651-SG
   - 04-0652-US
-  - 05-0000-HK
   - 05-0001-FR
   - 05-0002-RELAY
   - 05-0003-HK
@@ -3365,19 +2982,22 @@ proxy-groups:
   - 05-0012-NL
   - 05-0015-CA
   - 05-0017-RELAY
-  - 05-0020-RO
+  - 05-0022-JP
   - 05-0023-HK
   - 05-0024-RELAY
   - 05-0025-RELAY
   - 06-0041-FI
   - 06-0049-US
   - 06-0056-HK
+  - 06-0057-HK
   - 06-0058-HK
   - 06-0059-HK
   - 06-0060-HK
+  - 06-0061-HK
   - 06-0063-HK
   - 06-0064-HK
   - 06-0065-HK
+  - 06-0066-HK
   - 06-0067-HK
   - 06-0068-HK
   - 06-0070-HK
@@ -3407,31 +3027,26 @@ proxy-groups:
   - 06-0125-US
   - 06-0127-US
   - 06-0128-US
-  - 06-0135-US
-  - 06-0141-US
-  - 06-0142-US
+  - 06-0133-US
   - 06-0145-US
+  - 06-0149-US
   - 06-0150-US
-  - 06-0154-US
   - 06-0156-US
   - 06-0157-US
+  - 06-0160-US
+  - 06-0161-US
   - 06-0163-US
-  - 06-0164-US
-  - 06-0165-US
   - 06-0167-US
   - 06-0169-US
   - 06-0170-US
   - 06-0172-US
   - 06-0174-US
-  - 06-0175-US
   - 06-0177-US
   - 06-0179-US
   - 06-0180-US
   - 06-0186-US
   - 06-0187-US
   - 06-0188-US
-  - 06-0190-US
-  - 06-0193-US
   - 06-0196-US
   - 07-0200-HK
   - 07-0203-US
@@ -3445,11 +3060,12 @@ proxy-groups:
   - 07-0214-US
   - 07-0215-HK
   - 07-0216-HK
-  - 07-0218-DE
+  - 07-0217-HK
   - 07-0219-DE
   - 07-0220-US
   - 07-0221-US
   - 07-0223-US
+  - 07-0224-HK
   - 07-0227-CA
   - 07-0228-US
   - 07-0230-HK
@@ -3463,17 +3079,21 @@ proxy-groups:
   - 07-0245-US
   - 07-0246-US
   - 07-0247-HK
+  - 07-0248-HK
   - 07-0249-US
   - 07-0250-US
+  - 07-0251-HK
   - 07-0252-HK
   - 07-0254-US
   - 07-0255-US
   - 07-0256-HK
+  - 07-0257-HK
   - 07-0260-US
   - 07-0261-LT
   - 07-0262-US
   - 07-0264-US
   - 07-0265-US
+  - 07-0266-HK
   - 07-0267-HK
   - 08-0268-HK
   - 08-0269-HK
@@ -3506,7 +3126,6 @@ proxy-groups:
   - 08-0296-HK
   - 08-0297-HK
   - 08-0298-HK
-  - 08-0299-US
   - 08-0300-FR
   - 08-0301-HK
   - 08-0304-HK
@@ -3515,6 +3134,7 @@ proxy-groups:
   - 08-0307-HK
   - 08-0309-HK
   - 08-0311-HK
+  - 08-0313-US
   - 08-0314-HK
   - 08-0316-HK
   - 08-0317-HK
@@ -3524,71 +3144,38 @@ proxy-groups:
   - 08-0321-HK
   - 08-0322-HK
   - 08-0324-FR
+  - 08-0326-US
   - 08-0327-HK
   - 08-0332-HK
   - 08-0333-US
   - 08-0334-FR
+  - 08-0335-HK
   - 08-0337-DE
   - 08-0338-HK
   - 08-0340-HK
   - 08-0341-TR
   - 08-0343-HK
+  - 08-0344-DE
   - 08-0345-FR
   - 08-0347-US
-  - 08-0348-MY
   - 08-0351-HK
+  - 08-0352-DE
   - 08-0354-US
   - 08-0356-US
   - 08-0357-US
   - 08-0358-US
   - 08-0361-US
   - 08-0363-DE
-  - 08-0365-US
-  - 08-0366-US
   - 08-0367-US
   - 08-0369-US
-  - 09-0391-RELAY
-  - 09-0392-RELAY
-  - 09-0393-RELAY
-  - 09-0394-RELAY
-  - 09-0395-RELAY
-  - 09-0396-RELAY
-  - 09-0397-RELAY
-  - 09-0398-HK
-  - 09-0399-JP
-  - 09-0401-SG
-  - 09-0402-SG
-  - 09-0403-US
-  - 09-0404-US
-  - 09-0405-US
-  - 09-0406-AE
-  - 09-0407-CA
-  - 09-0408-CA
-  - 09-0409-DE
-  - 09-0410-DE
-  - 09-0411-DE
-  - 09-0412-DE
-  - 09-0413-NL
-  - 09-0415-NL
-  - 09-0416-PL
-  - 09-0417-SE
-  - 10-0419-HK
-  - 10-0421-TW
-  - 10-0436-US
-  - 10-0437-US
+  - 10-0432-SG
   - 10-0438-HK
   - 10-0444-HK
-  - 10-0452-US
-  - 10-0453-US
+  - 10-0450-HK
   - 10-0460-RELAY
-  - 10-0462-US
-  - 13-0465-CY
-  - 13-0466-CY
-  - 13-0467-CY
-  - 13-0468-CY
-  - 13-0469-CY
   - 13-0471-DE
   - 13-0478-KZ
+  - 13-0479-AT
   - 13-0480-SG
   - 13-0481-TR
   - 13-0484-XK
@@ -3610,6 +3197,7 @@ proxy-groups:
   - 16-0507-HK
   - 16-0508-HK
   - 16-0510-HK
+  - 16-0511-HK
   - 16-0512-HK
   - 16-0513-HK
   - 16-0514-HK
@@ -3630,22 +3218,20 @@ proxy-groups:
   - 17-0563-ES
   - 17-0574-US
   - 17-0577-LT
-  - 17-0578-DE
+  - 17-0580-RELAY
   - 17-0582-NL
   - 17-0584-RELAY
   - 17-0591-CY
   - 17-0592-FI
   - 17-0600-LT
-  - 17-0601-RU
   - 17-0602-SG
   - 17-0603-LT
   - 17-0605-NL
   - 17-0607-IL
-  - 17-0609-RU
   - 17-0614-DE
   - 17-0623-RU
   - 17-0624-MD
-  - 17-0685-FR
+  - 17-0653-FR
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -3655,18 +3241,20 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0000-HK
   - 05-0003-HK
   - 05-0005-HK
   - 05-0006-HK
   - 05-0023-HK
   - 06-0056-HK
+  - 06-0057-HK
   - 06-0058-HK
   - 06-0059-HK
   - 06-0060-HK
+  - 06-0061-HK
   - 06-0063-HK
   - 06-0064-HK
   - 06-0065-HK
+  - 06-0066-HK
   - 06-0067-HK
   - 06-0068-HK
   - 06-0070-HK
@@ -3697,13 +3285,19 @@ proxy-groups:
   - 07-0206-HK
   - 07-0215-HK
   - 07-0216-HK
+  - 07-0217-HK
+  - 07-0224-HK
   - 07-0230-HK
   - 07-0233-HK
   - 07-0239-HK
   - 07-0240-HK
   - 07-0247-HK
+  - 07-0248-HK
+  - 07-0251-HK
   - 07-0252-HK
   - 07-0256-HK
+  - 07-0257-HK
+  - 07-0266-HK
   - 07-0267-HK
   - 08-0268-HK
   - 08-0269-HK
@@ -3751,14 +3345,14 @@ proxy-groups:
   - 08-0322-HK
   - 08-0327-HK
   - 08-0332-HK
+  - 08-0335-HK
   - 08-0338-HK
   - 08-0340-HK
   - 08-0343-HK
   - 08-0351-HK
-  - 09-0398-HK
-  - 10-0419-HK
   - 10-0438-HK
   - 10-0444-HK
+  - 10-0450-HK
   - 16-0490-HK
   - 16-0491-HK
   - 16-0493-HK
@@ -3776,6 +3370,7 @@ proxy-groups:
   - 16-0507-HK
   - 16-0508-HK
   - 16-0510-HK
+  - 16-0511-HK
   - 16-0512-HK
   - 16-0513-HK
   - 16-0514-HK
@@ -3790,7 +3385,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 10-0421-TW
+  - DIRECT
   filter: 台湾|TW|Tw|Taiwan|新北|彰化|CHT|HINET
 - name: JP
   type: url-test
@@ -3801,7 +3396,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 09-0399-JP
+  - 05-0022-JP
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
@@ -3829,8 +3424,7 @@ proxy-groups:
   - 04-0647-SG
   - 04-0649-SG
   - 04-0651-SG
-  - 09-0401-SG
-  - 09-0402-SG
+  - 10-0432-SG
   - 13-0480-SG
   - 17-0602-SG
   filter: (?i)新|狮城|SG|Singapore
@@ -3861,31 +3455,26 @@ proxy-groups:
   - 06-0125-US
   - 06-0127-US
   - 06-0128-US
-  - 06-0135-US
-  - 06-0141-US
-  - 06-0142-US
+  - 06-0133-US
   - 06-0145-US
+  - 06-0149-US
   - 06-0150-US
-  - 06-0154-US
   - 06-0156-US
   - 06-0157-US
+  - 06-0160-US
+  - 06-0161-US
   - 06-0163-US
-  - 06-0164-US
-  - 06-0165-US
   - 06-0167-US
   - 06-0169-US
   - 06-0170-US
   - 06-0172-US
   - 06-0174-US
-  - 06-0175-US
   - 06-0177-US
   - 06-0179-US
   - 06-0180-US
   - 06-0186-US
   - 06-0187-US
   - 06-0188-US
-  - 06-0190-US
-  - 06-0193-US
   - 06-0196-US
   - 07-0203-US
   - 07-0204-US
@@ -3912,7 +3501,8 @@ proxy-groups:
   - 07-0262-US
   - 07-0264-US
   - 07-0265-US
-  - 08-0299-US
+  - 08-0313-US
+  - 08-0326-US
   - 08-0333-US
   - 08-0347-US
   - 08-0354-US
@@ -3920,18 +3510,8 @@ proxy-groups:
   - 08-0357-US
   - 08-0358-US
   - 08-0361-US
-  - 08-0365-US
-  - 08-0366-US
   - 08-0367-US
   - 08-0369-US
-  - 09-0403-US
-  - 09-0404-US
-  - 09-0405-US
-  - 10-0436-US
-  - 10-0437-US
-  - 10-0452-US
-  - 10-0453-US
-  - 10-0462-US
   - 17-0555-US
   - 17-0574-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
