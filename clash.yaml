@@ -82,12 +82,12 @@ proxies:
   type: hysteria
   up: 20 Mbps
 - cipher: chacha20-ietf-poly1305
-  name: 05-0423-US
+  name: 05-0473-US
   password: zwBLM6bBE5YxvwvnKgxAq3ErXpqMYv20
   port: 443
   server: 185.193.48.157
   type: ss
-- name: 05-0424-RELAY
+- name: 05-0474-RELAY
   network: ws
   port: 2095
   server: itarmy.com.ua
@@ -117,6 +117,12 @@ proxies:
   password: passxzHDLxkZoSAzqgKyq24Z
   port: 31043
   server: solar-3xui-hel-40-002.devastation.ru
+  type: ss
+- cipher: aes-256-cfb
+  name: 06-0008-GB
+  password: amazonskr05
+  port: 443
+  server: 3.8.172.214
   type: ss
 - cipher: aes-256-cfb
   name: 06-0009-GB
@@ -181,6 +187,13 @@ proxies:
   port: 443
   server: 3.147.64.175
   type: ss
+- name: 06-0038-DE
+  password: 809f6ac6-74aa-462a-85a9-da93b6a0d6ff
+  port: 58338
+  server: lsdg1.lansecs.top
+  skip-cert-verify: true
+  sni: lsdg1.lansecs.top
+  type: hysteria2
 - name: 06-0090-RELAY
   network: ws
   port: 2096
@@ -220,12 +233,6 @@ proxies:
     headers:
       Host: xxy.wzzsl.dynv6.net
     path: /Telegram🇨🇳 %40WangCai2 /?ed=2560
-- cipher: aes-128-gcm
-  name: 06-0098-HK
-  password: I1qrYxOXxPYCOkhT
-  port: 50239
-  server: sg2.web3sp.com
-  type: ss
 - name: 06-0104-RELAY
   network: ws
   port: 2096
@@ -317,6 +324,13 @@ proxies:
     headers:
       Host: xxy.wzzsl.dynv6.net
     path: /Telegram🇨🇳 %40WangCai2 /?ed=2560
+- name: 06-0130-US
+  password: 0d53acc0-fe64-4fdc-9c8f-2ddc63faf6c3
+  port: 58338
+  server: lsus3.lansecs.top
+  skip-cert-verify: true
+  sni: lsus3.lansecs.top
+  type: hysteria2
 - name: 06-0132-US
   password: 94931862-1484-11f0-9ab7-f23c95b6f51d
   port: 1743
@@ -329,13 +343,6 @@ proxies:
   server: 5bedbab5-t3bpc0-t49cd4-4550.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
-- name: 06-0138-US
-  password: 447bf3c3-4a00-437a-9f60-801c968fd84f
-  port: 443
-  server: tuntro005.instconn.com
-  skip-cert-verify: true
-  sni: python.686911.xyz
-  type: trojan
 - name: 06-0139-US
   password: 16955d72-1794-11f0-a035-f23c95b6f51d
   port: 1743
@@ -354,10 +361,157 @@ proxies:
   server: e10829f0-t4un40-t9lb2a-1glq.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
-- name: 09-0237-RELAY
+- name: 07-0199-HK
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.98
+  skip-cert-verify: true
+  type: trojan
+- name: 07-0201-US
+  password: df7bed3c-06eb-11f0-8ebc-f23c93141fad
+  port: 1743
+  server: 57ac7353-t4x400-t9lxaa-1glq.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 50 Mbps
+  name: 07-0203-FR
+  port: 50011
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  type: hysteria
+  up: 20 Mbps
+- name: 07-0206-US
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 1743
+  server: bb441d0e-t4x400-t5waci-4550.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0207-US
+  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+  port: 1743
+  server: 3d2c11f1-t52o00-tdw2ye-2gok.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0208-US
+  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  port: 1743
+  server: 825eee23-t4un40-tcj7b6-d70y.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0210-US
+  password: 1b609740-eec2-11ef-8543-f23c93136cb3
+  port: 1743
+  server: c0a37350-t4x400-tdtx5w-au6.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0214-US
+  password: 6286105c-fb6d-11ef-be96-f23c93136cb3
+  port: 1743
+  server: 026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0215-US
+  password: 16955d72-1794-11f0-a035-f23c95b6f51d
+  port: 1743
+  server: fecc1dc4-t4v9c0-t5ht86-dnss.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0216-US
+  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+  port: 1743
+  server: c37b0be5-t3kyo0-t3lvgh-2gok.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0218-US
+  password: 712bdc36-24be-11ee-be53-f23c9313b177
+  port: 1743
+  server: ffe170b7-t4x400-tcl9of-5fdt.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0219-US
+  password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
+  port: 1743
+  server: dcc40639-t3cxs0-tcj7b6-d70y.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0220-US
+  password: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+  port: 1743
+  server: 6adab57e-t53wg0-tdvgqe-2gok.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- name: 07-0226-US
+  password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+  port: 1743
+  server: 67e01b04-t3dk00-tcm6ys-deip.la.shifen.uk
+  skip-cert-verify: true
+  type: hysteria2
+- cipher: aes-256-cfb
+  name: 08-0228-US
+  password: amazonskr05
+  port: 443
+  server: 3.141.46.88
+  type: ss
+- name: 08-0238-DE
+  network: tcp
+  port: 31783
+  server: 185.204.170.191
+  servername: 185.204.170.191
+  tls: false
+  type: vless
+  udp: true
+  uuid: 01bd02a8-4e8c-4d75-9c74-7a99c1d27d83
+- cipher: aes-256-cfb
+  name: 08-0256-DE
+  password: amazonskr05
+  port: 443
+  server: 54.93.193.217
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 08-0257-TR
+  network: tcp
+  port: 50475
+  server: 164.138.202.55
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b3bfb11c-43ff-41f3-9ba7-18b615baa134
+- cipher: chacha20-ietf-poly1305
+  name: 08-0266-SI
+  password: HfAiyrdFbKJuKIQkGjvJrDFefmH8YDSC
+  port: 443
+  server: 45.83.131.43
+  type: ss
+- name: 08-0283-FR
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.37.61.95
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+- name: 09-0348-JP
+  network: ws
+  port: 29876
+  server: 150.230.192.48
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0349-SG
   network: ws
   port: 443
-  server: cf-cname.xingpingcn.top
+  server: 45.77.35.218
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -367,10 +521,62 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0238-RELAY
+- name: 09-0350-SG
+  network: ws
+  port: 39738
+  server: 8.222.219.87
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0351-SG
+  network: ws
+  port: 5443
+  server: 185.223.207.115
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0352-US
+  network: ws
+  port: 20205
+  server: 74.207.243.49
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0353-AT
+  network: ws
+  port: 443
+  server: 94.177.8.19
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0354-US
   network: ws
   port: 2053
-  server: cmcmcm.cf.090227.xyz
+  server: 192.3.30.175
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -380,10 +586,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0239-RELAY
+- name: 09-0355-DE
   network: ws
-  port: 2096
-  server: mfa.gov.ua
+  port: 14362
+  server: 91.107.131.10
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -393,10 +599,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0240-RELAY
+- name: 09-0356-DE
   network: ws
-  port: 2083
-  server: store.ubi.com
+  port: 443
+  server: 172.104.251.126
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -406,10 +612,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0241-RELAY
+- name: 09-0357-DE
   network: ws
-  port: 2096
-  server: www.shopify.com
+  port: 20205
+  server: 172.105.65.179
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -419,10 +625,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0242-RELAY
+- name: 09-0358-IT
   network: ws
-  port: 2083
-  server: staticdelivery.nexusmods.com
+  port: 443
+  server: 45.128.37.133
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -432,10 +638,36 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0243-RELAY
+- name: 09-0359-DE
+  network: ws
+  port: 20205
+  server: 139.144.181.39
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0360-FR
+  network: ws
+  port: 8443
+  server: 141.94.221.119
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0361-FR
   network: ws
   port: 2053
-  server: cloudflare-dl.byoip.top
+  server: 51.38.48.91
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -445,10 +677,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0244-RELAY
+- name: 09-0362-CH
   network: ws
-  port: 2087
-  server: saas.sin.fan
+  port: 443
+  server: 38.180.84.46
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -458,10 +690,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0245-RELAY
+- name: 09-0363-NL
   network: ws
-  port: 2087
-  server: cloudflare-dl.cnae.top
+  port: 6555
+  server: 209.250.252.208
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -471,10 +703,10 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0246-RELAY
+- name: 09-0364-PL
   network: ws
-  port: 2096
-  server: cfsaas.080112.xyz
+  port: 443
+  server: 37.252.6.119
   servername: snippet.danfeng.eu.org
   tls: true
   type: vless
@@ -484,7 +716,33 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0247-KR
+- name: 09-0365-RU
+  network: ws
+  port: 443
+  server: 93.183.81.158
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0366-IL
+  network: ws
+  port: 8443
+  server: 212.80.205.244
+  servername: snippet.danfeng.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.eu.org
+    path: /?ed=2560
+- name: 09-0475-KR
   network: ws
   port: 12696
   server: 115.40.244.240
@@ -497,7 +755,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0248-PH
+- name: 09-0476-PH
   network: ws
   port: 2053
   server: 61.245.11.69
@@ -510,7 +768,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0249-SG
+- name: 09-0477-SG
   network: ws
   port: 39738
   server: 8.219.65.35
@@ -523,7 +781,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0250-SG
+- name: 09-0478-SG
   network: ws
   port: 20205
   server: 139.177.185.196
@@ -536,7 +794,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0251-US
+- name: 09-0479-US
   network: ws
   port: 50008
   server: 129.146.81.170
@@ -549,7 +807,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0252-US
+- name: 09-0480-US
   network: ws
   port: 443
   server: 91.245.252.45
@@ -562,7 +820,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0253-AT
+- name: 09-0481-AT
   network: ws
   port: 443
   server: 94.177.8.31
@@ -575,7 +833,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0254-DE
+- name: 09-0482-DE
   network: ws
   port: 443
   server: 217.160.216.30
@@ -588,7 +846,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0255-DE
+- name: 09-0483-DE
   network: ws
   port: 443
   server: 172.105.250.191
@@ -601,7 +859,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0256-DE
+- name: 09-0484-DE
   network: ws
   port: 20205
   server: 172.104.158.230
@@ -614,7 +872,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0257-DE
+- name: 09-0485-DE
   network: ws
   port: 20205
   server: 139.144.77.159
@@ -627,7 +885,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0258-FR
+- name: 09-0486-FR
   network: ws
   port: 2053
   server: 135.125.234.160
@@ -640,7 +898,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0259-DE
+- name: 09-0487-DE
   network: ws
   port: 443
   server: 49.12.210.182
@@ -653,7 +911,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0260-FR
+- name: 09-0488-FR
   network: ws
   port: 2053
   server: 141.94.220.64
@@ -666,7 +924,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0261-FR
+- name: 09-0489-FR
   network: ws
   port: 2053
   server: 141.94.220.57
@@ -679,7 +937,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0262-FI
+- name: 09-0490-FI
   network: ws
   port: 443
   server: 95.216.140.177
@@ -692,7 +950,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0263-FI
+- name: 09-0491-FI
   network: ws
   port: 2053
   server: 135.181.249.212
@@ -705,7 +963,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0264-NL
+- name: 09-0492-NL
   network: ws
   port: 2053
   server: 164.90.194.71
@@ -718,7 +976,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0265-RU
+- name: 09-0493-RU
   network: ws
   port: 2053
   server: 5.129.241.155
@@ -731,7 +989,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0266-RU
+- name: 09-0494-RU
   network: ws
   port: 443
   server: 217.198.13.100
@@ -744,7 +1002,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0437-RU
+- name: 09-0495-RU
   network: ws
   port: 2053
   server: 82.97.249.34
@@ -757,7 +1015,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0438-LV
+- name: 09-0496-LV
   network: ws
   port: 2053
   server: 195.123.212.222
@@ -770,7 +1028,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0439-FI
+- name: 09-0497-FI
   network: ws
   port: 2053
   server: 95.182.99.170
@@ -783,7 +1041,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0440-CA
+- name: 09-0498-CA
   network: ws
   port: 3030
   server: 149.248.62.201
@@ -796,7 +1054,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0441-DE
+- name: 09-0499-DE
   network: ws
   port: 8443
   server: 80.66.85.115
@@ -809,7 +1067,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0442-DE
+- name: 09-0500-DE
   network: ws
   port: 8443
   server: 206.189.250.230
@@ -822,7 +1080,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0443-DE
+- name: 09-0501-DE
   network: ws
   port: 20205
   server: 139.162.155.147
@@ -835,7 +1093,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0444-ES
+- name: 09-0502-ES
   network: ws
   port: 443
   server: 65.20.99.180
@@ -848,7 +1106,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0445-MD
+- name: 09-0503-MD
   network: ws
   port: 2053
   server: 94.131.117.4
@@ -861,7 +1119,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0446-US
+- name: 09-0504-US
   network: ws
   port: 2053
   server: 194.113.211.115
@@ -874,7 +1132,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0447-MY
+- name: 09-0505-MY
   network: ws
   port: 39738
   server: 47.250.48.35
@@ -887,7 +1145,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0448-NL
+- name: 09-0506-NL
   network: ws
   port: 443
   server: 103.90.73.117
@@ -900,7 +1158,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0449-FI
+- name: 09-0507-FI
   network: ws
   port: 2053
   server: 46.8.238.49
@@ -913,7 +1171,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0450-LV
+- name: 09-0508-LV
   network: ws
   port: 443
   server: 216.173.70.192
@@ -926,20 +1184,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0451-HK
-  network: ws
-  port: 39738
-  server: 8.217.139.122
-  servername: snippet.danfeng.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: cef7e6ae-078d-42d4-8283-6aacb9128b5a
-  ws-opts:
-    headers:
-      Host: snippet.danfeng.eu.org
-    path: /?ed=2560
-- name: 09-0452-TH
+- name: 09-0510-TH
   network: ws
   port: 443
   server: 43.133.110.81
@@ -952,7 +1197,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0453-SG
+- name: 09-0511-SG
   network: ws
   port: 8443
   server: 159.65.138.96
@@ -965,7 +1210,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0454-SG
+- name: 09-0512-SG
   network: ws
   port: 39738
   server: 43.160.196.64
@@ -978,7 +1223,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0455-US
+- name: 09-0513-US
   network: ws
   port: 443
   server: 150.136.176.65
@@ -991,7 +1236,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0456-US
+- name: 09-0514-US
   network: ws
   port: 443
   server: 47.251.176.161
@@ -1004,7 +1249,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0457-DE
+- name: 09-0515-DE
   network: ws
   port: 20205
   server: 45.79.248.7
@@ -1017,7 +1262,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0458-DE
+- name: 09-0516-DE
   network: ws
   port: 20205
   server: 172.105.67.238
@@ -1030,7 +1275,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0459-FR
+- name: 09-0517-FR
   network: ws
   port: 2053
   server: 51.195.42.173
@@ -1043,7 +1288,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0460-DE
+- name: 09-0518-DE
   network: ws
   port: 443
   server: 18.196.70.197
@@ -1056,7 +1301,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0461-FR
+- name: 09-0519-FR
   network: ws
   port: 8443
   server: 95.182.96.30
@@ -1069,7 +1314,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0462-FR
+- name: 09-0520-FR
   network: ws
   port: 8443
   server: 141.94.204.206
@@ -1082,7 +1327,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0463-FR
+- name: 09-0521-FR
   network: ws
   port: 8443
   server: 141.94.70.243
@@ -1095,7 +1340,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0464-FI
+- name: 09-0522-FI
   network: ws
   port: 443
   server: 135.181.195.12
@@ -1108,7 +1353,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0465-FI
+- name: 09-0523-FI
   network: ws
   port: 8443
   server: 135.181.249.212
@@ -1121,7 +1366,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0466-SG
+- name: 09-0524-SG
   network: ws
   port: 39738
   server: 43.160.250.162
@@ -1134,7 +1379,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0467-SG
+- name: 09-0525-SG
   network: ws
   port: 8443
   server: 139.162.4.242
@@ -1147,7 +1392,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0468-SG
+- name: 09-0526-SG
   network: ws
   port: 16444
   server: 207.148.121.53
@@ -1160,7 +1405,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0469-SG
+- name: 09-0527-SG
   network: ws
   port: 2443
   server: 139.180.136.32
@@ -1173,7 +1418,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0470-US
+- name: 09-0528-US
   network: ws
   port: 17750
   server: 173.249.210.53
@@ -1186,7 +1431,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0471-US
+- name: 09-0529-US
   network: ws
   port: 58869
   server: 146.235.209.40
@@ -1199,7 +1444,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0472-FR
+- name: 09-0530-FR
   network: ws
   port: 2053
   server: 54.37.64.120
@@ -1212,7 +1457,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0473-DE
+- name: 09-0531-DE
   network: ws
   port: 20205
   server: 172.105.72.217
@@ -1225,7 +1470,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0474-DE
+- name: 09-0532-DE
   network: ws
   port: 20205
   server: 172.104.251.126
@@ -1238,7 +1483,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0475-US
+- name: 09-0533-US
   network: ws
   port: 1001
   server: 68.183.149.43
@@ -1251,7 +1496,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0476-NL
+- name: 09-0534-NL
   network: ws
   port: 443
   server: 77.238.237.179
@@ -1264,7 +1509,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0477-FR
+- name: 09-0535-FR
   network: ws
   port: 8443
   server: 146.59.19.208
@@ -1277,7 +1522,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0478-RU
+- name: 09-0536-RU
   network: ws
   port: 8443
   server: 213.226.126.183
@@ -1290,7 +1535,7 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
-- name: 09-0479-IL
+- name: 09-0537-IL
   network: ws
   port: 2053
   server: 77.91.74.150
@@ -1303,9 +1548,15 @@ proxies:
     headers:
       Host: snippet.danfeng.eu.org
     path: /?ed=2560
+- cipher: aes-128-gcm
+  name: 10-0382-HK
+  password: I1qrYxOXxPYCOkhT
+  port: 50439
+  server: tw2.web3sp.com
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 10-0296-KR
+  name: 10-0538-KR
   network: ws
   port: 2087
   server: lv4.789900.xyz
@@ -1316,17 +1567,11 @@ proxies:
   uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
   ws-opts:
     path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
-- name: 10-0301-HK
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.129
-  skip-cert-verify: true
-  type: trojan
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 10-0322-NL
+  name: 10-0539-NL
   port: 48429
   protocol: udp
   server: 109.104.154.97
@@ -1337,51 +1582,75 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 10-0325-FR
+  name: 10-0540-FR
   port: 15010
   protocol: udp
   server: 195.154.200.40
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- cipher: aes-128-gcm
-  name: 10-0326-HK
-  password: I1qrYxOXxPYCOkhT
-  port: 50709
-  server: au1.web3sp.com
-  type: ss
-- name: 17-0358-RELAY
+- name: 17-0390-RELAY
   network: ws
-  port: 8880
-  server: host17.sheydayeman.nl
-  servername: host17.sheydayeman.nl
-  tls: false
+  port: 443
+  server: www.speedtest.net
+  servername: gb-8981.shenzogmbh.com
+  tls: true
   type: vless
   udp: true
-  uuid: 8bc1deee-1136-4533-f5d0-0b5751803107
+  uuid: 5ec3a039-ea63-4bf9-a848-a65c9bfa66f5
   ws-opts:
     headers:
-      Host: host17.sheydayeman.nl
-    path: /
+      Host: gb-8981.shenzogmbh.com
+    path: /api/v1
 - cipher: chacha20-ietf-poly1305
-  name: 17-0370-CY
+  name: 17-0395-LT
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0421-CY
   password: VnSL5YmYusDmMsUV2Y9dh7
   port: 39447
   server: 45.12.150.199
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 17-0380-US
+  name: 17-0423-US
+  password: akvJQzZCaTdisSyuSy3aRmyvKC53X1d3PaAsb9xU8n5TY9hSB1DK5e6SPm921igHcRsCTCvf1pWufTJ5Li8PiiQG4vYdyyM7
+  port: 40565
+  server: imap.roomyinmita.name
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0425-US
+  password: zPbZwy4CsNmSmhGYjoUW47iRgnK7US3cZ9g7o5YefnnTAMzk74upYV8k29XdQaefPwGM7HAmhvqLXSovVA1HH8L8podSAZ3X
+  port: 40565
+  server: imap.roomyinmita.name
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0426-US
+  password: 2AJogKuFsiVa5SrhD7vPn8P28se9DBAT564XTGDnE9h5HZPh593bzJRxYavWzryacr6CAN5nHFm8RpsHfqRnasyhbsRzY4Np
+  port: 40565
+  server: imap.roomyinmita.name
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0427-US
+  password: ivQYTiSyUGyRiVhqcbaEtMjXC8djrscPbnhjnU9oTEuVwh6LhJSkQNYjxtKx5X2iRRCJHu7e3UFwW9S9iAyhP2rX6ot6Lc7x
+  port: 40565
+  server: imap.roomyinmita.name
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0431-US
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 104.192.226.106
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 17-0381-SE
+  name: 17-0432-SE
   password: e0AuSSE9kqrZnpK1RgcuPt
   port: 50589
   server: 78.40.116.11
   type: ss
-- name: 17-0382-US
+- name: 17-0433-US
   network: ws
   port: 2096
   server: 198.71.191.253
@@ -1395,24 +1664,30 @@ proxies:
       Host: fast01.0860852.xyz
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 17-0384-CY
+  name: 17-0435-CY
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 134.255.210.49
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 17-0387-CR
+  name: 17-0437-US
+  password: QLXkEq597i3oGAGzjE4qS64uPGhjxWpPiqwwBArKbsqYPUNpQBwdgHL6KoDSRGE9bjSdn3p4UaDYMVm6s1wMoifavnirR5N8
+  port: 40565
+  server: imap.roomyinmita.name
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17-0438-CR
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 145.14.131.37
   type: ss
-- cipher: aes-256-gcm
-  name: 17-0398-SG
-  password: bd080898-b41a-48ae-b164-1baae4124627
-  port: 8443
-  server: 15.235.186.140
+- cipher: chacha20-ietf-poly1305
+  name: 17-0450-BH
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 38.54.2.182
   type: ss
-- name: 17-0403-FR
+- name: 17-0454-FR
   network: tcp
   port: 37096
   server: vpn-srv-2.circlevpn.net
@@ -1421,44 +1696,19 @@ proxies:
   type: vless
   udp: true
   uuid: c30ec165-fcb4-47af-8e68-70d88a3b2910
-- cipher: chacha20-ietf-poly1305
-  name: 17-0415-NL
-  password: RFK38Cg7APneSB5cWDcpbm
-  port: 443
-  server: 92.112.126.90
-  type: ss
 - flow: xtls-rprx-vision
-  name: 17-0416-DE
+  name: 17-0470-MD
   network: tcp
   port: 443
   reality-opts:
-    public-key: y_AlGiUJiCRWCT8FyrfUm-Cmpm0bl0cSUMRP3VZ9X0I
-    short-id: 89dbda1a1c9369
-  server: 64.188.70.0
-  servername: google.com
+    public-key: LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw
+    short-id: 81e0b568
+  server: 94.131.104.178
+  servername: latvia6.clearorbitllc.com
   tls: true
   type: vless
   udp: true
-  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
-- flow: xtls-rprx-vision
-  name: 17-0417-DE
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: y_AlGiUJiCRWCT8FyrfUm-Cmpm0bl0cSUMRP3VZ9X0I
-    short-id: 89dbda1a1c9369
-  server: de.nitroo-tech.ru
-  servername: google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
-- cipher: chacha20-ietf-poly1305
-  name: 17-0480-DE
-  password: LVBYRkSkHlTqebSJrGc2C7
-  port: 443
-  server: 81.19.141.45
-  type: ss
+  uuid: d5c1b5d7-055b-4457-bc3a-6e99919c1bcb
 proxy-groups:
 - name: PROXY
   type: select
@@ -1476,11 +1726,12 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0002-NL
-  - 05-0423-US
-  - 05-0424-RELAY
+  - 05-0473-US
+  - 05-0474-RELAY
   - 06-0005-CA
   - 06-0006-BG
   - 06-0007-FI
+  - 06-0008-GB
   - 06-0009-GB
   - 06-0010-GB
   - 06-0011-GB
@@ -1491,10 +1742,10 @@ proxy-groups:
   - 06-0017-DE
   - 06-0018-CA
   - 06-0019-US
+  - 06-0038-DE
   - 06-0090-RELAY
   - 06-0091-RELAY
   - 06-0092-RELAY
-  - 06-0098-HK
   - 06-0104-RELAY
   - 06-0105-RELAY
   - 06-0108-RELAY
@@ -1502,103 +1753,133 @@ proxy-groups:
   - 06-0116-RELAY
   - 06-0117-RELAY
   - 06-0118-RELAY
+  - 06-0130-US
   - 06-0132-US
   - 06-0134-US
-  - 06-0138-US
   - 06-0139-US
   - 06-0143-US
   - 06-0145-US
-  - 09-0237-RELAY
-  - 09-0238-RELAY
-  - 09-0239-RELAY
-  - 09-0240-RELAY
-  - 09-0241-RELAY
-  - 09-0242-RELAY
-  - 09-0243-RELAY
-  - 09-0244-RELAY
-  - 09-0245-RELAY
-  - 09-0246-RELAY
-  - 09-0247-KR
-  - 09-0248-PH
-  - 09-0249-SG
-  - 09-0250-SG
-  - 09-0251-US
-  - 09-0252-US
-  - 09-0253-AT
-  - 09-0254-DE
-  - 09-0255-DE
-  - 09-0256-DE
-  - 09-0257-DE
-  - 09-0258-FR
-  - 09-0259-DE
-  - 09-0260-FR
-  - 09-0261-FR
-  - 09-0262-FI
-  - 09-0263-FI
-  - 09-0264-NL
-  - 09-0265-RU
-  - 09-0266-RU
-  - 09-0437-RU
-  - 09-0438-LV
-  - 09-0439-FI
-  - 09-0440-CA
-  - 09-0441-DE
-  - 09-0442-DE
-  - 09-0443-DE
-  - 09-0444-ES
-  - 09-0445-MD
-  - 09-0446-US
-  - 09-0447-MY
-  - 09-0448-NL
-  - 09-0449-FI
-  - 09-0450-LV
-  - 09-0451-HK
-  - 09-0452-TH
-  - 09-0453-SG
-  - 09-0454-SG
-  - 09-0455-US
-  - 09-0456-US
-  - 09-0457-DE
-  - 09-0458-DE
-  - 09-0459-FR
-  - 09-0460-DE
-  - 09-0461-FR
-  - 09-0462-FR
-  - 09-0463-FR
-  - 09-0464-FI
-  - 09-0465-FI
-  - 09-0466-SG
-  - 09-0467-SG
-  - 09-0468-SG
-  - 09-0469-SG
-  - 09-0470-US
-  - 09-0471-US
-  - 09-0472-FR
-  - 09-0473-DE
-  - 09-0474-DE
-  - 09-0475-US
-  - 09-0476-NL
-  - 09-0477-FR
-  - 09-0478-RU
-  - 09-0479-IL
-  - 10-0296-KR
-  - 10-0301-HK
-  - 10-0322-NL
-  - 10-0325-FR
-  - 10-0326-HK
-  - 17-0358-RELAY
-  - 17-0370-CY
-  - 17-0380-US
-  - 17-0381-SE
-  - 17-0382-US
-  - 17-0384-CY
-  - 17-0387-CR
-  - 17-0398-SG
-  - 17-0403-FR
-  - 17-0415-NL
-  - 17-0416-DE
-  - 17-0417-DE
-  - 17-0480-DE
+  - 07-0199-HK
+  - 07-0201-US
+  - 07-0203-FR
+  - 07-0206-US
+  - 07-0207-US
+  - 07-0208-US
+  - 07-0210-US
+  - 07-0214-US
+  - 07-0215-US
+  - 07-0216-US
+  - 07-0218-US
+  - 07-0219-US
+  - 07-0220-US
+  - 07-0226-US
+  - 08-0228-US
+  - 08-0238-DE
+  - 08-0256-DE
+  - 08-0257-TR
+  - 08-0266-SI
+  - 08-0283-FR
+  - 09-0348-JP
+  - 09-0349-SG
+  - 09-0350-SG
+  - 09-0351-SG
+  - 09-0352-US
+  - 09-0353-AT
+  - 09-0354-US
+  - 09-0355-DE
+  - 09-0356-DE
+  - 09-0357-DE
+  - 09-0358-IT
+  - 09-0359-DE
+  - 09-0360-FR
+  - 09-0361-FR
+  - 09-0362-CH
+  - 09-0363-NL
+  - 09-0364-PL
+  - 09-0365-RU
+  - 09-0366-IL
+  - 09-0475-KR
+  - 09-0476-PH
+  - 09-0477-SG
+  - 09-0478-SG
+  - 09-0479-US
+  - 09-0480-US
+  - 09-0481-AT
+  - 09-0482-DE
+  - 09-0483-DE
+  - 09-0484-DE
+  - 09-0485-DE
+  - 09-0486-FR
+  - 09-0487-DE
+  - 09-0488-FR
+  - 09-0489-FR
+  - 09-0490-FI
+  - 09-0491-FI
+  - 09-0492-NL
+  - 09-0493-RU
+  - 09-0494-RU
+  - 09-0495-RU
+  - 09-0496-LV
+  - 09-0497-FI
+  - 09-0498-CA
+  - 09-0499-DE
+  - 09-0500-DE
+  - 09-0501-DE
+  - 09-0502-ES
+  - 09-0503-MD
+  - 09-0504-US
+  - 09-0505-MY
+  - 09-0506-NL
+  - 09-0507-FI
+  - 09-0508-LV
+  - 09-0510-TH
+  - 09-0511-SG
+  - 09-0512-SG
+  - 09-0513-US
+  - 09-0514-US
+  - 09-0515-DE
+  - 09-0516-DE
+  - 09-0517-FR
+  - 09-0518-DE
+  - 09-0519-FR
+  - 09-0520-FR
+  - 09-0521-FR
+  - 09-0522-FI
+  - 09-0523-FI
+  - 09-0524-SG
+  - 09-0525-SG
+  - 09-0526-SG
+  - 09-0527-SG
+  - 09-0528-US
+  - 09-0529-US
+  - 09-0530-FR
+  - 09-0531-DE
+  - 09-0532-DE
+  - 09-0533-US
+  - 09-0534-NL
+  - 09-0535-FR
+  - 09-0536-RU
+  - 09-0537-IL
+  - 10-0382-HK
+  - 10-0538-KR
+  - 10-0539-NL
+  - 10-0540-FR
+  - 17-0390-RELAY
+  - 17-0395-LT
+  - 17-0421-CY
+  - 17-0423-US
+  - 17-0425-US
+  - 17-0426-US
+  - 17-0427-US
+  - 17-0431-US
+  - 17-0432-SE
+  - 17-0433-US
+  - 17-0435-CY
+  - 17-0437-US
+  - 17-0438-CR
+  - 17-0450-BH
+  - 17-0454-FR
+  - 17-0470-MD
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1621,11 +1902,12 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0002-NL
-  - 05-0423-US
-  - 05-0424-RELAY
+  - 05-0473-US
+  - 05-0474-RELAY
   - 06-0005-CA
   - 06-0006-BG
   - 06-0007-FI
+  - 06-0008-GB
   - 06-0009-GB
   - 06-0010-GB
   - 06-0011-GB
@@ -1636,10 +1918,10 @@ proxy-groups:
   - 06-0017-DE
   - 06-0018-CA
   - 06-0019-US
+  - 06-0038-DE
   - 06-0090-RELAY
   - 06-0091-RELAY
   - 06-0092-RELAY
-  - 06-0098-HK
   - 06-0104-RELAY
   - 06-0105-RELAY
   - 06-0108-RELAY
@@ -1647,103 +1929,133 @@ proxy-groups:
   - 06-0116-RELAY
   - 06-0117-RELAY
   - 06-0118-RELAY
+  - 06-0130-US
   - 06-0132-US
   - 06-0134-US
-  - 06-0138-US
   - 06-0139-US
   - 06-0143-US
   - 06-0145-US
-  - 09-0237-RELAY
-  - 09-0238-RELAY
-  - 09-0239-RELAY
-  - 09-0240-RELAY
-  - 09-0241-RELAY
-  - 09-0242-RELAY
-  - 09-0243-RELAY
-  - 09-0244-RELAY
-  - 09-0245-RELAY
-  - 09-0246-RELAY
-  - 09-0247-KR
-  - 09-0248-PH
-  - 09-0249-SG
-  - 09-0250-SG
-  - 09-0251-US
-  - 09-0252-US
-  - 09-0253-AT
-  - 09-0254-DE
-  - 09-0255-DE
-  - 09-0256-DE
-  - 09-0257-DE
-  - 09-0258-FR
-  - 09-0259-DE
-  - 09-0260-FR
-  - 09-0261-FR
-  - 09-0262-FI
-  - 09-0263-FI
-  - 09-0264-NL
-  - 09-0265-RU
-  - 09-0266-RU
-  - 09-0437-RU
-  - 09-0438-LV
-  - 09-0439-FI
-  - 09-0440-CA
-  - 09-0441-DE
-  - 09-0442-DE
-  - 09-0443-DE
-  - 09-0444-ES
-  - 09-0445-MD
-  - 09-0446-US
-  - 09-0447-MY
-  - 09-0448-NL
-  - 09-0449-FI
-  - 09-0450-LV
-  - 09-0451-HK
-  - 09-0452-TH
-  - 09-0453-SG
-  - 09-0454-SG
-  - 09-0455-US
-  - 09-0456-US
-  - 09-0457-DE
-  - 09-0458-DE
-  - 09-0459-FR
-  - 09-0460-DE
-  - 09-0461-FR
-  - 09-0462-FR
-  - 09-0463-FR
-  - 09-0464-FI
-  - 09-0465-FI
-  - 09-0466-SG
-  - 09-0467-SG
-  - 09-0468-SG
-  - 09-0469-SG
-  - 09-0470-US
-  - 09-0471-US
-  - 09-0472-FR
-  - 09-0473-DE
-  - 09-0474-DE
-  - 09-0475-US
-  - 09-0476-NL
-  - 09-0477-FR
-  - 09-0478-RU
-  - 09-0479-IL
-  - 10-0296-KR
-  - 10-0301-HK
-  - 10-0322-NL
-  - 10-0325-FR
-  - 10-0326-HK
-  - 17-0358-RELAY
-  - 17-0370-CY
-  - 17-0380-US
-  - 17-0381-SE
-  - 17-0382-US
-  - 17-0384-CY
-  - 17-0387-CR
-  - 17-0398-SG
-  - 17-0403-FR
-  - 17-0415-NL
-  - 17-0416-DE
-  - 17-0417-DE
-  - 17-0480-DE
+  - 07-0199-HK
+  - 07-0201-US
+  - 07-0203-FR
+  - 07-0206-US
+  - 07-0207-US
+  - 07-0208-US
+  - 07-0210-US
+  - 07-0214-US
+  - 07-0215-US
+  - 07-0216-US
+  - 07-0218-US
+  - 07-0219-US
+  - 07-0220-US
+  - 07-0226-US
+  - 08-0228-US
+  - 08-0238-DE
+  - 08-0256-DE
+  - 08-0257-TR
+  - 08-0266-SI
+  - 08-0283-FR
+  - 09-0348-JP
+  - 09-0349-SG
+  - 09-0350-SG
+  - 09-0351-SG
+  - 09-0352-US
+  - 09-0353-AT
+  - 09-0354-US
+  - 09-0355-DE
+  - 09-0356-DE
+  - 09-0357-DE
+  - 09-0358-IT
+  - 09-0359-DE
+  - 09-0360-FR
+  - 09-0361-FR
+  - 09-0362-CH
+  - 09-0363-NL
+  - 09-0364-PL
+  - 09-0365-RU
+  - 09-0366-IL
+  - 09-0475-KR
+  - 09-0476-PH
+  - 09-0477-SG
+  - 09-0478-SG
+  - 09-0479-US
+  - 09-0480-US
+  - 09-0481-AT
+  - 09-0482-DE
+  - 09-0483-DE
+  - 09-0484-DE
+  - 09-0485-DE
+  - 09-0486-FR
+  - 09-0487-DE
+  - 09-0488-FR
+  - 09-0489-FR
+  - 09-0490-FI
+  - 09-0491-FI
+  - 09-0492-NL
+  - 09-0493-RU
+  - 09-0494-RU
+  - 09-0495-RU
+  - 09-0496-LV
+  - 09-0497-FI
+  - 09-0498-CA
+  - 09-0499-DE
+  - 09-0500-DE
+  - 09-0501-DE
+  - 09-0502-ES
+  - 09-0503-MD
+  - 09-0504-US
+  - 09-0505-MY
+  - 09-0506-NL
+  - 09-0507-FI
+  - 09-0508-LV
+  - 09-0510-TH
+  - 09-0511-SG
+  - 09-0512-SG
+  - 09-0513-US
+  - 09-0514-US
+  - 09-0515-DE
+  - 09-0516-DE
+  - 09-0517-FR
+  - 09-0518-DE
+  - 09-0519-FR
+  - 09-0520-FR
+  - 09-0521-FR
+  - 09-0522-FI
+  - 09-0523-FI
+  - 09-0524-SG
+  - 09-0525-SG
+  - 09-0526-SG
+  - 09-0527-SG
+  - 09-0528-US
+  - 09-0529-US
+  - 09-0530-FR
+  - 09-0531-DE
+  - 09-0532-DE
+  - 09-0533-US
+  - 09-0534-NL
+  - 09-0535-FR
+  - 09-0536-RU
+  - 09-0537-IL
+  - 10-0382-HK
+  - 10-0538-KR
+  - 10-0539-NL
+  - 10-0540-FR
+  - 17-0390-RELAY
+  - 17-0395-LT
+  - 17-0421-CY
+  - 17-0423-US
+  - 17-0425-US
+  - 17-0426-US
+  - 17-0427-US
+  - 17-0431-US
+  - 17-0432-SE
+  - 17-0433-US
+  - 17-0435-CY
+  - 17-0437-US
+  - 17-0438-CR
+  - 17-0450-BH
+  - 17-0454-FR
+  - 17-0470-MD
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1753,10 +2065,8 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 06-0098-HK
-  - 09-0451-HK
-  - 10-0301-HK
-  - 10-0326-HK
+  - 07-0199-HK
+  - 10-0382-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -1778,7 +2088,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - DIRECT
+  - 09-0348-JP
   filter: (?i)日|东京|大阪|JP|Japan|Tokyo|Osaka|Saitama
 - name: SG
   type: url-test
@@ -1789,15 +2099,17 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 09-0249-SG
-  - 09-0250-SG
-  - 09-0453-SG
-  - 09-0454-SG
-  - 09-0466-SG
-  - 09-0467-SG
-  - 09-0468-SG
-  - 09-0469-SG
-  - 17-0398-SG
+  - 09-0349-SG
+  - 09-0350-SG
+  - 09-0351-SG
+  - 09-0477-SG
+  - 09-0478-SG
+  - 09-0511-SG
+  - 09-0512-SG
+  - 09-0524-SG
+  - 09-0525-SG
+  - 09-0526-SG
+  - 09-0527-SG
   filter: (?i)新|狮城|SG|Singapore
 - name: US
   type: url-test
@@ -1808,24 +2120,44 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 05-0423-US
+  - 05-0473-US
   - 06-0019-US
+  - 06-0130-US
   - 06-0132-US
   - 06-0134-US
-  - 06-0138-US
   - 06-0139-US
   - 06-0143-US
   - 06-0145-US
-  - 09-0251-US
-  - 09-0252-US
-  - 09-0446-US
-  - 09-0455-US
-  - 09-0456-US
-  - 09-0470-US
-  - 09-0471-US
-  - 09-0475-US
-  - 17-0380-US
-  - 17-0382-US
+  - 07-0201-US
+  - 07-0206-US
+  - 07-0207-US
+  - 07-0208-US
+  - 07-0210-US
+  - 07-0214-US
+  - 07-0215-US
+  - 07-0216-US
+  - 07-0218-US
+  - 07-0219-US
+  - 07-0220-US
+  - 07-0226-US
+  - 08-0228-US
+  - 09-0352-US
+  - 09-0354-US
+  - 09-0479-US
+  - 09-0480-US
+  - 09-0504-US
+  - 09-0513-US
+  - 09-0514-US
+  - 09-0528-US
+  - 09-0529-US
+  - 09-0533-US
+  - 17-0423-US
+  - 17-0425-US
+  - 17-0426-US
+  - 17-0427-US
+  - 17-0431-US
+  - 17-0433-US
+  - 17-0437-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
