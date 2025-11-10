@@ -84,12 +84,12 @@ proxies:
       Host: 13.204.17.137
     path: /news
 - cipher: aes-256-cfb
-  name: 05-0402-FR
+  name: 05-0409-FR
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 195.154.119.77
   type: ss
-- name: 05-0403-RELAY
+- name: 05-0410-RELAY
   network: ws
   port: 443
   server: time.is
@@ -106,14 +106,14 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 05-0404-FR
+  name: 05-0411-FR
   port: 35511
   protocol: udp
   server: 62.210.10.186
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- name: 05-0405-RELAY
+- name: 05-0412-RELAY
   network: ws
   port: 443
   server: ium3uojslvj2shb1yh8zu7etc34vmyfb.z8f5hmu0ue.workers.dev
@@ -127,7 +127,7 @@ proxies:
       Host: pmlmyazd.pages.dev
     path: /XqtZ2JB0WH2bmNOL
 - cipher: chacha20-ietf-poly1305
-  name: 05-0406-NL
+  name: 05-0413-NL
   password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
   port: 443
   server: 51.158.204.165
@@ -178,11 +178,11 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0000-IN
-  - 05-0402-FR
-  - 05-0403-RELAY
-  - 05-0404-FR
-  - 05-0405-RELAY
-  - 05-0406-NL
+  - 05-0409-FR
+  - 05-0410-RELAY
+  - 05-0411-FR
+  - 05-0412-RELAY
+  - 05-0413-NL
   - 06-0022-HK
   - 06-0024-FI
   - 06-0034-CA
@@ -208,11 +208,11 @@ proxy-groups:
   filter: .*
   proxies:
   - 05-0000-IN
-  - 05-0402-FR
-  - 05-0403-RELAY
-  - 05-0404-FR
-  - 05-0405-RELAY
-  - 05-0406-NL
+  - 05-0409-FR
+  - 05-0410-RELAY
+  - 05-0411-FR
+  - 05-0412-RELAY
+  - 05-0413-NL
   - 06-0022-HK
   - 06-0024-FI
   - 06-0034-CA
