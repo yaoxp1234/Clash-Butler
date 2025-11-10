@@ -97,7 +97,7 @@ proxies:
       Host: a.azadnet002.ddns-ip.net
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: 05-0413-GB
+  name: 05-0416-GB
   password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
   port: 443
   server: 45.14.245.2
@@ -106,14 +106,14 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 05-0414-FR
+  name: 05-0417-FR
   port: 35511
   protocol: udp
   server: 62.210.10.186
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- name: 05-0415-RELAY
+- name: 05-0418-RELAY
   network: ws
   port: 443
   server: ium3uojslvj2shb1yh8zu7etc34vmyfb.z8f5hmu0ue.workers.dev
@@ -127,18 +127,11 @@ proxies:
       Host: pmlmyazd.pages.dev
     path: /XqtZ2JB0WH2bmNOL
 - cipher: chacha20-ietf-poly1305
-  name: 05-0416-NL
+  name: 05-0419-NL
   password: 0KDTVV9wFm2pvQUnQftJDWgXbaY8kIfG
   port: 443
   server: 51.158.204.165
   type: ss
-- name: 06-0027-HK
-  password: BxceQaOe
-  port: 443
-  server: 203.198.122.129
-  skip-cert-verify: true
-  sni: 203.198.122.129
-  type: trojan
 - alpn:
   - h3
   name: 06-0042-CA
@@ -160,20 +153,6 @@ proxies:
   server: 58.152.46.98
   skip-cert-verify: true
   type: trojan
-- name: 06-0088-HK
-  password: 5938684e-e2d8-4127-a10f-b83faa0299cc
-  port: 58338
-  server: 45.149.92.33
-  skip-cert-verify: true
-  sni: lsxg1.lansecs.top
-  type: hysteria2
-- name: 06-0093-HK
-  password: 4f32ae76-4448-4a61-9b8a-bbaf98d6dfd5
-  port: 58430
-  server: xg1.qucloud.top
-  skip-cert-verify: true
-  sni: xg1.qucloud.top
-  type: hysteria2
 - name: 06-0153-US
   password: 537d7098-fdbe-11ef-8ebc-f23c93141fad
   port: 1743
@@ -194,7 +173,7 @@ proxies:
   skip-cert-verify: true
   type: hysteria2
 - cipher: aes-256-cfb
-  name: 06-0417-AU
+  name: 06-0420-AU
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 103.75.119.38
@@ -225,6 +204,19 @@ proxies:
     headers:
       Host: 13.204.17.137
     path: /news
+- alterId: 2
+  cipher: auto
+  name: 07-0183-HK
+  network: ws
+  port: 30807
+  server: v10.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - name: 07-0184-US
   password: 7a2512b4-09ee-11f0-8d46-f23c9313b177
   port: 1743
@@ -237,6 +229,13 @@ proxies:
   server: 37a48ffc-t4whs0-t5a0jp-b4pt.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
+- name: 07-0191-HK
+  password: BxceQaOe
+  port: 443
+  server: 58.152.30.26
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
 - name: 07-0192-US
   network: ws
   port: 443
@@ -250,6 +249,19 @@ proxies:
     headers:
       Host: 38.60.163.6
     path: /6049408f
+- alterId: 0
+  cipher: auto
+  name: 07-0195-HK
+  network: ws
+  port: 20292
+  server: 47.242.77.252
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 57f5c2bd-bb79-4fd8-eea1-a84d1ddf3a21
+  ws-opts:
+    path: /
 - alterId: 2
   cipher: auto
   name: 07-0198-HK
@@ -301,13 +313,6 @@ proxies:
   server: 3d2c11f1-t52o00-tdw2ye-2gok.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
-- name: 07-0207-US
-  password: 328cf214-7773-4e3a-adfc-a534c1cc574d
-  port: 54265
-  server: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  skip-cert-verify: true
-  sni: banmabanmabanmabanmabanmabanma1.wanlidag.top
-  type: hysteria2
 - name: 07-0208-US
   password: 94931862-1484-11f0-9ab7-f23c95b6f51d
   port: 1743
@@ -325,13 +330,6 @@ proxies:
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- name: 07-0211-CA
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 47262
-  server: 40.233.103.51
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - name: 07-0213-US
   password: 1b609740-eec2-11ef-8543-f23c93136cb3
   port: 1743
@@ -364,19 +362,6 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /x %40节点狂魔
-- alterId: 2
-  cipher: auto
-  name: 07-0219-HK
-  network: ws
-  port: 30809
-  server: v9.heduian.link
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /oooo
 - name: 07-0227-US
   password: 6286105c-fb6d-11ef-be96-f23c93136cb3
   port: 1743
@@ -407,6 +392,19 @@ proxies:
   server: 026b10f5-t4whs0-t5vo4i-4550.la.shifen.uk
   skip-cert-verify: true
   type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 07-0237-HK
+  network: ws
+  port: 30830
+  server: v30.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    path: /oooo
 - name: 07-0239-US
   password: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
   port: 1743
@@ -425,7 +423,7 @@ proxies:
   port: 443
   server: 45.83.142.237
   type: ss
-- name: 10-0311-DE
+- name: 10-0313-DE
   network: tcp
   port: 24199
   server: 159.69.220.135
@@ -435,7 +433,7 @@ proxies:
   udp: true
   uuid: fac7c48a-02b7-4017-a1bc-abde29099e9f
 - cipher: chacha20-ietf-poly1305
-  name: 10-0313-CY
+  name: 10-0315-CY
   password: NiPzObWODHbCoAI8f1Ty3X
   port: 22658
   server: 45.12.150.212
@@ -444,21 +442,27 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: 50 Mbps
-  name: 10-0331-FR
+  name: 10-0333-FR
   port: 15010
   protocol: udp
   server: 195.154.200.40
   skip-cert-verify: true
   type: hysteria
   up: 20 Mbps
-- name: 16-0339-NOWHERE
+- name: 16-0341-NOWHERE
   password: 1b57001bd214304027025a740b6cf1ac
   port: 3841
   server: 221.128.195.12
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 17-0348-RELAY
+- cipher: chacha20-ietf-poly1305
+  name: 17-0349-LT
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 45.87.175.178
+  type: ss
+- name: 17-0350-RELAY
   network: ws
   port: 443
   server: 77.37.33.39
@@ -471,25 +475,7 @@ proxies:
     headers:
       Host: gb-021.shenzogmbh.com
     path: /api/v1
-- cipher: chacha20-ietf-poly1305
-  name: 17-0354-US
-  password: 2AJogKuFsiVa5SrhD7vPn8P28se9DBAT564XTGDnE9h5HZPh593bzJRxYavWzryacr6CAN5nHFm8RpsHfqRnasyhbsRzY4Np
-  port: 40565
-  server: imap.roomyinmita.name
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 17-0355-US
-  password: ivQYTiSyUGyRiVhqcbaEtMjXC8djrscPbnhjnU9oTEuVwh6LhJSkQNYjxtKx5X2iRRCJHu7e3UFwW9S9iAyhP2rX6ot6Lc7x
-  port: 40565
-  server: imap.roomyinmita.name
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 17-0358-US
-  password: QLXkEq597i3oGAGzjE4qS64uPGhjxWpPiqwwBArKbsqYPUNpQBwdgHL6KoDSRGE9bjSdn3p4UaDYMVm6s1wMoifavnirR5N8
-  port: 40565
-  server: imap.roomyinmita.name
-  type: ss
-- name: 17-0359-FR
+- name: 17-0361-FR
   network: ws
   port: 443
   server: 213.21.242.82
@@ -502,7 +488,7 @@ proxies:
     headers:
       Host: hikoop.ru
     path: /ray
-- name: 17-0361-RELAY
+- name: 17-0363-RELAY
   network: ws
   port: 443
   server: 104.26.6.89
@@ -515,25 +501,7 @@ proxies:
     headers:
       Host: gb-021.shenzogmbh.com
     path: /api/v1
-- cipher: chacha20-ietf-poly1305
-  name: 17-0363-LT
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.155
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 17-0364-US
-  password: akvJQzZCaTdisSyuSy3aRmyvKC53X1d3PaAsb9xU8n5TY9hSB1DK5e6SPm921igHcRsCTCvf1pWufTJ5Li8PiiQG4vYdyyM7
-  port: 40565
-  server: imap.roomyinmita.name
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 17-0365-US
-  password: zPbZwy4CsNmSmhGYjoUW47iRgnK7US3cZ9g7o5YefnnTAMzk74upYV8k29XdQaefPwGM7HAmhvqLXSovVA1HH8L8podSAZ3X
-  port: 40565
-  server: imap.roomyinmita.name
-  type: ss
-- name: 17-0367-RELAY
+- name: 17-0369-RELAY
   network: ws
   port: 2096
   server: 92.53.191.253
@@ -546,7 +514,7 @@ proxies:
     headers:
       Host: fast01.0860852.xyz
     path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=512
-- name: 17-0370-RELAY
+- name: 17-0372-RELAY
   network: ws
   port: 2096
   server: 45.131.4.253
@@ -560,36 +528,62 @@ proxies:
       Host: vless.muzheng.top
     path: /Telegram🇨🇳+%40WangCai2+/?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 17-0371-CR
+  name: 17-0373-CR
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 145.14.131.37
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 17-0382-CY
+  name: 17-0384-CY
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 134.255.210.49
   type: ss
-- name: 17-0394-TW
+- name: 17-0396-TW
   password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
   port: 8443
   server: official.taipeicitygovernment.com.ua
   skip-cert-verify: true
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 17-0400-BH
+  name: 17-0402-BH
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.2.182
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 17-0406-FI
-  password: dAHM1pm8ag7KdlrUylQi6t
+- flow: xtls-rprx-vision
+  name: 17-0405-DE
+  network: tcp
   port: 443
-  server: 38.244.136.233
+  reality-opts:
+    public-key: y_AlGiUJiCRWCT8FyrfUm-Cmpm0bl0cSUMRP3VZ9X0I
+    short-id: 89dbda1a1c9369
+  server: 64.188.70.0
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
+- flow: xtls-rprx-vision
+  name: 17-0406-DE
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: y_AlGiUJiCRWCT8FyrfUm-Cmpm0bl0cSUMRP3VZ9X0I
+    short-id: 89dbda1a1c9369
+  server: de.nitroo-tech.ru
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd79807f-bcef-46b8-93b6-229676a0c1a0
+- cipher: chacha20-ietf-poly1305
+  name: 17-0409-DE
+  password: JNK7CvuvWTpF2ZY3d9ygt1
+  port: 443
+  server: 109.122.197.192
   type: ss
-- name: 17-0408-NL
+- name: 17-0410-NL
   network: tcp
   port: 16798
   reality-opts:
@@ -614,6 +608,12 @@ proxies:
   type: vless
   udp: true
   uuid: d5c1b5d7-055b-4457-bc3a-6e99919c1bcb
+- cipher: chacha20-ietf-poly1305
+  name: 17-0415-NL
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
 proxy-groups:
 - name: PROXY
   type: select
@@ -633,70 +633,66 @@ proxy-groups:
   - 05-0000-FR
   - 05-0006-FR
   - 05-0007-RELAY
-  - 05-0413-GB
-  - 05-0414-FR
-  - 05-0415-RELAY
-  - 05-0416-NL
-  - 06-0027-HK
+  - 05-0416-GB
+  - 05-0417-FR
+  - 05-0418-RELAY
+  - 05-0419-NL
   - 06-0042-CA
   - 06-0053-CO
   - 06-0079-HK
-  - 06-0088-HK
-  - 06-0093-HK
   - 06-0153-US
   - 06-0161-US
   - 06-0165-US
-  - 06-0417-AU
+  - 06-0420-AU
   - 07-0181-HK
   - 07-0182-IN
+  - 07-0183-HK
   - 07-0184-US
   - 07-0187-US
+  - 07-0191-HK
   - 07-0192-US
+  - 07-0195-HK
   - 07-0198-HK
   - 07-0201-US
   - 07-0202-HK
   - 07-0203-US
   - 07-0204-HK
   - 07-0205-US
-  - 07-0207-US
   - 07-0208-US
   - 07-0209-FR
-  - 07-0211-CA
   - 07-0213-US
   - 07-0215-HK
   - 07-0216-LT
   - 07-0217-KR
-  - 07-0219-HK
   - 07-0227-US
   - 07-0229-US
   - 07-0231-US
   - 07-0232-US
   - 07-0233-US
+  - 07-0237-HK
   - 07-0239-US
   - 08-0243-SE
   - 08-0244-CY
-  - 10-0311-DE
-  - 10-0313-CY
-  - 10-0331-FR
-  - 16-0339-NOWHERE
-  - 17-0348-RELAY
-  - 17-0354-US
-  - 17-0355-US
-  - 17-0358-US
-  - 17-0359-FR
-  - 17-0361-RELAY
-  - 17-0363-LT
-  - 17-0364-US
-  - 17-0365-US
-  - 17-0367-RELAY
-  - 17-0370-RELAY
-  - 17-0371-CR
-  - 17-0382-CY
-  - 17-0394-TW
-  - 17-0400-BH
-  - 17-0406-FI
-  - 17-0408-NL
+  - 10-0313-DE
+  - 10-0315-CY
+  - 10-0333-FR
+  - 16-0341-NOWHERE
+  - 17-0349-LT
+  - 17-0350-RELAY
+  - 17-0361-FR
+  - 17-0363-RELAY
+  - 17-0369-RELAY
+  - 17-0372-RELAY
+  - 17-0373-CR
+  - 17-0384-CY
+  - 17-0396-TW
+  - 17-0402-BH
+  - 17-0405-DE
+  - 17-0406-DE
+  - 17-0409-DE
+  - 17-0410-NL
   - 17-0412-MD
+  - 17-0415-NL
 - name: Best
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -721,70 +717,66 @@ proxy-groups:
   - 05-0000-FR
   - 05-0006-FR
   - 05-0007-RELAY
-  - 05-0413-GB
-  - 05-0414-FR
-  - 05-0415-RELAY
-  - 05-0416-NL
-  - 06-0027-HK
+  - 05-0416-GB
+  - 05-0417-FR
+  - 05-0418-RELAY
+  - 05-0419-NL
   - 06-0042-CA
   - 06-0053-CO
   - 06-0079-HK
-  - 06-0088-HK
-  - 06-0093-HK
   - 06-0153-US
   - 06-0161-US
   - 06-0165-US
-  - 06-0417-AU
+  - 06-0420-AU
   - 07-0181-HK
   - 07-0182-IN
+  - 07-0183-HK
   - 07-0184-US
   - 07-0187-US
+  - 07-0191-HK
   - 07-0192-US
+  - 07-0195-HK
   - 07-0198-HK
   - 07-0201-US
   - 07-0202-HK
   - 07-0203-US
   - 07-0204-HK
   - 07-0205-US
-  - 07-0207-US
   - 07-0208-US
   - 07-0209-FR
-  - 07-0211-CA
   - 07-0213-US
   - 07-0215-HK
   - 07-0216-LT
   - 07-0217-KR
-  - 07-0219-HK
   - 07-0227-US
   - 07-0229-US
   - 07-0231-US
   - 07-0232-US
   - 07-0233-US
+  - 07-0237-HK
   - 07-0239-US
   - 08-0243-SE
   - 08-0244-CY
-  - 10-0311-DE
-  - 10-0313-CY
-  - 10-0331-FR
-  - 16-0339-NOWHERE
-  - 17-0348-RELAY
-  - 17-0354-US
-  - 17-0355-US
-  - 17-0358-US
-  - 17-0359-FR
-  - 17-0361-RELAY
-  - 17-0363-LT
-  - 17-0364-US
-  - 17-0365-US
-  - 17-0367-RELAY
-  - 17-0370-RELAY
-  - 17-0371-CR
-  - 17-0382-CY
-  - 17-0394-TW
-  - 17-0400-BH
-  - 17-0406-FI
-  - 17-0408-NL
+  - 10-0313-DE
+  - 10-0315-CY
+  - 10-0333-FR
+  - 16-0341-NOWHERE
+  - 17-0349-LT
+  - 17-0350-RELAY
+  - 17-0361-FR
+  - 17-0363-RELAY
+  - 17-0369-RELAY
+  - 17-0372-RELAY
+  - 17-0373-CR
+  - 17-0384-CY
+  - 17-0396-TW
+  - 17-0402-BH
+  - 17-0405-DE
+  - 17-0406-DE
+  - 17-0409-DE
+  - 17-0410-NL
   - 17-0412-MD
+  - 17-0415-NL
 - name: HK
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -794,16 +786,16 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 06-0027-HK
   - 06-0079-HK
-  - 06-0088-HK
-  - 06-0093-HK
   - 07-0181-HK
+  - 07-0183-HK
+  - 07-0191-HK
+  - 07-0195-HK
   - 07-0198-HK
   - 07-0202-HK
   - 07-0204-HK
   - 07-0215-HK
-  - 07-0219-HK
+  - 07-0237-HK
   filter: (?i)港|HK|HongKong|hong kong
 - name: TW
   type: url-test
@@ -814,7 +806,7 @@ proxy-groups:
   interval: 600
   tolerance: 50
   proxies:
-  - 17-0394-TW
+  - 17-0396-TW
   filter: 台湾|TW|Tw|Taiwan|新北|彰化|CHT|HINET
 - name: JP
   type: url-test
@@ -856,7 +848,6 @@ proxy-groups:
   - 07-0201-US
   - 07-0203-US
   - 07-0205-US
-  - 07-0207-US
   - 07-0208-US
   - 07-0213-US
   - 07-0227-US
@@ -865,11 +856,6 @@ proxy-groups:
   - 07-0232-US
   - 07-0233-US
   - 07-0239-US
-  - 17-0354-US
-  - 17-0355-US
-  - 17-0358-US
-  - 17-0364-US
-  - 17-0365-US
   filter: (?i)美|洛杉矶|芝加哥|西雅图|America|US|United.*?States
 - name: Claude
   type: url-test
