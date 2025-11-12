@@ -193,6 +193,19 @@ proxies:
   skip-cert-verify: true
   sni: 203.198.122.129
   type: trojan
+- name: 06-0035-FI
+  network: ws
+  port: 443
+  server: fl-3-direct.djarbnet.ru
+  servername: fl-3-direct.djarbnet.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc67ca7f-064e-4117-ac31-a66d5728a11c
+  ws-opts:
+    headers:
+      Host: fl-3-direct.djarbnet.ru
+    path: /getupdates
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -344,12 +357,6 @@ proxies:
   sni: bing.com
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 10-0339-GB
-  password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP
-  port: 443
-  server: 45.14.245.2
-  type: ss
-- cipher: chacha20-ietf-poly1305
   name: 10-0341-LT
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
@@ -380,19 +387,6 @@ proxies:
     headers:
       Host: vless.muzheng.top
     path: /
-- name: 17-0397-RELAY
-  network: ws
-  port: 2053
-  server: 104.21.7.162
-  servername: dashboard.app-browser.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: c495405a-41d7-429e-b999-94136197b211
-  ws-opts:
-    headers:
-      Host: dashboard.app-browser.org
-    path: /J5aLQOY1R9ONWYCM
 - name: 17-0399-RELAY
   network: ws
   port: 2096
@@ -631,12 +625,38 @@ proxies:
   port: 990
   server: 134.255.210.49
   type: ss
+- name: 17-0468-RELAY
+  network: ws
+  port: 2053
+  server: 104.26.6.89
+  servername: om4.omidsuccess.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: e188a23f-f17a-4a61-8a48-aa83b3653f5d
+  ws-opts:
+    headers:
+      Host: om4.omidsuccess.uk
+    path: /containers/de
 - cipher: chacha20-ietf-poly1305
   name: 17-0474-BH
   password: f8f7aCzcPKbsF8p3
   port: 990
   server: 38.54.2.182
   type: ss
+- name: 17-0479-LV
+  network: ws
+  port: 53299
+  server: 83.222.20.64
+  servername: 83.222.20.64
+  tls: false
+  type: vless
+  udp: true
+  uuid: 393044fb-755a-4623-965e-3ae4fe39d730
+  ws-opts:
+    headers:
+      Host: 83.222.20.64
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 17-0481-NL
   password: RFK38Cg7APneSB5cWDcpbm
@@ -655,19 +675,6 @@ proxies:
   port: 443
   server: switcher-nick-croquet.freesocks.work
   type: ss
-- flow: xtls-rprx-vision
-  name: 17-0488-MD
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw
-    short-id: 81e0b568
-  server: 94.131.104.178
-  servername: latvia6.clearorbitllc.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d5c1b5d7-055b-4457-bc3a-6e99919c1bcb
 - cipher: chacha20-ietf-poly1305
   name: 17-0491-FI
   password: dAHM1pm8ag7KdlrUylQi6t
@@ -709,6 +716,7 @@ proxy-groups:
   - 05-0496-FR
   - 05-0497-NL
   - 06-0033-HK
+  - 06-0035-FI
   - 07-0202-FR
   - 07-0203-US
   - 07-0204-US
@@ -731,12 +739,10 @@ proxy-groups:
   - 08-0501-HK
   - 09-0240-HK
   - 09-0241-HK
-  - 10-0339-GB
   - 10-0341-LT
   - 10-0369-MD
   - 17-0389-NL
   - 17-0393-RELAY
-  - 17-0397-RELAY
   - 17-0399-RELAY
   - 17-0404-RELAY
   - 17-0406-RELAY
@@ -762,11 +768,12 @@ proxy-groups:
   - 17-0449-CR
   - 17-0450-RELAY
   - 17-0459-CY
+  - 17-0468-RELAY
   - 17-0474-BH
+  - 17-0479-LV
   - 17-0481-NL
   - 17-0482-NL
   - 17-0487-NL
-  - 17-0488-MD
   - 17-0491-FI
   - 17-0503-TW
 - name: Best
@@ -803,6 +810,7 @@ proxy-groups:
   - 05-0496-FR
   - 05-0497-NL
   - 06-0033-HK
+  - 06-0035-FI
   - 07-0202-FR
   - 07-0203-US
   - 07-0204-US
@@ -825,12 +833,10 @@ proxy-groups:
   - 08-0501-HK
   - 09-0240-HK
   - 09-0241-HK
-  - 10-0339-GB
   - 10-0341-LT
   - 10-0369-MD
   - 17-0389-NL
   - 17-0393-RELAY
-  - 17-0397-RELAY
   - 17-0399-RELAY
   - 17-0404-RELAY
   - 17-0406-RELAY
@@ -856,11 +862,12 @@ proxy-groups:
   - 17-0449-CR
   - 17-0450-RELAY
   - 17-0459-CY
+  - 17-0468-RELAY
   - 17-0474-BH
+  - 17-0479-LV
   - 17-0481-NL
   - 17-0482-NL
   - 17-0487-NL
-  - 17-0488-MD
   - 17-0491-FI
   - 17-0503-TW
 - name: HK
